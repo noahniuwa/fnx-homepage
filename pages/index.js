@@ -1,13 +1,7 @@
 import Head from 'next/head';
-import {useState} from 'react';
-
+ import Navbar from '../components/Navbar'
 
 export default function Home() {
-  const [menu, setMenu] = useState(0);
-  const handleMenuClick = () => {
-    if (menu === 1) return setMenu(0)
-    setMenu(1)
-  }
   
   return (
     <div className="">
@@ -20,53 +14,9 @@ export default function Home() {
      
 
       <main>
-        <div className="section_1"> 
-        <nav className="navbar   is-primary" role="navigation" aria-label="main navigation">
-        <div className="navbar-brand">
-          <a className="navbar-item"  >
-            <img className="logo" src="logo.png"/>
-          </a>
-
-          <a role="button" onClick={handleMenuClick} className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div id="basicNavbar" className={`navbar-menu ${menu === 0 ? "" : "is-active" }`}>
-          <div className="navbar-end">
-            <a className="navbar-item">
-              Blog
-            </a>
-            <a className="navbar-item">
-              Documentation
-            </a>
-            <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link">
-                Products
-              </a>
-              <div className="navbar-dropdown">
-                <a className="navbar-item">
-                FNX Mining 
-                </a>
-                <a className="navbar-item">
-                FPO 1.0 
-                </a>
-                <a className="navbar-item">
-                FPO 0.1 
-                </a>
-                  <a className="navbar-item">
-                Wandora's Box 
-                </a>
-                <a className="navbar-item">
-                Jack's Pot
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>          
+        <header className="section_1"> 
+        <Navbar />   
+        <div className="headerContentContainer">
           <div className="mainContents">  
             <h1 className="mainTitle">
               FinNexus
@@ -82,10 +32,12 @@ export default function Home() {
           <div className="mainAside">
             <img className="section_1_bg" src="bgshape_01.svg"/>
           </div>
-        </div>
+        </div>     
+          
+        </header>
         <div className="section_2"> 
           <img className="section_2_img" src="FNX_liquidity.svg"/>
-          <div className="imageAside">
+          <div className="section_2_imageAside">
             <h3 className="asideTitle">Liquidity</h3>
             <p className="asideText">DeFi has come to represent the forefront of blockchain based finance. However, from the perspective of investors, there are a number of key issues the DeFi ecosystem is still not able to solve:
             <button className="asideButton is-rounded button is-danger">Dark</button>
@@ -139,8 +91,31 @@ export default function Home() {
 
       <style jsx>{`
       
-      
-      @media (min-width: 700px) {
+        .mainContentsText {
+          margin-bottom: 40px;
+        }
+        .section_1 {
+          color: white;
+          padding-left: 100px;
+          padding-right: 100px;
+          padding-bottom: 450px;
+          color: white;
+          background-color: #224099;
+          width: 100%;
+          height: 80vh;
+          margin: auto;
+          border-radius: 0 0 250px 250px;
+        }.headerContentContainer {
+          display: flex;
+          justify-content: space-around;
+        }
+        .mainAside {
+
+        }
+        .mainContents {
+          width: 400px;
+          font-size: 1em;
+        }
         .partners {
           transform: translateY(-40px);
           color: white;
@@ -229,7 +204,7 @@ export default function Home() {
           padding-right: 80px;
           padding-bottom: 300px;
           width: 100%;
-          height: 400px;
+          height: 500px;
           background-color: #9F66A9;
           border-radius: 300px;
         }
@@ -254,18 +229,22 @@ export default function Home() {
         }
         .section_2 {
           margin-top: 50px;
+          margin-left:auto;
+          margin-right: auto;
+          max-width: 80%;
           display: flex;
           justify-content: space-evenly;
         }
         .section_2_img{
-          /* display: inline-block; */
-          width: 40%;
+          width: 50%;
           transform: translateY(-100px);
-          /* filter: drop-shadow(0 -.01mm 2mm #EFF0EB); */
           filter: drop-shadow(0px 10px 15px #585858);
         }
+        .section_2_imageAside {
+          width: 30%;
+        }
         .imageAside {
-          /* display: inline-block; */
+          display: inline-block;
           width: 30%;
         }
         h3 {
@@ -273,11 +252,7 @@ export default function Home() {
           font-size: 4rem;
           font-weight: 900;
         }
-        .navbar-menu.is-active {
-          display: block;
-          position: absolute;
-          width: 100%;
-        }
+        
         .section_1_bg {
           width: 250px;
           margin-left: 170px;
@@ -287,12 +262,10 @@ export default function Home() {
            /* border: 1px dashed red; */
          }
         .mainTitle{
-          margin-bottom: 35px;
+          margin-bottom: 20px;
+          margin-top: 20px;
         }
-        .navbar{
-          width: 80%;
-          margin: auto;
-        }
+        
         .buttons-list {
           display: flex;
         }
@@ -301,40 +274,32 @@ export default function Home() {
           margin-right: 30px;
           
         }
-        .mainAside {
-          display: inline-block;
-        }
-        .mainContents {
-          display: inline-block;
-          padding-top: 50px;
-          padding-left: 30px;
-          width: 400px;
-          font-size: 1em;
-        }
+        
         h1 {
-          font-size: 4em;
+          font-size: 5em;
           font-weight: 900;
         }
         main {
           width: 90%;
           margin: auto;
         }
-        .section_1 {
-          color: white;
-          padding-left: 100px;
-          padding-right: 100px;
-          padding-bottom: 450px;
-          color: white;
-          background-color: #224099;
-          width: 100%;
-          height: 80vh;
-          margin: auto;
-          border-radius: 0 0 250px 250px;
-        }
+      
+      @media (max-width: 1000px) {
+        
       }
         @media (max-width: 700px) {
-          
-          .buttons-list {
+        .section_2 {
+          margin-top: 50px;
+          display: block;
+          justify-content: space-evenly;
+        }
+        .section_1_bg{
+          position: absolute;
+          right: -20px;
+          top: 450px;
+          z-index: 0;
+        }
+        .buttons-list {
           display: flex;
         }
         .button {
@@ -354,12 +319,9 @@ export default function Home() {
             line-height: 1.3;
              
           }
-          .navbar-burger span {
-            width: 30px;
-            height: 1.5px;
-          }
+          
           h1 {
-            font-size: 6rem;
+            font-size: 3rem;
             font-weight: 900;
            }
           main {
@@ -369,7 +331,7 @@ export default function Home() {
           .section_1 {
             padding-left: 30px;
             padding-right: 30px;
-            height: 70vh;
+            height: 75vh;
             border-radius: 0 0 80px 80px;
             background-color: #224099;
             background-size: 100% 800px;
@@ -380,6 +342,20 @@ export default function Home() {
           .mainContentsText {
             margin-bottom: 20px;
           }
+        .section_2 {
+          width: 100%;
+        }
+        .section_2_img{
+          width: 100%;
+        }
+        .section_2_imageAside {
+          width: 100%;
+        }
+        .section_1_bg {
+          width: 150px;
+          margin-left: 170px;
+          transform: translateY(30px);
+        }
         }
       `}</style>
 
@@ -392,7 +368,8 @@ export default function Home() {
           margin: 0;
           font-family: 'Open Sans Condensed', sans-serif;
           font-weight: 600;
-          
+          font-size: 20px;
+        
         }
         
         * {
