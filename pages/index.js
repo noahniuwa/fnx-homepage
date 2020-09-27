@@ -100,245 +100,240 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
-      .subSectionContainer {
-        width: 45%;
-      }
-      .section_1_bg {
-        display: none;
-      }
-      .appContainer {
-        overflow: hidden;
-      }
-      .btn_right {
-        float: right;
-      }
-       
-      html,
-        body {
-          padding: 0;
-          width: 100%;
-          height: 100%;
-          margin: 0;
-          font-family: 'Open Sans Condensed', sans-serif;
-          font-weight: 600;
-          font-size: 20px;
-          overflow: hidden;
-        
-        }
-        html {
-          overflow:   hidden;
-        }
-        ::-webkit-scrollbar {
-          width: 0px;
-          background: transparent; /* make scrollbar transparent */
-        }
-        
-        * {
-          box-sizing: border-box;
-          position: relative;
-        }
-      
-        .mainContentsText {
-          margin-bottom: 40px;
-        }
-        .section_1 {
-          width: 1200px;
-          color: white;
-          padding-left: 100px;
-          padding-right: 100px;
-          color: white;
-          background-color: #224099;
-         
-          height: 90vh;
-          max-height: 1000px;
-
-          margin: auto;
-          border-radius: 0 0 250px 250px;
-        }
-        .section_3 {
-          width: 1200px;
-        }
-        .section_2 {
-          width: 1200px;
-          margin-top: 0px;
-          margin-left:auto;
-          margin-right: auto;
-          display: flex;
-          justify-content: space-between;
-        }
-        .headerContentContainer {
-          
-          display: flex;
-          justify-content: space-around;
-          height: 100%;
-         }
-        .mainAside {
-          margin-top: 0px;
-          z-index: 99;
-          width: 40%;
-          background-image: url("/top_illustration.svg");
-          background-repeat: no-repeat;
-          background-position: right;
-          background-size: 500px 500px;
-        }
-
-      
-        .mainContents {
-          width: 35%;
-          font-size: 1em;
+        @media (min-width: 700px) {
+          main {
+            max-width: 80%;
           }
-        .partners {
-          transform: translateY(-40px);
-          color: white;
-          width: 100%;
-          height: 450px;
-          background-color: #A1D8D9;
-          border-radius: 300px;
-        }
-        .p_e_container {
-          margin-top: 200px;
-          color: white;
-          width: 100%;
-          height: 750px;
-          background-color: #6E308B;
-          border-radius: 200px 200px 200px 200px;
-        }
-        .pill_section_2_img {
-          margin-top: 50px;
-          width: 90%;
-        }
-        .pillText_1 {
-          margin-top: 30px;
-        }
-        .purplePill_1{
-          width: 100%;
-          padding: 50px;
-        }
-        .purplePill_2{
-          width: 100%;
-        }
-        .pillContainer {
-          display: flex;
-          align-items: flex-end; 
-          justify-content: flex-start;
-        }
-        h4 {
-          font-size: 3rem;
-          font-weight: 900;
-          margin: 0;
-          padding: 0;
-          line-height: 1.5rem;
-        }
-        h5 {
-          font-size: 2rem;
-          font-weight: 900;
-          margin: 0;
-          padding: 0;
-        }
-        .labelTitle {
+          .subSectionContainer {
+            width: 45%;
+          }
+          .section_1_bg {
+            display: none;
+          }
+          .appContainer {
+            overflow: hidden;
+          }
+          .btn_right {
+            float: right;
+          }
           
+          html,
+          body {
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-weight: 600;
+            overflow: hidden;
+          }
+          html {
+            overflow:   hidden;
+            font-size: 200% !important;
+          }
+          ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent; /* make scrollbar transparent */
+          }
           
-        }
-        .versionLabel {
-          float: right;
-          margin-top: 5px;
-          width:30px;
-          height: 15px;
-          color: white;
-          background-color: #6E308B;
-          font-size: 0.5rem;
-          text-align: center;
-          border-radius: 10px;
-        }
-        .square_label_img {
-          width: 70%;
-          margin: auto;
-          display: block;
-        }
-        .squareLabel {
-          margin-right: 10px;
-          display: inline-block;
-          padding: 20px;
-          font-size: 1.2rem;
-          font-weight: 900;
-          color: black;
-          width: 110px;
-          height: 110px;
-          background-color: #EFF0EB;
-          border-radius: 20px;
-        }
-        .purplePill {
-          display: flex;
-          justify-content: space-evenly;
-          color: white;
-          margin-top: 100px;
-          padding-top: 40px;
-          padding-left: 150px;
-          padding-right: 80px;
-          padding-bottom: 300px;
-          width: 100%;
-          height: 500px;
-          background-color: #9F66A9;
-          border-radius: 300px;
-        }
-        .aside_3 {
-          transform: translateY(-50px);
-        }
-        .asideButton {
-          margin-top: 20px;
-        }
+          * {
+            box-sizing: border-box;
+            position: relative;
+          }
+        
+          .mainContentsText {
+            margin-bottom: 40px;
+          }
+          .section_1 {
+            color: white;
+            padding-left: 100px;
+            padding-right: 100px;
+            color: white;
+            background-color: #224099;
+            height: 90vh;
+            max-height: 800px;
+            margin: auto;
+            border-radius: 0 0 250px 250px;
+          }
+          .section_3 {
+            margin: auto;
+            display: flex;
+          }
+          .section_2 {
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+          }
+          .headerContentContainer {
+            
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+          }
+          .mainAside {
+            margin-top: 0px;
+            z-index: 99;
+            width: 40%;
+            background-image: url("/top_illustration.svg");
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 500px 500px;
+          }
 
         
-        .section_2_img{
-          margin-top: 40px;
-          width: 100%;
-          /* transform: translateY(-100px); */
-          filter: drop-shadow(0px 10px 15px #585858);
-        }
-        .section_2_imageAside {
-          width: 100%;
-        }
-         
-        h3 {
-          color: #9F66A9;
-          font-size: 4rem;
-          font-weight: 900;
-        }
+          .mainContents {
+            width: 35%;
+            font-size: 1rem;
+          }
+          .partners {
+            transform: translateY(-40px);
+            color: white;
+            width: 100%;
+            height: 450px;
+            background-color: #A1D8D9;
+            border-radius: 300px;
+          }
+          .p_e_container {
+            margin-top: 200px;
+            color: white;
+            width: 100%;
+            height: 750px;
+            background-color: #6E308B;
+            border-radius: 200px 200px 200px 200px;
+          }
+          .pill_section_2_img {
+            margin-top: 50px;
+            width: 90%;
+          }
+          .pillText_1 {
+            margin-top: 30px;
+          }
+          .purplePill_1{
+            width: 100%;
+            padding: 50px;
+          }
+          .purplePill_2{
+            width: 100%;
+          }
+          .pillContainer {
+            display: flex;
+            align-items: flex-end; 
+            justify-content: flex-start;
+          }
+          h4 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5rem;
+          }
+          h5 {
+            font-size: 2rem;
+            font-weight: 900;
+            margin: 0;
+            padding: 0;
+          }
+          .labelTitle {
+            
+            
+          }
+          .versionLabel {
+            float: right;
+            margin-top: 5px;
+            width:30px;
+            height: 15px;
+            color: white;
+            background-color: #6E308B;
+            font-size: 0.5rem;
+            text-align: center;
+            border-radius: 10px;
+          }
+          .square_label_img {
+            width: 70%;
+            margin: auto;
+            display: block;
+          }
+          .squareLabel {
+            margin-right: 10px;
+            display: inline-block;
+            padding: 20px;
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: black;
+            width: 110px;
+            height: 110px;
+            background-color: #EFF0EB;
+            border-radius: 20px;
+          }
+          .purplePill {
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+            margin-top: 100px;
+            padding-top: 40px;
+            padding-left: 150px;
+            padding-right: 80px;
+            padding-bottom: 300px;
+            width: 100%;
+            height: 500px;
+            background-color: #9F66A9;
+            border-radius: 300px;
+          }
+          .aside_3 {
+            transform: translateY(-50px);
+          }
+          .asideButton {
+            margin-top: 20px;
+          }
+
+          
+          .section_2_img{
+            margin-top: 40px;
+            width: 100%;
+            /* transform: translateY(-100px); */
+            filter: drop-shadow(0px 10px 15px #585858);
+          }
+          .section_2_imageAside {
+            width: 100%;
+          }
+          
+          h3 {
+            color: #9F66A9;
+            font-size: 4rem;
+            font-weight: 900;
+          }
+          
         
-       
-        
-        .mainTitle{
-          margin-bottom: 20px;
-          margin-top: 20px;
+          
+          .mainTitle{
+            margin-bottom: 20px;
+            margin-top: 20px;
+          }
+          
+          .buttons-list {
+            display: flex;
+          }
+          .button {
+            width: 120px;
+            margin-right: 30px;
+          }
+          
+          h1 {
+            font-size: 5rem;
+            font-weight: 900;
+          }
+          main {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+          }
+          
         }
-        
-        .buttons-list {
-          display: flex;
-        }
-        .button {
-          width: 120px;
-          margin-right: 30px;
-        }
-        
-        h1 {
-          font-size: 5em;
-          font-weight: 900;
-        }
-        main {
-          width: 90%;
-          margin: auto;
-          overflow: hidden;
-        }
-       
-      
-      @media (max-width: 1000px) {
-        
-      }
-        @media (max-width: 700px) {
-           
-        .subSectionContainer {
-          width: 100%;
-        }
+          @media (max-width: 700px) {
+            
+          .subSectionContainer {
+            width: 100%;
+          }
             .purplePill {
               overflow: visible;
               display: block;
