@@ -5,8 +5,8 @@ import {useState} from 'react';
 export default function Home() {
   const [menu, setMenu] = useState(0);
   const handleMenuClick = () => {
-    if (menu === 0) return setMenu(1)
-    setMenu(0)
+    if (menu === 1) return setMenu(0)
+    setMenu(1)
   }
   
   return (
@@ -34,7 +34,7 @@ export default function Home() {
           </a>
         </div>
 
-        <div id="basicNavbar" className={`navbar-menu ${menu ? "" : "is-active" }`}>
+        <div id="basicNavbar" className={`navbar-menu ${menu === 0 ? "" : "is-active" }`}>
           <div className="navbar-end">
             <a className="navbar-item">
               Blog
@@ -71,7 +71,7 @@ export default function Home() {
             <h1 className="mainTitle">
               FinNexus
             </h1>
-            <div>
+            <div className="mainContentsText">
               DeFi has come to represent the forefront of blockchain based finance. However, from the perspective of investors, there are a number of key issues the DeFi ecosystem is still not able to solve:
             </div>
             <div className="buttons-list">
@@ -138,144 +138,146 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
+      
+      
+      @media (min-width: 700px) {
+        .partners {
+          transform: translateY(-40px);
+          color: white;
+          width: 100%;
+          height: 450px;
+          background-color: #A1D8D9;
+          border-radius: 300px;
+        }
+        .p_e_container {
+          margin-top: 200px;
+          color: white;
+          width: 100%;
+          height: 750px;
+          background-color: #6E308B;
+          border-radius: 200px 200px 200px 200px;
+        }
+        .pill_section_2_img {
+          width: 400px;
+        }
+        .pillText_1 {
+          margin-top: 30px;
+        }
+        .purplePill_1{
+          width: 300px;
+        }
+        .purplePill_2{
+          width: 400px;
+        }
+        .pillContainer {
+          display: flex;
+          align-items: flex-end; 
+          justify-content: flex-start;
+        }
+        h4 {
+          font-size: 3rem;
+          font-weight: 900;
+          margin: 0;
+          padding: 0;
+          line-height: 1.5rem;
+        }
+        h5 {
+          font-size: 2rem;
+          font-weight: 900;
+          margin: 0;
+          padding: 0;
+        }
+        .labelTitle {
+          
+          
+        }
+        .versionLabel {
+          float: right;
+          margin-top: 5px;
+          width:30px;
+          height: 15px;
+          color: white;
+          background-color: #6E308B;
+          font-size: 0.5rem;
+          text-align: center;
+          border-radius: 10px;
+        }
+        .square_label_img {
+          width: 70%;
+          margin: auto;
+          display: block;
+        }
+        .squareLabel {
+          margin-right: 10px;
+          display: inline-block;
+          padding: 20px;
+          font-size: 1.2rem;
+          font-weight: 900;
+          color: black;
+          width: 110px;
+          height: 110px;
+          background-color: #EFF0EB;
+          border-radius: 20px;
+        }
+        .purplePill {
+          display: flex;
+          justify-content: space-evenly;
+          color: white;
+          margin-top: 100px;
+          padding-top: 40px;
+          padding-left: 150px;
+          padding-right: 80px;
+          padding-bottom: 300px;
+          width: 100%;
+          height: 400px;
+          background-color: #9F66A9;
+          border-radius: 300px;
+        }
+        .aside_3 {
+          transform: translateY(-50px);
+        }
+        .asideButton {
+          margin-top: 20px;
+        }
 
-      .partners {
-        transform: translateY(-40px);
-        color: white;
-        width: 100%;
-        height: 450px;
-        background-color: #A1D8D9;
-        border-radius: 300px;
-      }
-      .p_e_container {
-        margin-top: 200px;
-        color: white;
-        width: 100%;
-        height: 750px;
-        background-color: #6E308B;
-        border-radius: 200px 200px 200px 200px;
-      }
-      .pill_section_2_img {
-        width: 400px;
-      }
-      .pillText_1 {
-        margin-top: 30px;
-      }
-      .purplePill_1{
-        width: 300px;
-      }
-      .purplePill_2{
-        width: 400px;
-      }
-      .pillContainer {
-        display: flex;
-        align-items: flex-end; 
-        justify-content: flex-start;
-      }
-      h4 {
-        font-size: 3rem;
-        font-weight: 900;
-        margin: 0;
-        padding: 0;
-        line-height: 1.5rem;
-      }
-      h5 {
-        font-size: 2rem;
-        font-weight: 900;
-        margin: 0;
-        padding: 0;
-      }
-      .labelTitle {
-        
-        
-      }
-      .versionLabel {
-        float: right;
-        margin-top: 5px;
-        width:30px;
-        height: 15px;
-        color: white;
-        background-color: #6E308B;
-        font-size: 0.5rem;
-        text-align: center;
-        border-radius: 10px;
-      }
-      .square_label_img {
-        width: 70%;
-        margin: auto;
-        display: block;
-      }
-      .squareLabel {
-        margin-right: 10px;
-        display: inline-block;
-        padding: 20px;
-        font-size: 1.2rem;
-        font-weight: 900;
-        color: black;
-        width: 110px;
-        height: 110px;
-        background-color: #EFF0EB;
-        border-radius: 20px;
-      }
-      .purplePill {
-        display: flex;
-        justify-content: space-evenly;
-        color: white;
-        margin-top: 100px;
-        padding-top: 40px;
-        padding-left: 150px;
-        padding-right: 80px;
-        padding-bottom: 300px;
-        width: 100%;
-        height: 400px;
-        background-color: #9F66A9;
-        border-radius: 300px;
-      }
-      .aside_3 {
-        transform: translateY(-50px);
-      }
-      .asideButton {
-        margin-top: 20px;
-      }
-
-      .section_3 {
-        margin-top: 50px;
-        display: flex;
-        justify-content: space-evenly;
-      }
-      .section_3_img{
-        /* display: inline-block; */
-        width: 40%;
-        
-        /* filter: drop-shadow(0 -.01mm 2mm #EFF0EB); */
-        filter: drop-shadow(0px 10px 15px #585858);
-      }
-      .section_2 {
-        margin-top: 50px;
-        display: flex;
-        justify-content: space-evenly;
-      }
-      .section_2_img{
-        /* display: inline-block; */
-        width: 40%;
-        transform: translateY(-100px);
-        /* filter: drop-shadow(0 -.01mm 2mm #EFF0EB); */
-        filter: drop-shadow(0px 10px 15px #585858);
-      }
-      .imageAside {
-        /* display: inline-block; */
-        width: 30%;
-      }
-      h3 {
-        color: #9F66A9;
-        font-size: 4rem;
-        font-weight: 900;
-      }
-      .navbar-menu.is-active {
-        display: block;
-        position: absolute;
-        width: 100%;
-      }
+        .section_3 {
+          margin-top: 50px;
+          display: flex;
+          justify-content: space-evenly;
+        }
+        .section_3_img{
+          /* display: inline-block; */
+          width: 40%;
+          
+          /* filter: drop-shadow(0 -.01mm 2mm #EFF0EB); */
+          filter: drop-shadow(0px 10px 15px #585858);
+        }
+        .section_2 {
+          margin-top: 50px;
+          display: flex;
+          justify-content: space-evenly;
+        }
+        .section_2_img{
+          /* display: inline-block; */
+          width: 40%;
+          transform: translateY(-100px);
+          /* filter: drop-shadow(0 -.01mm 2mm #EFF0EB); */
+          filter: drop-shadow(0px 10px 15px #585858);
+        }
+        .imageAside {
+          /* display: inline-block; */
+          width: 30%;
+        }
+        h3 {
+          color: #9F66A9;
+          font-size: 4rem;
+          font-weight: 900;
+        }
+        .navbar-menu.is-active {
+          display: block;
+          position: absolute;
+          width: 100%;
+        }
         .section_1_bg {
           width: 250px;
           margin-left: 170px;
@@ -317,26 +319,56 @@ export default function Home() {
           width: 90%;
           margin: auto;
         }
-        @media (min-width: 700px) {
-          .section_1 {
-            color: white;
-            padding-left: 100px;
-            padding-right: 100px;
-            padding-bottom: 450px;
-            color: white;
-            background-color: #224099;
-            width: 100%;
-            height: 80vh;
-            margin: auto;
-            border-radius: 0 0 250px 250px;
-          }
+        .section_1 {
+          color: white;
+          padding-left: 100px;
+          padding-right: 100px;
+          padding-bottom: 450px;
+          color: white;
+          background-color: #224099;
+          width: 100%;
+          height: 80vh;
+          margin: auto;
+          border-radius: 0 0 250px 250px;
         }
+      }
         @media (max-width: 700px) {
+          
+          .buttons-list {
+          display: flex;
+        }
+        .button {
+          width: 120px;
+          margin-right: 30px;
+          
+        }
+          .mainAside {
+            display: inline-block;
+          }
+          .mainContents {
+            display: inline-block;
+            padding-top: 45px;
+            padding-left: 30px;
+            width: 90%;
+            font-size: 1.2rem;
+            line-height: 1.3;
+             
+          }
+          .navbar-burger span {
+            width: 30px;
+            height: 1.5px;
+          }
+          h1 {
+            font-size: 6rem;
+            font-weight: 900;
+           }
           main {
             width: 100%;
             margin: 0;
           }
           .section_1 {
+            padding-left: 30px;
+            padding-right: 30px;
             height: 70vh;
             border-radius: 0 0 80px 80px;
             background-color: #224099;
@@ -344,6 +376,9 @@ export default function Home() {
             margin: auto;
             width: 100%;
             color: white;
+          }
+          .mainContentsText {
+            margin-bottom: 20px;
           }
         }
       `}</style>
