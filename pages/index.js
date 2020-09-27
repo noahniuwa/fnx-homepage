@@ -4,7 +4,7 @@ import Head from 'next/head';
 export default function Home() {
   
   return (
-    <div className="">
+    <div className="appContainer">
       <Head>
         <title>FinNexus</title>
         <link rel="icon" href="/favicon.ico" />
@@ -15,8 +15,8 @@ export default function Home() {
 
       <main>
         <header className="section_1"> 
-        <Navbar />   
-        <div className="headerContentContainer">
+          <Navbar />   
+          <div className="headerContentContainer">
           <div className="mainContents">  
             <h1 className="mainTitle">
               FinNexus
@@ -30,28 +30,38 @@ export default function Home() {
             </div>
           </div>
           <div className="mainAside">
-            <img className="section_1_bg" src="bgshape_01.svg"/>
-          </div>
-        </div>     
-          
+            {/* <img className="section_1_bg" src="bgshape_01.svg"/> */}
+            {/* <img className="section_1_bg" src="top_illustration.svg"/> */}
+           </div>
+        </div>  
+          <img className="section_1_bg" src="bgshape_01.svg"/>
         </header>
+
         <div className="section_2"> 
-          <img className="section_2_img" src="FNX_liquidity.svg"/>
-          <div className="section_2_imageAside">
-            <h3 className="asideTitle">Liquidity</h3>
-            <p className="asideText">DeFi has come to represent the forefront of blockchain based finance. However, from the perspective of investors, there are a number of key issues the DeFi ecosystem is still not able to solve:
-            <button className="asideButton is-rounded button is-danger">Dark</button>
+          <div className="subSectionContainer">
+            <img className="section_2_img" src="FNX_liquidity.svg"/>
+          </div>
+          <div className="subSectionContainer">
+            <div className="section_2_imageAside">
+              <h3>Liquidity</h3>
+              <p>DeFi has come to represent the forefront of blockchain based finance. However, from the perspective of investors, there are a number of key issues the DeFi ecosystem is still not able to solve:</p>
+              <button className=" btn_right is-rounded button is-danger">Dark</button>
+            </div>          
+          </div>
+          
+        </div>
+
+        <div className="section_3"> 
+          <img className="section_3_img" src="FNX_options.svg"/>
+          <div className="section_3_imageAside">
+            <h3>Options</h3>
+            <p>DeFi has come to represent the forefront of blockchain based finance. However, from the perspective of investors, there are a number of key issues the DeFi ecosystem is still not able to solve:
             </p>
+            <button className="asideButton  is-rounded button is-danger">Dark</button>
           </div>
         </div>
-        <div className="section_3">
-          <div className="imageAside aside_3">
-            <h3 className="asideTitle">Options</h3>
-            <p className="asideText">DeFi has come to represent the forefront of blockchain based finance. However, from the perspective of investors, there are a number of key issues the DeFi ecosystem is still not able to solve.</p>
-            <button className="asideButton is-rounded button is-danger">Dark</button>
-          </div> 
-          <img className="section_3_img" src="FNX_options.svg"/>
-        </div>
+        
+     
 
         <div className="purplePill">
           <div className="purplePill_1">
@@ -69,10 +79,10 @@ export default function Home() {
               </div>
             </div>
             <p className="pillText_1">DeFi has come to represent the forefront of blockchain based finance. However, from the perspective of investors, there are a number of key issues the DeFi ecosystem is still not able to solve.</p>
-            <button className="asideButton is-rounded button is-warning">Dark</button>
+            <button className="asideButton .btn_right is-rounded button is-warning">Dark</button>
             </div>
           <div className="purplePill_2">
-            <img className="pill_section_2_img" src="FNX_options.svg"/>
+            <img className="pill_section_2_img" src="earn.svg"/>
           </div>
         </div>
 
@@ -90,32 +100,93 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
+      .subSectionContainer {
+        width: 45%;
+      }
+      .section_1_bg {
+        display: none;
+      }
+      .appContainer {
+        overflow: hidden;
+      }
+      .btn_right {
+        float: right;
+      }
+       
+      html,
+        body {
+          padding: 0;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          font-family: 'Open Sans Condensed', sans-serif;
+          font-weight: 600;
+          font-size: 20px;
+          overflow: hidden;
+        
+        }
+        html {
+          overflow:   hidden;
+        }
+        ::-webkit-scrollbar {
+          width: 0px;
+          background: transparent; /* make scrollbar transparent */
+        }
+        
+        * {
+          box-sizing: border-box;
+          position: relative;
+        }
       
         .mainContentsText {
           margin-bottom: 40px;
         }
         .section_1 {
+          width: 1200px;
           color: white;
           padding-left: 100px;
           padding-right: 100px;
-          padding-bottom: 450px;
           color: white;
           background-color: #224099;
-          width: 100%;
-          height: 80vh;
+         
+          height: 90vh;
+          max-height: 1000px;
+
           margin: auto;
           border-radius: 0 0 250px 250px;
-        }.headerContentContainer {
+        }
+        .section_3 {
+          width: 1200px;
+        }
+        .section_2 {
+          width: 1200px;
+          margin-top: 0px;
+          margin-left:auto;
+          margin-right: auto;
+          display: flex;
+          justify-content: space-between;
+        }
+        .headerContentContainer {
+          
           display: flex;
           justify-content: space-around;
-        }
+          height: 100%;
+         }
         .mainAside {
+          margin-top: 0px;
+          z-index: 99;
+          width: 40%;
+          background-image: url("/top_illustration.svg");
+          background-repeat: no-repeat;
+          background-position: right;
+          background-size: 500px 500px;
+        }
 
-        }
+      
         .mainContents {
-          width: 400px;
+          width: 35%;
           font-size: 1em;
-        }
+          }
         .partners {
           transform: translateY(-40px);
           color: white;
@@ -133,16 +204,18 @@ export default function Home() {
           border-radius: 200px 200px 200px 200px;
         }
         .pill_section_2_img {
-          width: 400px;
+          margin-top: 50px;
+          width: 90%;
         }
         .pillText_1 {
           margin-top: 30px;
         }
         .purplePill_1{
-          width: 300px;
+          width: 100%;
+          padding: 50px;
         }
         .purplePill_2{
-          width: 400px;
+          width: 100%;
         }
         .pillContainer {
           display: flex;
@@ -215,52 +288,25 @@ export default function Home() {
           margin-top: 20px;
         }
 
-        .section_3 {
-          margin-top: 50px;
-          display: flex;
-          justify-content: space-evenly;
-        }
-        .section_3_img{
-          /* display: inline-block; */
-          width: 40%;
-          
-          /* filter: drop-shadow(0 -.01mm 2mm #EFF0EB); */
-          filter: drop-shadow(0px 10px 15px #585858);
-        }
-        .section_2 {
-          margin-top: 50px;
-          margin-left:auto;
-          margin-right: auto;
-          max-width: 80%;
-          display: flex;
-          justify-content: space-evenly;
-        }
+        
         .section_2_img{
-          width: 50%;
-          transform: translateY(-100px);
+          margin-top: 40px;
+          width: 100%;
+          /* transform: translateY(-100px); */
           filter: drop-shadow(0px 10px 15px #585858);
         }
         .section_2_imageAside {
-          width: 30%;
+          width: 100%;
         }
-        .imageAside {
-          display: inline-block;
-          width: 30%;
-        }
+         
         h3 {
           color: #9F66A9;
           font-size: 4rem;
           font-weight: 900;
         }
         
-        .section_1_bg {
-          width: 250px;
-          margin-left: 170px;
-          transform: translateY(30px);
-        }
-         * {
-           /* border: 1px dashed red; */
-         }
+       
+        
         .mainTitle{
           margin-bottom: 20px;
           margin-top: 20px;
@@ -272,7 +318,6 @@ export default function Home() {
         .button {
           width: 120px;
           margin-right: 30px;
-          
         }
         
         h1 {
@@ -282,56 +327,97 @@ export default function Home() {
         main {
           width: 90%;
           margin: auto;
+          overflow: hidden;
         }
+       
       
       @media (max-width: 1000px) {
         
       }
         @media (max-width: 700px) {
-        .section_2 {
-          margin-top: 50px;
-          display: block;
-          justify-content: space-evenly;
+           
+        .subSectionContainer {
+          width: 100%;
         }
-        .section_1_bg{
-          position: absolute;
-          right: -20px;
-          top: 450px;
-          z-index: 0;
-        }
-        .buttons-list {
-          display: flex;
-        }
-        .button {
-          width: 120px;
-          margin-right: 30px;
-          
-        }
+            .purplePill {
+              overflow: visible;
+              display: block;
+              color: white;
+              margin-top: 0;
+              padding-top: 0px;
+              padding-left: 0px;
+              padding-right: 0px;
+              padding-bottom: 0px;
+              width: 100%;
+              height: 600px;
+              background-color: #9F66A9;
+              border-radius: 50px;
+          }
+         
+          .pillText_1 {
+            margin-top: 30px;
+          }
+          .purplePill_1{
+            width: 100%;
+          }
+          .pill_section_2_img {
+            width: 80%;
+            display: block;
+            margin: auto;
+            filter: drop-shadow(0px 10px 15px #585858);
+
+          }
+          .purplePill_2{
+            display: block;
+            width: 100%;
+           }
+          .pillContainer {
+            display: flex;
+            align-items: flex-end; 
+            justify-content: flex-start;
+          }
+          .section_1_bg{
+            position: absolute;
+            display: block;
+            /* transform: translateX(200px); */
+            width: 100%;
+            transform: translate(309px, -350px);
+          }
+       
+          .buttons-list {
+            display: flex;
+          }
+          .button {
+            width: 120px;
+            margin-right: 30px;
+            
+          }
           .mainAside {
-            display: inline-block;
+            background-image: none;
           }
           .mainContents {
             display: inline-block;
             padding-top: 45px;
-            padding-left: 30px;
-            width: 90%;
+            padding-left: 55px;
+            padding-right: 15px;
+            width: 95%;
+            font-weight: 400;
             font-size: 1.2rem;
             line-height: 1.3;
-             
           }
           
           h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 900;
-           }
+          }
           main {
             width: 100%;
             margin: 0;
           }
           .section_1 {
-            padding-left: 30px;
-            padding-right: 30px;
-            height: 75vh;
+            padding-left: 0px;
+            padding-right: 0px;
+            height: 90vh;
             border-radius: 0 0 80px 80px;
             background-color: #224099;
             background-size: 100% 800px;
@@ -342,38 +428,47 @@ export default function Home() {
           .mainContentsText {
             margin-bottom: 20px;
           }
-        .section_2 {
-          width: 100%;
-        }
-        .section_2_img{
-          width: 100%;
-        }
-        .section_2_imageAside {
-          width: 100%;
-        }
-        .section_1_bg {
-          width: 150px;
-          margin-left: 170px;
-          transform: translateY(30px);
-        }
-        }
-      `}</style>
+        
+          .section_2 {
+            width: 80%;
+            display: block;
+            margin-bottom: 0px;
+            transform: translateY(-100px);
+          }
+          .section_2_img{
+            width: 100%;
+            margin-bottom: 30px;
+            filter: drop-shadow(0px 10px 15px #585858);
 
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          width: 100%;
-          height: 100%;
-          margin: 0;
-          font-family: 'Open Sans Condensed', sans-serif;
-          font-weight: 600;
-          font-size: 20px;
-        
-        }
-        
-        * {
-          box-sizing: border-box;
+           }
+          .section_2_imageAside {
+            width: 100%;
+          }
+          
+          .section_3 {
+            width: 80%;
+            display: block;
+            transform: translateY(-100px);
+            margin: auto;
+          }
+          .section_3_img{
+            margin-top: 40px;
+            width: 100%;
+            margin-bottom: 30px;
+            filter: drop-shadow(0px 10px 15px #585858);
+
+           }
+          .section_3_imageAside {
+            width: 100%;
+          }
+          
+          .button {
+            width: 100px;
+            margin-right: 20px;
+          } 
+          .mainTitle{
+            font-size: 3.5rem;
+          }
         }
       `}</style>
     </div>

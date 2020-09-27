@@ -12,14 +12,13 @@ export default function Navbar() {
       <nav className="navbar   is-primary" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <div className="navbar-item"  >
-            <img className="logo" src="/fnxLogo.svg" alt="FinNexus" width="300" height="100" />
+            <img className="logo" src="/fnxLogo.svg" alt="FinNexus" width="150" height="100" />
            </div>
-         
-          <a role="button" onClick={handleMenuClick} className={`navbar-burger burger ${menu === 0 ? "" : "is-active"}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+            <a role="button" onClick={handleMenuClick} className={`navbar-burger burger ${menu === 0 ? "" : "is-active"}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
         </div>
 
         <div id="basicNavbar" className={`navbar-menu ${menu === 0 ? "" : "is-active"}`}>
@@ -86,11 +85,23 @@ export default function Navbar() {
           .navbar-burger span {
             
           }
+          .navbar{
+            width: 100%;
+            margin: auto;
+            padding: 0 20px;
+          }
+
+       
+        
+          .navbar-item img {
+            max-height: 2.75rem;
+          }
+        
           .navbar-menu.is-active {
-          display: block;
-          position: absolute;
-          width: 100%;
-          right: 5px;
+            display: block;
+            position: absolute;
+            width: 100%;
+            right: 0px;
           }
            
         }
