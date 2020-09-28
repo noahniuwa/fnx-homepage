@@ -89,6 +89,7 @@ export default function Navbar() {
             width: 100%;
             margin: auto;
             padding: 0 20px;
+            font-weight: 900;
           }
 
        
