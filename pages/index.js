@@ -883,10 +883,10 @@ export default function Home() {
           }
           .purplePill {
             display: flex;
-             margin-bottom: 60px;
+            margin-bottom: 60px;
             justify-content: space-between;
             color: #F1F1F2;
-             padding-left: 40px;
+            padding-left: 40px;
             padding-right: 40px;
             width: 95%;
             background-color: #9F66A9;
@@ -894,8 +894,8 @@ export default function Home() {
           }
           .pillText_1 {
             margin-top: 2rem;
-            line-height: 1.3rem;
-            max-width: 18rem;
+            /* line-height: 1.3rem; */
+            max-width: 28rem;
           }
           .purplePill_1{
             width: 100%;
@@ -1252,7 +1252,7 @@ export default function Home() {
           }
           .pillText_1 {
             margin-top: 2rem;
-            line-height: 1.3rem;
+            /* line-height: 1.3rem; */
             max-width: 18rem;
           }
           .purplePill_1{
@@ -1406,7 +1406,7 @@ export default function Home() {
           }
           .pillText_1 {
             margin-top: 0px;
-            line-height: 1.3rem;
+            /* line-height: 1.3rem; */
           }
           .purplePill_1{
             margin: auto;
