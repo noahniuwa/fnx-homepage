@@ -910,13 +910,15 @@ export default function Home() {
             justify-content: flex-start;
           }
           .team-title {
-            font-size: 5rem;
-            margin-bottom: 4rem;
-          }
-          .team-header-container {
+            font-size: 4rem;
+            padding-bottom: 4rem;
             margin: auto;
             max-width: 60%;
             padding-top: 3rem;
+
+          }
+          .team-header-container {
+            
           }
           .team {
             max-width: 60%;
