@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar'
+import TeamMember from '../components/TeamMember'
+
 
 export default function Home() {
   
@@ -89,39 +91,120 @@ export default function Home() {
           <div className="exchanges">
           </div>
         </div>
+        
         <div className="team-header-container">
           <h3 className="section-header">Team</h3>
         </div>
-
         <div className="grid team">
-          <img className="team-member" src="Jack Tung - Legal Expert.png"/>
-          <img className="team-member" src="Jack Tung - Legal Expert.png"/>
-          <img className="team-member" src="Jack Tung - Legal Expert.png"/>
-          <img className="team-member" src="Jack Tung - Legal Expert.png"/>
-          <img className="team-member" src="Jack Tung - Legal Expert.png"/>
-          <img className="team-member" src="Jack Tung - Legal Expert.png"/>
+          <TeamMember name="Boris Yang" title="Founder & CEO" image="Boris Yang - Founder & CEO.png" />
+          <TeamMember name="Bob Chen" title="Co-founder & CTO" image="Bob Chen - Co-founder & CTO.png" />
+          <TeamMember name="Ryan Tian" title="Financial Specialist" image="Ryan Tian - Financial Specialist.png" />
+          <TeamMember name="Veerender Singh" title="Community Manager" image="Veerender Singh - Community Manager.png" />
+          <TeamMember name="Jack Tung" title="Legal Expert" image="Jack Tung - Legal Expert.png" />
+          <TeamMember name="Nicholas Krapels" title="Strategy Advisor" image="Nicholas Krapels - Strategy Advisor.png" />
+          <TeamMember name="Noah Maizels" title="Global Marketing Adviser" image="Noah Maizels - Global Marketing Adviser.png" />
+          <TeamMember name="Eason Zhang" title="FP of River Capital" image="Eason Zhang.png" />
+          <TeamMember name="Jack Lu" title="Wanchain Founder & CEO" image="Jack Lu.png" />
+
         </div>
       </main>
 
       <footer>
-      
+        <div className="footer_1">
+          <p className="socials-title">
+            <span className="big-text">Join</span> the FinNexus community <strong>NOW</strong>
+          </p>
+          <div className="socials">
+            <a href="https://twitter.com/fin_nexus/">
+              <img className="social-logo" src="/twitter.svg" alt="social-logo" width="100" height="100" />
+            </a>
+            <a href="https://t.me/FinNexusOfficial">
+              <img className="social-logo" src="/telegram.svg" alt="social-logo" width="100" height="100" />
+            </a>
+            <a href="https://medium.com/finnexus/">
+              <img className="social-logo" src="/medium.svg" alt="social-logo" width="100" height="100" />
+            </a>
+            <a href="https://www.linkedin.com/company/finnexus/">
+              <img className="social-logo" src="/linkedin.svg" alt="social-logo" width="100" height="100" />
+            </a>
+            <a href="https://www.facebook.com/FinNexus/">
+              <img className="social-logo" src="/facebook.svg" alt="social-logo" width="100" height="100" />
+            </a>
+            <a href="https://discord.gg/bCDMHN7">
+              <img className="social-logo" src="/discord.svg" alt="social-logo" width="100" height="100" />
+            </a>
+            <a>
+              <img className="social-logo" src="/wechat.svg" alt="social-logo" width="100" height="100" />
+            </a>
+            <a href="mailto:info@finnexus.io">
+              <img className="social-logo" src="/email.svg" alt="social-logo" width="100" height="100" />
+            </a>
+             
+          </div>
+        </div>
+        
+        <div className="footer_2">
+          <img className="logo" src="/fnxLogo.svg" alt="FinNexus" width="150" height="100" />
+        </div>
+        <div className="footer_3">© 2020 FinNexus. All Rights Reserved.</div>
       </footer>
 
       </div>
 
       <style jsx>{`
-        .team-member:after {
-          content: url('bgshape_01.svg'); /* with class ModalCarrot ??*/
-          position: relative; /*or absolute*/
-          z-index: 100000; /*a number that's more than the modal box*/
-          left: -50px;
-          top: 10px;
+      strong {
+        color: inherit;
+      }
+      .big-text {
+        font-size: 2.5rem;
+        font-weight: 900;
+      }
+      .socials-title {
+        font-weight: 300;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+      }
+      .socials {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2.5rem;
+      }
+      .social-logo {
+        margin: 7px;
+
+        fill: white;
+        color: white;
+        filter: invert(100);
+        width: 2.7rem;
+      }
+      .logo {
+        margin: auto;
+        display: block;
+    
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      .float-container {
+        height: 3rem;
+      }
+        .purplePill {
+          width: 95%;
+          margin: auto;
         }
-       .team-member, .grid-item {
-          width: 100%;
+        .team-header-container{
+          max-width: 1000px;
+          margin-bottom: 4rem;
         }
-        .team-header-container h3 {
-          text-align: center;
+        *  
+        {
+          box-sizing: border-box;
+          position: relative;
+        }
+    
+          
         }
         .team {
           height: 500px;
@@ -129,14 +212,13 @@ export default function Home() {
         }
         
         .grid {
-          /* width: 100%; */
+          max-width: 1000px;
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
           /* This is better for small screens, once min() is better supported */
           /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
-          grid-gap: 1rem;
-          /* This is the standardized property now, but has slightly less support */
-          /* gap: 1rem */
+          grid-gap: 4rem;
+          height: 100%;
         }
            
         
@@ -162,13 +244,16 @@ export default function Home() {
           }
           .section-header {
             color: #9F66A9;
-            font-size: 3rem;
+            font-size: 4rem;
             font-weight: 900;
-            line-height: 3rem;
-            margin-bottom: 10px;
+            line-height: 3.7rem;
+            margin-bottom: 2rem;
           }
           .section_1_large_bg {
             display: block;
+          }
+          p, div {
+            
           }
           html,
           body {
@@ -182,17 +267,18 @@ export default function Home() {
             /* font-family: 'Open Sans Condensed', sans-serif; */
             font-weight: 600;
             overflow: hidden;
+            background-color: #F1F1F2; 
+
           }
           ::-webkit-scrollbar {
+            display: none;
             width: 0px;
-            background: transparent; /* make scrollbar transparent */
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
           }
           
-          * {
-            box-sizing: border-box;
-            position: relative;
-          }
-        
+         
+                  
           .appContainer,
             main {
               position: relative;
@@ -204,6 +290,17 @@ export default function Home() {
             margin: auto; */
           }
         @media (min-width: 1000px) and (max-width: 1300px){
+          ::-webkit-scrollbar {
+            display: none;
+            width: 0px;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+          }
+          
+          .team-header-container{
+            max-width: 700px;
+            margin-bottom: 4rem;
+          }
           .sizeRestrictor{
             max-width: 1000px;
           }
@@ -225,6 +322,10 @@ export default function Home() {
         }
 
         @media (min-width: 700px) and (max-width: 1000px)   {
+          .team-header-container{
+            max-width: 500px;
+            margin-bottom: 4rem;
+          }
           .sizeRestrictor{
             max-width: 700px;
           }
@@ -296,7 +397,7 @@ export default function Home() {
           }
           
           .pillText_1 {
-            margin-top: 30px;
+            margin-top: 20px;
          
           }
           .purplePill_1{
@@ -337,11 +438,32 @@ export default function Home() {
           main {
             width: 100%;
             margin: auto;
-            overflow: hidden;
+            /* overflow: hidden; */
           }
           
         }
         @media (max-width: 700px) {
+          .team {
+            transform: translateX(-11px);
+          }
+          .grid {
+            width: 60%;
+            margin: auto;
+            display: grid;
+            min-width: 330px;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            /* This is better for small screens, once min() is better supported */
+            /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+            grid-gap: 1.5rem;
+            /* This is the standardized property now, but has slightly less support */
+            /* gap: 1rem */
+          }
+          .team-header-container{
+            min-width: 500px;
+            margin-bottom: 2rem;
+            margin-left: 2rem;
+            margin-top: 6rem;
+          }
           .section_1_large_bg {
             display: none;
           }
@@ -378,20 +500,31 @@ export default function Home() {
             height: 110px;
             background-color: #EFF0EB;
             border-radius: 20px;
+            margin-bottom: 8px;
+          }
+          .pill_1_button {
+            margin-top: 10px;
+            bottom: 50px;
+          } 
+          .pill_section_2_img {
+            width: 85%;
+          }
+          .pillText_1 {
+            bottom: 20px;
           }
           .purplePill {
-         
+            margin-bottom: 60px;
             justify-content: space-evenly;
             color: #F1F1F2;
             padding-top: 40px;
             padding-bottom: 50px;
-            width: 100%;
+            width: 90%;
             background-color: #9F66A9;
-            border-radius: 30px;
+            border-radius: 25px;
           }
-         
           .pillText_1 {
             margin-top: 0px;
+            line-height: 1.3rem;
           }
           .purplePill_1{
             margin: auto;
@@ -402,7 +535,7 @@ export default function Home() {
             width: 90%;
            }
           .pill_section_2_img {
-            width: 100%;
+            width: 90%;
             display: block;
             margin: auto;
             filter: drop-shadow(0px 10px 15px rgba(9,9,9,0.3));
@@ -420,10 +553,7 @@ export default function Home() {
             left: 200px;
             top: 400px;
           }
-       
-          
-         
-          .mainContents {
+        .mainContents {
             display: inline-block;
             padding-top: 15px;
             padding-left: 20px;
@@ -433,8 +563,7 @@ export default function Home() {
             font-size: 1rem;
             line-height: 1.3;
           }
-          
-          
+
           .section_1 {
             padding-left: 0px;
             padding-right: 0px;
@@ -465,11 +594,6 @@ export default function Home() {
             filter: drop-shadow(0px 10px 15px rgba(9,9,9,0.3));
            }
 
-          .pill_1_button {
-            margin-top: 10px;
-            bottom: 50px;
-          }
-          
           .section_3 {
             width: 90%;
             display: block;
@@ -487,9 +611,7 @@ export default function Home() {
           .section_3_imageAside {
             width: 100%;
           }
-          .pill_section_2_img {
-            width: 85%;
-          }
+         
           .mainTitle{
             font-size: 3rem;
             line-height: 4rem;
@@ -501,21 +623,20 @@ export default function Home() {
             flex-direction: column-reverse;
           }
           .labelTitle {
-            margin-bottom: 30px;
+            margin-bottom: 50px;
+            
           }
           .labelTitle h4 {
             font-size: 2.5rem;
-            line-height: 2.5rem;
+            line-height: 2rem;
             font-weight: 900;
           }
           .labelTitle h5 {
             font-size: 1.5rem;
-            line-height: 2.5rem;
+            line-height: 2rem;
             font-weight: 900;
           }
-          .pillText_1 {
-            bottom: 20px;
-          }
+         
           p {
             font-weight: 900;
           }
@@ -525,6 +646,30 @@ export default function Home() {
           .button {
             font-weight: 900;
           }
+          .footer_1 {
+          }
+          .footer_2 {
+      
+            background-color: #203c88;
+          }
+          .footer_3 {
+            background-color: #1d357a;
+            font-size: .8rem;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+           }
+          footer {
+            justify-content: flex-end;
+            display: flex;
+            flex-direction: column;
+            margin-top: 4rem;
+            color: #F1F1F2;
+            background-color: #224099;
+            height: 70vh;
+            max-height: 800px;
+            border-radius: 25px 25px 0 0;
+          } 
       `}</style>
     </div>
   )
