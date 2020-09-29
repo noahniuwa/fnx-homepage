@@ -25,6 +25,10 @@ function Carousel() {
 
       <a  className="carousel-cell" href="https://www.bkex.com/"><img src="/bkex.png"/></a>
       <a className="carousel-cell" href="https://www.bitrue.com/"><img src="/bitrue.png"/></a>
+      <a  className="carousel-cell" href="https://www.bkex.com/"><img src="/bkex.png"/></a>
+      <a className="carousel-cell" href="https://www.bitrue.com/"><img src="/bitrue.png"/></a>
+      <a  className="carousel-cell" href="https://www.bkex.com/"><img src="/bkex.png"/></a>
+      <a className="carousel-cell" href="https://www.bitrue.com/"><img src="/bitrue.png"/></a>
 
 
 
@@ -46,7 +50,7 @@ function Carousel() {
       }
       @media   (max-width: 700px)   {
         .carousel-cell {
-          width: 50%; /* full width */
+          width: 40%; /* full width */
           /* height: 50%;   */
           margin-right: 30px;
         }

@@ -18,20 +18,18 @@ export default function Home() {
       <main> 
         <header className="section_1"> 
           <Navbar />   
-          <div className="headerContentContainer">
-            <div className="mainContents">  
-              <h1 className="mainTitle">
-              FinNexus Options v1.0
-              </h1>
-              <div className="mainContentsText_1">
-                FinNexus Protocol For Options is a pioneering multi-blockchain decentralized options protocol based on the innovative MASP (Multi-Asset Single Pool) liquidity model. 
-              </div>
-              <p className="instructions">Join our email list to get the latest news about FinNexus's upcoming decentralized derivative products. ...</p>
-              <button className="is-rounded button is-danger">Sign-up</button>
-       
-            
+          
+          <div className="mainContents">  
+            <h1 className="mainTitle">
+            FinNexus Options v1.0
+            </h1>
+            <div className="mainContentsText_1">
+              FinNexus Protocol For Options is a pioneering multi-blockchain decentralized options protocol based on the innovative MASP (Multi-Asset Single Pool) liquidity model. 
             </div>
-          </div>  
+            <p className="instructions">Join our email list to get the latest news about FinNexus's upcoming decentralized derivative products.</p>
+            <button className="is-rounded button is-danger">Sign-up</button>
+          </div>
+
           <img className="section_1_bg" src="bgshape_01.svg"/>
           <div className="transparent-controller">
             <img className="section_1_large_bg" src="top_illustration.svg"/>
@@ -43,7 +41,7 @@ export default function Home() {
           <div className="subSectionContainer">
             <div className="section_2_imageAside">
               <h3 className="section-header">Earn Now!</h3>
-              <p clasName="section_2_text">With FPO v1.0, liquidity providers earn attractive rewards for trustlessly locking their assets in the the MASP liquidity pool.</p>
+              <p clasName="section-2-text">With FPO v1.0, liquidity providers earn attractive rewards for trustlessly locking their assets in the the MASP liquidity pool.</p>
               <div className="float-container section_2_button">
                 <button className="is-rounded float-left button is-danger">Provide Liquidity</button>
               </div>
@@ -55,7 +53,7 @@ export default function Home() {
           <img className="section_3_img" src="FNX_options.svg"/>
           <div className="section_3_imageAside">
             <h3 className="section-header"> Hedge & Leverage</h3>
-            <p>FPO's wide variety of options makes it easy to find just the solution for your investment needs, and our MASP liquidity pool ensures you never need to worry if there's enough liquidity.</p>
+            <p className="section-3-text">FPO's wide variety of options makes it easy to find just the solution for your investment needs, and our MASP liquidity pool ensures you never need to worry if there's enough liquidity.</p>
             <button className="is-rounded button section_ is-danger">Buy FPO Options</button>
           </div>
         </div>
@@ -90,7 +88,7 @@ export default function Home() {
         </div>
         
         <div className="team-header-container">
-          <h3 className="section-header">Team</h3>
+          <h3 className="section-header team-title">Team</h3>
         </div>
         <div className="grid team">
           <TeamMember name="Boris Yang" title="Founder & CEO" image="Boris Yang - Founder & CEO.png" />
@@ -156,94 +154,31 @@ export default function Home() {
       </div>
 
       <style jsx>{`
-        
+        .sizeRestrictor{
+          max-width: 1200px;
+          margin: auto;
+        }
         .float-left {
           float: left;
         }
-        .carousel-container {
-          margin-bottom: 60px;
-        }
-        footer {
-          margin-top: 50px;
-        }
-        .partners-title {
-          margin-top: 60px;
-        }
-        .partners-title, .exchanges-title {
-          display: block;
-          text-align: center;
-        }
+      
         strong {
           color: inherit;
         }
-        .big-text {
-          font-size: 2.5rem;
-          font-weight: 900;
-        }
-        .socials-title {
-          font-weight: 300;
-          width: 70%;
-          margin: auto;
-          text-align: center;
-          margin-bottom: 2rem;
-          font-size: 1.5rem;
-        }
-        .socials {
-          width: 80%;
-          margin: auto;
-          margin-bottom: 2.5rem;
-        }
+         
+        
+         
+       
         .social-logo {
-          margin: 7px;
-
-          fill: white;
-          color: white;
-          filter: invert(100);
-          width: 2.7rem;
+           filter: invert(100);
         }
-        .logo {
-          margin: auto;
-          display: block;
-      
-          padding-top: 15px;
-          padding-bottom: 15px;
-        }
-        .float-container {
-          height: 3rem;
-        }
-        .purplePill {
-          width: 95%;
-          margin: auto;
-        }
-        .team-header-container{
-          max-width: 1000px;
-          margin-bottom: 4rem;
-          
-        }
+        
           
         * {
           box-sizing: border-box;
           position: relative;
         }
-    
-          
-        }
-        .team {
-          height: 500px;
-          margin: auto;
-          margin-bottom: 50px;
-        }
-        
-        .socials-grid {
-          max-width: 200px;
-          display: grid;
-          /* grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); */
-          /* This is better for small screens, once min() is better supported */
-          grid-template-columns: repeat(auto-fill, minmax(min(40px, 100%), 1fr));
-          grid-gap: .5rem;
-          height: 8rem;
-        }
-          
+      
         .grid {
           max-width: 1000px;
           display: grid;
@@ -263,7 +198,7 @@ export default function Home() {
           margin-top: 10px;
         } 
         .instructions {
-          font-size: .7rem;
+          font-size: 1rem;
           font-weight: 400;
           font-style: italic;
         }
@@ -291,12 +226,10 @@ export default function Home() {
         html,
         body {
           font-weight: 900;
-          overflow:   hidden;
+          overflow:   visible;
           padding: 0;
           width: 100%;
-
           margin: 0;
-          overflow: hidden;
           background-color: #F1F1F2; 
         }
         ::-webkit-scrollbar {
@@ -309,27 +242,50 @@ export default function Home() {
           position: relative;
           overflow: hidden;
         }       
-        
-        @media(min-width: 1000px){
-
+        @media(min-width: 1200px){
+          .pillText_1, 
+          .section-1-text, 
+          .section-2-text,{
+            font-size: 1.5rem;
+          }
+          .section-3-text {
+            width: 28rem;
+          }
+          .button {
+            font-size: 1.4rem;
+          }
           .section_1 {
-            height: 85vh;
+            height: 60vh;
             border-radius: 0 0 200px 200px;
             background-color: #224099;
             background-size: 100% 800px;
             margin: auto;
+            
             width: 100%;
             color: #F1F1F2;
           }
+          .mainContents {
+            width: 40%;
+            font-weight: 600;
+            font-size: 1.3rem;
+            line-height: 1.3;
+            left: 9rem;
+            max-height: 20rem;
+          }
+          
+          .carousel-container {
+              padding-bottom: 3rem;
+              max-width: 80%;
+              margin: auto;
+            }
            
           .section_1_large_bg {
             position: absolute;
-            max-width: 18rem;
-            left: 33rem;
-            right: 5rem;
-            top: -25rem;
+            max-width: 25rem;
+            right: 3rem;
+            top: -15rem;
             z-index: 1; 
-            opacity: 0.5;
+            /* opacity: 0.5; */
           }
           .section_1_bg{
             display: none;
@@ -340,12 +296,12 @@ export default function Home() {
             z-index: 1; 
           }
           .mainContents {
-            display: block;
             width: 40%;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 1.3rem;
             line-height: 1.3;
-            right: 9rem;
+            left: 9rem;
+            max-height: 20rem;
           }
           
           .mainTitle{
@@ -365,15 +321,16 @@ export default function Home() {
           main {
             width: 100%;
             margin: auto;
-            /* overflow: hidden; */
+            overflow: visible;
           }
           .section_2_imageAside {
-            max-width: 18rem;
+            max-width: 28rem;
             top: 0rem;
+            font-size: 1.5rem;
           }    
           .section_2_img{
             margin-top: 40px;
-            max-width: 22rem;
+            max-width: 30rem;
             margin-bottom: 30px;
             filter: drop-shadow(0px 10px 15px rgba(9,9,9,0.3));
             bottom: 9rem;
@@ -400,11 +357,11 @@ export default function Home() {
          
           .section_3_img{
             margin-top: 40px;
-            width: 25rem;
             margin-bottom: 30px;
             transform: translateX(1.6rem);
             filter: drop-shadow(0px 10px 15px rgba(9,9,9,0.3));
-            bottom: 2rem;
+            bottom: 6rem;
+            width: 30rem;
            }
           
           .section_3 {
@@ -452,7 +409,376 @@ export default function Home() {
           .headerContentContainer {
             display: flex;
             justify-content: space-around;
-            height: 100%;
+            max-height: 10rem;
+          }
+      
+         
+          
+           
+          
+          .pillText_1 {
+            margin-top: 20px;
+            
+          }
+        
+          .pillContainer {
+            display: flex;
+            align-items: flex-end; 
+            justify-content: flex-start;
+          }
+          h4 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5rem;
+          }
+          h5 {
+            font-size: 2rem;
+            font-weight: 900;
+            margin: 0;
+            padding: 0;
+          }
+         
+          .team-title{
+            width: 60%;
+            margin: 6rem auto;
+            font-size: 5rem;
+          }
+          .team {
+            width: 60%;
+            margin: auto;
+          }
+     
+          .section_2_img{
+            margin-top: 40px;
+            width: 100%;
+            /* transform: translateY(-100px); */
+            filter: drop-shadow(0px 10px 15px rgba(9,9,9,0.3));
+          }
+
+          .pill_bg_image {
+            position: absolute; 
+            bottom: 0rem;
+            top: 5rem;
+            right: -7rem;
+            max-width: 20rem;
+            z-index: 2;
+          }
+          .label-options {
+            text-align: center;
+          }
+          .versionLabel {
+            transform: scale(1.2, 1.2);
+            float: right;
+            margin-top: 5px;
+            width: 30px;
+            height: 15px;
+            color: #F1F1F2;
+            padding-top: 1px;
+            background-color: #6E308B;
+            font-size: 0.5rem;
+            text-align: center;
+            border-radius: 10px;
+          }
+          .square_label_img {
+            width: 70%;
+            margin: auto;
+            display: block;
+          }
+          .squareLabel {
+            transform: scale(.8, .8); 
+            box-sizing: content-box;
+            margin-right: 10px;
+            display: inline-block;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: black;
+            width: 110px;
+            height: 110px;
+            background-color: #EFF0EB;
+            border-radius: 20px;
+            margin-bottom: 8px;
+            top: 20px;
+          }
+          .pill_1_button {
+            margin-top: 3rem;
+            bottom: 50px;
+            float: left;
+          } 
+        
+          .pillText_1 {
+            bottom: 20px;
+            width: 100%;
+          }
+          .pill_section_2_img {
+            transform: translateX(-15px);
+            width: 100%;
+            display: block;
+            filter: drop-shadow(0px 10px 15px rgba(9,9,9,0.3));
+            z-index: 3;
+
+          }
+          .purplePill {
+            display: flex;
+             margin-bottom: 60px;
+            justify-content: space-between;
+            color: #F1F1F2;
+             padding-left: 40px;
+            padding-right: 40px;
+            width: 95%;
+            background-color: #9F66A9;
+            border-radius: 150px;
+          }
+          .pillText_1 {
+            margin-top: 2rem;
+            max-width: 28rem;
+          }
+          .purplePill_1{
+            width: 100%;
+            margin-left: 30px;
+           }
+          
+         
+          
+          .pillContainer {
+            display: flex;
+            align-items: flex-end; 
+            justify-content: flex-start;
+          }
+        
+          
+
+          .partners-title {
+            margin-bottom: 5rem;
+            font-size: 5rem;
+            margin-top: 10rem;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+          }
+          .exchanges-title {
+            margin-bottom: 50px;
+            font-size: 5rem;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+          }
+          .carousel-container {
+            margin-bottom: 5rem;
+          }
+
+          footer {
+            justify-content: flex-end;
+            display: flex;
+            flex-direction: column;
+            /* margin-top: 6rem; */
+            color: #F1F1F2;
+            background-color: #224099;
+            height: 60vh;
+            max-height: 800px;
+            border-radius: 300px 300px 0 0;
+            position: static;
+            width: 100%;
+          } 
+          .social-logo {
+            width: 3rem;
+          }
+          .socials-grid {
+            max-width: 400px;
+            display: grid;
+            /* grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); */
+            /* This is better for small screens, once min() is better supported */
+            grid-template-columns: repeat(auto-fill, minmax(min(100px, 100%), 1fr));
+            grid-gap: 1rem;
+            height: 8rem;
+            /* margin-right: 10rem; */
+            margin:auto;
+            margin-bottom: 4rem;
+          }
+          .socials-title {
+            max-width: 30rem;
+            font-size: 2rem;
+
+            margin: auto;
+          }
+          strong {
+            font-size: 2.5rem;
+          }
+          .big-text{
+            font-size: 3rem;
+          }
+          .footer_1 {
+            display: flex;
+            justify-content: space-evenly;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 12rem;          
+          }
+          .footer_2 {
+            text-align: center;
+            background-color: #203c88;
+          }
+          .footer_3 {
+            background-color: #1d357a;
+            font-size: .8rem;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+           }
+        }
+        @media (min-width: 1000px) and (max-width: 1600px){
+          .carousel-container {
+              padding-bottom: 5rem;
+              max-width: 80%;
+              margin: auto;
+            }
+            
+          .section_1 {
+          
+            height: 75vh;
+            border-radius: 0 0 200px 200px;
+            background-color: #224099;
+            background-size: 100% 800px;
+            margin: auto;
+            
+            width: 100%;
+            color: #F1F1F2;
+          }
+           
+          .section_1_large_bg {
+            position: absolute;
+            max-width: 22rem;
+            right: 3rem;
+            top: -12rem;
+            z-index: 1; 
+          }
+          .section_1_bg{
+            display: none;
+            position: absolute;
+            max-width: 18rem;
+            left: 33rem;
+            top: 5rem;
+            z-index: 1; 
+          }
+          .mainContents {
+            display: block;
+            width: 40%;
+            font-weight: 600;
+            font-size: .8rem;
+            line-height: 1;
+            right: -5rem;
+            top: 2rem;
+          }
+          
+          .mainTitle{
+            font-size: 2rem;
+            line-height: 2rem;
+            margin-bottom: 20px;
+          } 
+         
+         
+        
+       
+          .mainContentsText_1 {
+            margin-bottom: 20px;
+          }
+        
+          main {
+            width: 100%;
+            margin: auto;
+            overflow: visible;
+          }
+          .section_2_imageAside {
+            max-width: 25rem;
+            top: 6rem;
+            font-size: 1.3rem;
+          }    
+          .section_2_img{
+            margin-top: 40px;
+            max-width: 25rem;
+            margin-bottom: 30px;
+            filter: drop-shadow(0px 10px 15px rgba(9,9,9,0.3));
+            bottom: 9rem;
+           }
+          
+          .section_2 {
+            top: 2rem;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 80%;
+            margin-bottom: 2rem;
+            position: relative;
+          }
+          .section_2_button {
+            margin-top: 1rem;
+          }
+          .section_3_imageAside {
+            max-width: 30rem;
+            bottom: 7rem;
+            font-size: 1.3rem;
+          }    
+         
+          .section_3_img{
+            margin-top: 40px;
+            width: 30rem;
+            margin-bottom: 30px;
+            transform: translateX(1.6rem);
+            filter: drop-shadow(0px 10px 15px rgba(9,9,9,0.3));
+            bottom: 2rem;
+           }
+          
+          .section_3 {
+            margin: auto;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: 80%;
+            bottom: 2rem;
+            position: relative;
+            margin-top: 9rem;
+            padding-bottom: 3rem;
+          }
+        
+        
+        
+          .section_2 {
+            width: 90%;
+            margin: auto;
+            display: block;
+            margin-bottom: 80px;
+            position: relative;
+            bottom: 70px;
+            /* transform: translateY(-100px); */
+          }
+          .section_2_img {
+            width: 100%;
+            margin-bottom: 50px;
+            filter: drop-shadow(0px 10px 15px rgba(9,9,9,0.3));
+           }
+
+          
+          .appContainer {
+            overflow: hidden;
+          }
+          
+          
+          
+         
+         
+          .section_2 {
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+          }
+          .headerContentContainer {
+            display: flex;
+            justify-content: space-around;
+            
           }
       
          
@@ -483,10 +809,7 @@ export default function Home() {
             padding: 0;
           }
           
-          .team-header-container{
-            max-width: 500px;
-            margin-bottom: 4rem;
-          }
+         
      
           .section_2_img{
             margin-top: 40px;
@@ -586,19 +909,30 @@ export default function Home() {
             align-items: flex-end; 
             justify-content: flex-start;
           }
+          .team-title {
+            font-size: 5rem;
+            margin-bottom: 4rem;
+          }
           .team-header-container {
-            margin-left: 6rem;
+            margin: auto;
+            max-width: 60%;
+            padding-top: 3rem;
           }
           .team {
-            max-width: 80%;
+            max-width: 60%;
             margin: auto;
           }
-
+         
           .partners-title {
             margin-bottom: 50px;
+            font-size: 5rem;
+            margin-top: 10rem;
           }
           .exchanges-title {
             margin-bottom: 50px;
+            font-size: 5rem;
+            margin-top: 5rem;
+
           }
           footer {
             justify-content: flex-end;
@@ -614,11 +948,19 @@ export default function Home() {
             width: 100%;
           } 
           .socials-grid {
-            margin-right: 5rem;
+            max-width: 300px;
+            display: grid;
+            /* grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); */
+            /* This is better for small screens, once min() is better supported */
+            grid-template-columns: repeat(auto-fill, minmax(min(60px, 100%), 1fr));
+            grid-gap: 1rem;
+            height: 8rem;
+            margin-right: 10rem;
             padding-top: 3rem;
           }
           .socials-title {
             max-width: 20rem;
+            margin-right: 0rem;
           }
           .footer_1 {
             display: flex;
@@ -640,14 +982,30 @@ export default function Home() {
         }
 
         @media (min-width: 700px) and (max-width: 1000px)  {
+          .instructions {
+            font-size: .7rem;
+          }
+          
+          .carousel-container {
+              padding-bottom: 8rem;
+              max-width: 80%;
+              margin: auto;
+            }
+          .section_1_large_bg {
+            position: absolute;
+            max-width: 23rem;
+             right: 5rem;
+            top: -18rem;
+            z-index: 1; 
+           }
           
           .section_1 {
-            height: 85vh;
+            height: 75vh;
             border-radius: 0 0 200px 200px;
             background-color: #224099;
             background-size: 100% 800px;
-            margin: auto;
-            width: 100%;
+            /* margin: auto; */
+            /* width: 100%; */
             color: #F1F1F2;
           }
        
@@ -663,14 +1021,15 @@ export default function Home() {
             display: block;
             width: 40%;
             font-weight: 600;
-            font-size: 1rem;
-            line-height: 1.3;
-            right: 9rem;
+            font-size: .5rem;
+            line-height: 1rem;
+            left: 5rem;
           }
           
           .mainTitle{
-            font-size: 3rem;
-            line-height: 4rem;
+            font-size: 1.7rem;
+            max-width: 15rem;
+            line-height: 1.8rem;
             margin-bottom: 20px;
             margin-top: 20px;
           } 
@@ -680,15 +1039,17 @@ export default function Home() {
        
           .mainContentsText_1 {
             margin-bottom: 20px;
+            font-size: 0.8rem;
           }
         
           main {
             width: 100%;
             margin: auto;
-            /* overflow: hidden; */
+            overflow: visible;
           }
           .section_2_imageAside {
-            max-width: 18rem;
+            max-width: 16rem;
+            font-size: .8rem;
             top: 0rem;
           }    
           .section_2_img{
@@ -696,7 +1057,7 @@ export default function Home() {
             max-width: 22rem;
             margin-bottom: 30px;
             filter: drop-shadow(0px 10px 15px rgba(9,9,9,0.3));
-            bottom: 9rem;
+            bottom: 7rem;
            }
           
           .section_2 {
@@ -721,10 +1082,9 @@ export default function Home() {
           .section_3_img{
             margin-top: 40px;
             width: 25rem;
-            margin-bottom: 30px;
-            transform: translateX(1.6rem);
+             transform: translateX(1.6rem);
             filter: drop-shadow(0px 10px 15px rgba(9,9,9,0.3));
-            bottom: 2rem;
+            bottom: 4rem;
            }
           
           .section_3 {
@@ -733,7 +1093,7 @@ export default function Home() {
             flex-direction: row-reverse;
             justify-content: space-between;
             width: 80%;
-            bottom: 2rem;
+            bottom: 3rem;
             position: relative;
             margin-top: 9rem;
           }
@@ -762,7 +1122,9 @@ export default function Home() {
           
           
           
-         
+         .section-header {
+           font-size: 3rem;
+         }
          
           .section_2 {
             margin: auto;
@@ -772,7 +1134,6 @@ export default function Home() {
           .headerContentContainer {
             display: flex;
             justify-content: space-around;
-            height: 100%;
           }
       
          
@@ -923,28 +1284,36 @@ export default function Home() {
           footer {
             justify-content: flex-end;
             display: flex;
+      
             flex-direction: column;
             margin-top: 6rem;
             color: #F1F1F2;
             background-color: #224099;
             height: 70vh;
             max-height: 800px;
-            border-radius: 300px 300px 0 0;
+            border-radius: 200px 200px 0 0;
             position: static;
             width: 100%;
           } 
           .socials-grid {
-            margin-right: 5rem;
-            padding-top: 3rem;
+            max-width: 10rem;
+            top: 0rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(min(17px, 100%), 1fr));
+            grid-gap: 1rem;
+            margin: auto;
           }
           .socials-title {
-            max-width: 20rem;
+            max-width: 15rem;
+            
           }
           .footer_1 {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             max-width: 100%;
             margin: auto 2rem;
+            padding-right: 3rem;
+            padding-left: 3rem;
           }
           .footer_2 {
       
@@ -1127,8 +1496,8 @@ export default function Home() {
             width: 100%;
           }         
           .mainTitle{
-            font-size: 3rem;
-            line-height: 4rem;
+            font-size: 2rem;
+            line-height: 2rem;
             margin-bottom: 20px;
             margin-top: 20px;
           }
@@ -1158,17 +1527,7 @@ export default function Home() {
           .button {
             font-weight: 900;
           }
-         
-          .footer_2 {
-            background-color: #203c88;
-          }
-          .footer_3 {
-            background-color: #1d357a;
-            font-size: .8rem;
-            text-align: center;
-            padding-top: 5px;
-            padding-bottom: 5px;
-          }
+          
           footer {
             justify-content: flex-end;
             display: flex;
@@ -1178,26 +1537,51 @@ export default function Home() {
             background-color: #224099;
             height: 70vh;
             max-height: 800px;
-            border-radius: 25px 25px 0 0;
-            position: static;       
+            border-radius: 50px 50px 0 0;
+            position: static;
+            width: 100%;
           } 
-              
-          
-          .section_1_large_bg {
-            /* position: absolute;
-            max-width: 28rem;
-            left: 33rem;
-            right: 15rem;
-            top: -25rem;
-            z-index: 1;  
-            opacity: 0.5;*/
+          .socials-grid {
+            max-width: 7rem;
+            top: 0rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(min(17px, 100%), 1fr));
+            grid-gap: 1rem;
+            margin: auto;
           }
-          .transparent-controller {
-            /* opacity: 0.5;
-            z-index: -1;
-            right: -5rem;
-            bottom: 0rem; */
+          .socials-title {
+            width: 12rem;
           }
+          .footer_1 {
+            display: flex;
+            justify-content: center;
+            max-width: 100%;
+            margin: auto 1rem;
+          }
+          .footer_2 {
+      
+            background-color: #203c88;
+          }
+          .footer_3 {
+            background-color: #1d357a;
+            font-size: .8rem;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+           }
+           .carousel-container {
+              padding-bottom: 7rem;
+              max-width: 80%;
+              margin: auto;
+            }
+            .instructions {
+              font-size: 1rem;
+            }
+          .mainContentsText_1, 
+          .section_2_imageAside,  {
+            font-size: 1rem;
+          }
+         
       `}</style>
     </div>
   )

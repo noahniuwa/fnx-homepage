@@ -26,6 +26,11 @@ function Carousel() {
       <a className="carousel-cell" href="https://www.hillstonepe.co/"><img src="/hillstone.png"/></a> 
       <a className="carousel-cell" href="https://consensus-lab.com/"><img src="/consensuslab.png"/></a>
       <a className="carousel-cell" href="https://www.genesis-group.com/"><img src="/genesis.png"/></a>
+  
+      <a className="carousel-cell" href="https://www.hillstonepe.co/"><img src="/hillstone.png"/></a> 
+      <a className="carousel-cell" href="https://consensus-lab.com/"><img src="/consensuslab.png"/></a>
+      <a className="carousel-cell" href="https://www.genesis-group.com/"><img src="/genesis.png"/></a>
+
 
 
 
@@ -48,7 +53,7 @@ function Carousel() {
       }
       @media   (max-width: 700px)   {
         .carousel-cell {
-          width: 50%; /* full width */
+          width: 40%; /* full width */
           /* height: 50%;   */
           margin-right: 30px;
         }

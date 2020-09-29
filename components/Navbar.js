@@ -57,42 +57,35 @@ export default function Navbar() {
 
 
       <style jsx>{`
+      @media  (min-width: 1000px){
         .navbar-item img {
           max-height: 2.75rem;
         }
-      
+        .navbar-item {
+          font-size: 1.3rem;
+        }
         .navbar{
           width: 80%;
           margin: auto;
          }
+      }
+        
          
       @media  (min-width: 700px) and (max-width: 1000px) { 
-
-        .navbar-menu.is-active {
-          top: 60px;
-          opacity: 1;
-          position: absolute;
-          pointer-events: auto;
+        
+        .navbar-item img {
+          max-height: 2.75rem;
         }
-        .navbar-menu {
-          transition: top .4s ease-in-out;
-          right: 0px;
-          display: block;
-          width: 40%;
-          position: absolute;  
-          top: -400px;
-          pointer-events: none;
+        .navbar-item {
+          font-size: 1.3rem;
         }
-
         .navbar{
           width: 80%;
           margin: auto;
-          display: block;
-          z-index: 10;
-        }
+         }
       }
         @media  (max-width: 700px) { 
-
+         
           .navbar-menu.is-active {
           top: 60px;
           opacity: 1;
