@@ -60,50 +60,63 @@ export default function Navbar() {
         .navbar-item img {
           max-height: 2.75rem;
         }
-        
-        .navbar-menu.is-active {
-          display: block;
-          position: absolute;
-          width: 50%;
-          right: 5px;
-        }
-        
-         * {
-           /* border: 1px dashed red; */
+      
+        .navbar{
+          width: 80%;
+          margin: auto;
          }
-        
+         
+      @media  (min-width: 700px) and (max-width: 1000px) { 
+
+        .navbar-menu.is-active {
+          top: 60px;
+          opacity: 1;
+          position: absolute;
+          pointer-events: auto;
+        }
+        .navbar-menu {
+          transition: top .4s ease-in-out;
+          right: 0px;
+          display: block;
+          width: 40%;
+          position: absolute;  
+          top: -400px;
+          pointer-events: none;
+        }
+
+        .navbar{
+          width: 80%;
+          margin: auto;
+          display: block;
+          z-index: 10;
+        }
+      }
+        @media  (max-width: 700px) { 
+
+          .navbar-menu.is-active {
+          top: 60px;
+          opacity: 1;
+          position: absolute;
+          pointer-events: auto;
+        }
+        .navbar-menu {
+          transition: top .4s ease-in-out;
+          right: 0px;
+          display: block;
+          width: 100%;
+          position: absolute;  
+          top: -450px;
+          pointer-events: none;
+        }
+
         .navbar{
           width: 100%;
           margin: auto;
+          display: block;
+          z-index: 10;
         }
-        
-
-      @media (min-width: 700px) {
-        
       }
-        @media (max-width: 700px) {
-          .navbar-burger span {
-            
-          }
-          .navbar{
-            width: 100%;
-            margin: auto;
-            padding: 0 20px;
-            font-weight: 900;
-          }
-
-       
-        
-          .navbar-item img {
-            max-height: 2.75rem;
-          }
-        
-          .navbar-menu.is-active {
-            display: block;
-            position: absolute;
-            width: 100%;
-            right: 0px;
-          }
+  
            
         }
       `}</style>
