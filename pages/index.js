@@ -1405,6 +1405,7 @@ export default function Home() {
             width: 90%;
             background-color: #9F66A9;
             border-radius: 25px;
+            margin: auto;
           }
           .pillText_1 {
             margin-top: 0px;
@@ -1529,12 +1530,17 @@ export default function Home() {
           .button {
             font-weight: 900;
           }
+
+          .carousel-container {
+
+          }
+          
           
           footer {
             justify-content: flex-end;
             display: flex;
             flex-direction: column;
-            margin-top: 6rem;
+            margin-top: 3rem;
             color: #F1F1F2;
             background-color: #224099;
             height: 70vh;
@@ -1544,15 +1550,17 @@ export default function Home() {
             width: 100%;
           } 
           .socials-grid {
-            max-width: 7rem;
+            max-width: 10rem;
             top: 0rem;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(min(17px, 100%), 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(min(40px, 150%), 1fr));
             grid-gap: 1rem;
             margin: auto;
           }
           .socials-title {
             width: 12rem;
+            font-size: 1.5rem;
+            margin-left: 1.4rem;
           }
           .footer_1 {
             display: flex;
@@ -1561,7 +1569,7 @@ export default function Home() {
             margin: auto 1rem;
           }
           .footer_2 {
-      
+            text-align: center;
             background-color: #203c88;
           }
           .footer_3 {
@@ -1583,7 +1591,23 @@ export default function Home() {
           .section_2_imageAside,  {
             font-size: 1rem;
           }
-         
+          .big-text {
+            font-size: 2.5rem;
+          }
+          strong { 
+            font-size: 2rem;
+          }
+          .partners-title {
+            /* margin-bottom: 50px; */
+            font-size: 2rem;
+            margin-top: 4rem;
+          }
+          .exchanges-title {
+            /* margin-bottom: 50px; */
+            font-size: 2rem;
+            /* margin-top: 5rem; */
+
+          }
       `}</style>
     </div>
   )

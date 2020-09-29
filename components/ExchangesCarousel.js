@@ -50,7 +50,7 @@ function Carousel() {
       }
       @media   (max-width: 700px)   {
         .carousel-cell {
-          width: 40%; /* full width */
+          width: 50%; /* full width */
           /* height: 50%;   */
           margin-right: 30px;
         }
