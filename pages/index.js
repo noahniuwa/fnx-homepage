@@ -118,28 +118,28 @@ export default function Home() {
           </p>
           <div className="socials-grid socials">
             <a href="https://twitter.com/fin_nexus/">
-              <img className="social-logo" src="/twitter.svg" alt="social-logo" width="100" height="100" />
+              <img className="social-logo" src="/twitter.svg" alt="social-logo"   />
             </a>
             <a href="https://t.me/FinNexusOfficial">
-              <img className="social-logo" src="/telegram.svg" alt="social-logo" width="100" height="100" />
+              <img className="social-logo" src="/telegram.svg" alt="social-logo"   />
             </a>
             <a href="https://medium.com/finnexus/">
-              <img className="social-logo" src="/medium.svg" alt="social-logo" width="100" height="100" />
+              <img className="social-logo" src="/medium.svg" alt="social-logo"   />
             </a>
             <a href="https://www.linkedin.com/company/finnexus/">
-              <img className="social-logo" src="/linkedin.svg" alt="social-logo" width="100" height="100" />
+              <img className="social-logo" src="/linkedin.svg" alt="social-logo"   />
             </a>
             <a href="https://www.facebook.com/FinNexus/">
-              <img className="social-logo" src="/facebook.svg" alt="social-logo" width="100" height="100" />
+              <img className="social-logo" src="/facebook.svg" alt="social-logo"  />
             </a>
             <a href="https://discord.gg/bCDMHN7">
-              <img className="social-logo" src="/discord.svg" alt="social-logo" width="100" height="100" />
+              <img className="social-logo" src="/discord.svg" alt="social-logo"   />
             </a>
             <a>
-              <img className="social-logo" src="/wechat.svg" alt="social-logo" width="100" height="100" />
+              <img className="social-logo" src="/wechat.svg" alt="social-logo"  />
             </a>
             <a href="mailto:info@finnexus.io">
-              <img className="social-logo" src="/email.svg" alt="social-logo" width="100" height="100" />
+              <img className="social-logo" src="/email.svg" alt="social-logo"  />
             </a>
              
           </div>
@@ -154,10 +154,7 @@ export default function Home() {
       </div>
 
       <style jsx>{`
-        .sizeRestrictor{
-          max-width: 1200px;
-          margin: auto;
-        }
+       
         .float-left {
           float: left;
         }
@@ -242,7 +239,11 @@ export default function Home() {
           position: relative;
           overflow: hidden;
         }       
-        @media(min-width: 1200px){
+        @media(min-width: 1600px){
+          .sizeRestrictor{
+          max-width: 1300px;
+          margin: auto;
+        }
           .pillText_1, 
           .section-1-text, 
           .section-2-text,{
@@ -255,12 +256,11 @@ export default function Home() {
             font-size: 1.4rem;
           }
           .section_1 {
-            height: 60vh;
+            height: 600px;
             border-radius: 0 0 200px 200px;
             background-color: #224099;
             background-size: 100% 800px;
             margin: auto;
-            
             width: 100%;
             color: #F1F1F2;
           }
@@ -576,30 +576,27 @@ export default function Home() {
             /* margin-top: 6rem; */
             color: #F1F1F2;
             background-color: #224099;
-            height: 60vh;
+            height: 400px;
             max-height: 800px;
             border-radius: 300px 300px 0 0;
             position: static;
             width: 100%;
           } 
-          .social-logo {
-            width: 3rem;
-          }
+          /* .social-logo {
+            width: 8rem;
+          } */
           .socials-grid {
-            max-width: 400px;
+            max-width: 800px;
             display: grid;
-            /* grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); */
-            /* This is better for small screens, once min() is better supported */
             grid-template-columns: repeat(auto-fill, minmax(min(100px, 100%), 1fr));
             grid-gap: 1rem;
             height: 8rem;
-            /* margin-right: 10rem; */
             margin:auto;
             margin-bottom: 4rem;
           }
           .socials-title {
             max-width: 30rem;
-            font-size: 2rem;
+            font-size: 1.5rem;
 
             margin: auto;
           }
@@ -630,6 +627,10 @@ export default function Home() {
            }
         }
         @media (min-width: 1000px) and (max-width: 1600px){
+          .sizeRestrictor{
+          max-width: 1200px;
+          margin: auto;
+        }
           .carousel-container {
               padding-bottom: 5rem;
               max-width: 80%;
@@ -638,7 +639,7 @@ export default function Home() {
             
           .section_1 {
           
-            height: 75vh;
+            height: 500px;
             border-radius: 0 0 200px 200px;
             background-color: #224099;
             background-size: 100% 800px;
@@ -924,54 +925,63 @@ export default function Home() {
             max-width: 60%;
             margin: auto;
           }
+          .grid {
+            width: 60%;
+            margin: auto;
+            margin-bottom: 180px;
+            display: grid;
+            min-width: 330px;
+            grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+            grid-gap: 6.5rem;
+          }
          
           .partners-title {
+            max-width: 80%;
+            margin: auto;
             margin-bottom: 50px;
-            font-size: 5rem;
-            margin-top: 10rem;
           }
           .exchanges-title {
+            max-width: 80%;
+            margin: auto;
             margin-bottom: 50px;
-            font-size: 5rem;
-            margin-top: 5rem;
-
+          }
           }
           footer {
             justify-content: flex-end;
             display: flex;
+      
             flex-direction: column;
             margin-top: 6rem;
             color: #F1F1F2;
             background-color: #224099;
-            height: 70vh;
-            max-height: 800px;
-            border-radius: 300px 300px 0 0;
+            height: 350px;
+            margin: auto;
+            border-radius: 200px 200px 0 0;
             position: static;
-            width: 100%;
+            width: 90%;
           } 
           .socials-grid {
-            max-width: 300px;
+            max-width: 10rem;
+            top: 0rem;
             display: grid;
-            /* grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); */
-            /* This is better for small screens, once min() is better supported */
-            grid-template-columns: repeat(auto-fill, minmax(min(60px, 100%), 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(min(17px, 100%), 1fr));
             grid-gap: 1rem;
-            height: 8rem;
-            margin-right: 10rem;
-            padding-top: 3rem;
+            margin: auto;
           }
           .socials-title {
-            max-width: 20rem;
-            margin-right: 0rem;
+            max-width: 10rem;
+            
           }
           .footer_1 {
             display: flex;
-            justify-content: space-evenly;
-            max-width: 100%;
-            margin: auto 2rem;
+            justify-content: center;
+            max-width: 80%;
+            margin: auto;
+            padding-right: 3rem;
+            padding-left: 3rem;
           }
           .footer_2 {
-      
+            text-align: center;
             background-color: #203c88;
           }
           .footer_3 {
@@ -981,6 +991,7 @@ export default function Home() {
             padding-top: 5px;
             padding-bottom: 5px;
            }
+
         }
 
         @media (min-width: 700px) and (max-width: 1000px)  {
@@ -988,11 +999,7 @@ export default function Home() {
             font-size: .7rem;
           }
           
-          .carousel-container {
-              padding-bottom: 8rem;
-              max-width: 80%;
-              margin: auto;
-            }
+          
           .section_1_large_bg {
             position: absolute;
             max-width: 23rem;
@@ -1002,7 +1009,7 @@ export default function Home() {
            }
           
           .section_1 {
-            height: 75vh;
+            height: 400px;
             border-radius: 0 0 200px 200px;
             background-color: #224099;
             background-size: 100% 800px;
@@ -1270,17 +1277,36 @@ export default function Home() {
             justify-content: flex-start;
           }
           .team-header-container {
-            margin-left: 6rem;
-          }
-          .team {
-            max-width: 80%;
+            /* margin-left: 6rem; */
+            width: 60%;
             margin: auto;
           }
-
+          .team {
+            max-width: 70%;
+            margin: auto;
+          }
+          .grid {
+            width: 60%;
+            margin: auto;
+            margin-bottom: 80px;
+            display: grid;
+            min-width: 330px;
+            grid-template-columns: repeat(auto-fill, minmax(90px, .5fr));
+            grid-gap: 4.5rem;
+          }
+          .carousel-container {
+              padding-bottom: 8rem;
+              max-width: 80%;
+              margin: auto;
+            }
           .partners-title {
+            max-width: 80%;
+            margin: auto;
             margin-bottom: 50px;
           }
           .exchanges-title {
+            max-width: 80%;
+            margin: auto;
             margin-bottom: 50px;
           }
           footer {
@@ -1291,11 +1317,11 @@ export default function Home() {
             margin-top: 6rem;
             color: #F1F1F2;
             background-color: #224099;
-            height: 70vh;
-            max-height: 800px;
+            height: 350px;
+            margin: auto;
             border-radius: 200px 200px 0 0;
             position: static;
-            width: 100%;
+            width: 90%;
           } 
           .socials-grid {
             max-width: 10rem;
@@ -1306,19 +1332,19 @@ export default function Home() {
             margin: auto;
           }
           .socials-title {
-            max-width: 15rem;
+            max-width: 10rem;
             
           }
           .footer_1 {
             display: flex;
             justify-content: center;
-            max-width: 100%;
-            margin: auto 2rem;
+            max-width: 80%;
+            margin: auto;
             padding-right: 3rem;
             padding-left: 3rem;
           }
           .footer_2 {
-      
+            text-align: center;
             background-color: #203c88;
           }
           .footer_3 {
@@ -1350,7 +1376,6 @@ export default function Home() {
             min-width: 330px;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             grid-gap: 1.5rem;
-      
           }
           .team-header-container{
             min-width: 500px;
@@ -1454,7 +1479,7 @@ export default function Home() {
           .section_1 {
             padding-left: 0px;
             padding-right: 0px;
-            height: 90vh;
+            height: 400px;
             border-radius: 0 0 80px 80px;
             background-color: #224099;
             background-size: 100% 800px;
@@ -1531,9 +1556,7 @@ export default function Home() {
             font-weight: 900;
           }
 
-          .carousel-container {
-
-          }
+          
           
           
           footer {
@@ -1543,7 +1566,7 @@ export default function Home() {
             margin-top: 3rem;
             color: #F1F1F2;
             background-color: #224099;
-            height: 70vh;
+            height: 400px;
             max-height: 800px;
             border-radius: 50px 50px 0 0;
             position: static;
