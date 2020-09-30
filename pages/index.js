@@ -1479,7 +1479,7 @@ export default function Home() {
           .section_1 {
             padding-left: 0px;
             padding-right: 0px;
-            height: 400px;
+            height: 600px;
             border-radius: 0 0 80px 80px;
             background-color: #224099;
             background-size: 100% 800px;
@@ -1635,7 +1635,10 @@ export default function Home() {
             /* margin-bottom: 50px; */
             font-size: 2rem;
             /* margin-top: 5rem; */
-
+          }
+          .team-title {
+            z-index: 100;
+            margin-top: 3rem;
           }
       `}</style>
     </div>
