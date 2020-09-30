@@ -196,15 +196,15 @@ export default function Navbar(props) {
          .team-member-title {
             position: absolute;
             background-color: #224099;
-            border-left: .5rem solid #224099;
-            border-right: .5rem solid #224099;
+            /* border-left: .5rem solid #224099; */
+            /* border-right: .5rem solid #224099; */
             border-top: .6rem solid #224099;
             border-bottom: .6rem solid #224099;
             text-align: center;
             border-radius: 1.3rem;
             transform: translate(0rem, -2.2rem);
             z-index: 100;
-          }
+           }
           
           .team-name {
             text-align: center;
@@ -212,16 +212,17 @@ export default function Navbar(props) {
             color: white;
             font-weight: 900;
             line-height: 1.1rem;
-            width: 10rem;
+            width: 11rem;
+            font-size: 1.2rem;
           }
           .team-title {
             text-align: center;
             margin: auto;
             color: white;
-            width: 10rem;
+            width: 11rem;
             font-weight: 300;
             line-height: 1rem;
-            font-size: .8rem;
+            font-size: 1rem;
           }
           .team-member-frame {
             top: -3px;

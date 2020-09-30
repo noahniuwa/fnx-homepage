@@ -97,9 +97,9 @@ export default function Home() {
           <TeamMember name="Veerender Singh" title="Community Manager" image="Veerender Singh - Community Manager.png" />
           <TeamMember name="Jack Tung" title="Legal Expert" image="Jack Tung - Legal Expert.png" />
           <TeamMember name="Nicholas Krapels" title="Strategy Advisor" image="Nicholas Krapels - Strategy Advisor.png" />
-          <TeamMember name="Noah Maizels" title="Global Marketing Adviser" image="Noah Maizels - Global Marketing Adviser.png" />
+          <TeamMember name="Noah Maizels" title="Marketing Adviser" image="Noah Maizels - Global Marketing Adviser.png" />
           <TeamMember name="Eason Zhang" title="FP of River Capital" image="Eason Zhang.png" />
-          <TeamMember name="Jack Lu" title="Wanchain Founder & CEO" image="Jack Lu.png" />
+          <TeamMember name="Jack Lu" title="Wanchain Founder" image="Jack Lu.png" />
 
         </div>
       </main>
@@ -154,7 +154,10 @@ export default function Home() {
       </div>
 
       <style jsx>{`
-       
+        main, .grid, .team {
+          overflow: visible;
+        }
+      
         .float-left {
           float: left;
         }
@@ -1627,18 +1630,23 @@ export default function Home() {
           }
           .partners-title {
             /* margin-bottom: 50px; */
-            font-size: 2rem;
+            font-size: 3rem;
             margin-top: 4rem;
+            margin-left: 2rem;
           }
           
           .exchanges-title {
             /* margin-bottom: 50px; */
-            font-size: 2rem;
+            margin-left: 2rem;
+
+            font-size: 3rem;
             /* margin-top: 5rem; */
           }
           .team-title {
             z-index: 100;
             margin-top: 3rem;
+            float: left;
+            margin-left: 3rem;
           }
       `}</style>
     </div>
