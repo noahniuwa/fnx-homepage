@@ -29,6 +29,7 @@ export default function Navbar(props) {
             border-radius: 1.3rem;
             transform: translate(0rem, -2.2rem);
             z-index: 100;
+            font-size: 1.1rem;
           }
           
           .team-name {
