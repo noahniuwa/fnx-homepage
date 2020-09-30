@@ -63,7 +63,7 @@ export default function Navbar(props) {
             width: 11rem;
             height: 11rem;
             margin: auto;
-            transform: scale(1, 1);
+            transform: scale(0.9 , 0.9);
           }
       
           .team-header-container h3 {
@@ -117,7 +117,7 @@ export default function Navbar(props) {
             width: 11rem;
             height: 11rem;
             margin: auto;
-            transform: scale(1, 1);
+            transform: scale(0.9, 0.9);
           }
       
           .team-header-container h3 {

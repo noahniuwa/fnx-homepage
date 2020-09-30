@@ -116,7 +116,7 @@ export default function Home() {
           <p className="socials-title">
             <span className="big-text">Join</span> the FinNexus community <strong>NOW</strong>
           </p>
-          <div className="socials-grid socials">
+          <div className="socials-grid">
             <a href="https://twitter.com/fin_nexus/">
               <img className="social-logo" src="/twitter.svg" alt="social-logo"   />
             </a>
@@ -167,7 +167,7 @@ export default function Home() {
          
        
         .social-logo {
-           filter: invert(100);
+         filter: invert(100);
         }
         
           
@@ -241,9 +241,9 @@ export default function Home() {
         }       
         @media(min-width: 1600px){
           .sizeRestrictor{
-          max-width: 1300px;
-          margin: auto;
-        }
+            max-width: 1300px;
+            margin: auto;
+          }
           .pillText_1, 
           .section-1-text, 
           .section-2-text,{
@@ -443,7 +443,7 @@ export default function Home() {
           .team-title{
             width: 60%;
             margin: 6rem auto;
-            font-size: 5rem;
+            font-size: 3em;
           }
           .team {
             width: 60%;
@@ -552,7 +552,7 @@ export default function Home() {
 
           .partners-title {
             margin-bottom: 5rem;
-            font-size: 5rem;
+            font-size: 3em;
             margin-top: 10rem;
             margin-left: auto;
             margin-right: auto;
@@ -560,7 +560,7 @@ export default function Home() {
           }
           .exchanges-title {
             margin-bottom: 50px;
-            font-size: 5rem;
+            font-size: 3em;
             margin-left: auto;
             margin-right: auto;
             width: 80%;
@@ -570,6 +570,7 @@ export default function Home() {
           }
 
           footer {
+            max-width: 1200px;
             justify-content: flex-end;
             display: flex;
             flex-direction: column;
@@ -928,7 +929,7 @@ export default function Home() {
           .grid {
             width: 60%;
             margin: auto;
-            margin-bottom: 180px;
+            margin-bottom: 120px;
             display: grid;
             min-width: 330px;
             grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
@@ -949,7 +950,6 @@ export default function Home() {
           footer {
             justify-content: flex-end;
             display: flex;
-      
             flex-direction: column;
             margin-top: 6rem;
             color: #F1F1F2;
@@ -958,6 +958,7 @@ export default function Home() {
             margin: auto;
             border-radius: 200px 200px 0 0;
             position: static;
+            max-width: 1000px;
             width: 90%;
           } 
           .socials-grid {
@@ -974,11 +975,9 @@ export default function Home() {
           }
           .footer_1 {
             display: flex;
-            justify-content: center;
-            max-width: 80%;
+            justify-content: space-between;
+            max-width: 100%;
             margin: auto;
-            padding-right: 3rem;
-            padding-left: 3rem;
           }
           .footer_2 {
             text-align: center;
@@ -1336,12 +1335,12 @@ export default function Home() {
             
           }
           .footer_1 {
-            display: flex;
+            /* display: flex;
             justify-content: center;
             max-width: 80%;
             margin: auto;
             padding-right: 3rem;
-            padding-left: 3rem;
+            padding-left: 3rem; */
           }
           .footer_2 {
             text-align: center;
@@ -1356,6 +1355,7 @@ export default function Home() {
            }
         }
         @media (max-width: 700px) {
+          
           
           .pill_bg_image {
             position: absolute; 
@@ -1572,24 +1572,29 @@ export default function Home() {
             position: static;
             width: 100%;
           } 
+          .social-logo {
+            width: 1.5rem;
+          }
           .socials-grid {
-            max-width: 10rem;
-            top: 0rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(min(40px, 150%), 1fr));
-            grid-gap: 1rem;
-            margin: auto;
+             max-width: 15rem;
+            /* top: 0rem; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding-left: 4rem;
+            /* display: grid; */
+            /* grid-template-columns: repeat(auto-fill, minmax(min(100px, 150%), 1fr)); */
+            /* grid-gap: 1rem; */
+            /* margin: auto; */
           }
           .socials-title {
-            width: 12rem;
             font-size: 1.5rem;
-            margin-left: 1.4rem;
+            padding-left: 1rem;
           }
           .footer_1 {
-            display: flex;
+            /* display: flex;
             justify-content: center;
-            max-width: 100%;
-            margin: auto 1rem;
+            max-width: 100%; */
           }
           .footer_2 {
             text-align: center;
@@ -1625,6 +1630,7 @@ export default function Home() {
             font-size: 2rem;
             margin-top: 4rem;
           }
+          
           .exchanges-title {
             /* margin-bottom: 50px; */
             font-size: 2rem;
