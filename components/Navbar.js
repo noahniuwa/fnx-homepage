@@ -8,11 +8,11 @@ export default function Navbar() {
     setMenu(1)
   }
   return (
-    <div>
-      <nav className="navbar   is-primary" role="navigation" aria-label="main navigation">
+    <div className="navbar-container">
+      <nav className="navbar is-primary" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <div className="navbar-item"  >
-            <img className="logo" src="/fnxLogo.svg" alt="FinNexus" width="150" height="100" />
+            <img className="logo" src="/fnxLogo.svg" alt="FinNexus"  />
            </div>
             <a role="button" onClick={handleMenuClick} className={`navbar-burger burger ${menu === 0 ? "" : "is-active"}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
               <span aria-hidden="true"></span>
@@ -57,36 +57,54 @@ export default function Navbar() {
 
 
       <style jsx>{`
-      @media  (min-width: 1000px){
+        .navbar {
+          margin: auto;
+          width: 1000px;
+        }
         .navbar-item img {
-          max-height: 2.75rem;
+          width: 160px;
+          max-height: 100px;
+          position: absolute;
+        }
+        .logo {
+          max-width: 900px;
+          margin-top: 30px;
+        } 
+        .navbar-item {
+          font-size: 16px;
+        }
+      @media (min-width: 1700px){
+        .navbar {
+          margin: auto;
+          width: 1200px;
+        }
+        .navbar-item img {
+          width: 180px;
         }
         .navbar-item {
-          font-size: 1.3rem;
+          font-size: 20px;
         }
-        .navbar{
-          width: 80%;
-          margin: auto;
-         }
       }
-        
-         
-      @media  (min-width: 700px) and (max-width: 1000px) { 
-        
-        .navbar-item img {
-          max-height: 2.75rem;
+ 
+      @media (max-width: 1024px){
+        .navbar {
+          margin: auto;
+          width: 95%;
         }
         .navbar-item {
-          font-size: 1.3rem;
+          font-size: 17px;
         }
-        .navbar{
-          width: 80%;
-          margin: auto;
-         }
-      }
-        @media  (max-width: 700px) { 
-         
-          .navbar-menu.is-active {
+        .navbar-item img {
+          width: 140px;
+          max-height: 100px;
+          position: absolute;
+        }
+        .logo {
+          max-width: 900px;
+          margin-top: 30px;
+        }
+          
+        .navbar-menu.is-active {
           top: 60px;
           opacity: 1;
           position: absolute;
@@ -101,17 +119,9 @@ export default function Navbar() {
           top: -450px;
           pointer-events: none;
         }
-
-        .navbar{
-          width: 100%;
-          margin: auto;
-          display: block;
-          z-index: 10;
-        }
       }
-  
-           
-        }
+     
+       
       `}</style>
     </div>
   )
