@@ -289,7 +289,7 @@ export default function Home() {
           width: 500px; 
         }
         .section-3-text {
-          width: 80%;
+          width: 100%;
           margin: 1em 0;
           font-size: 1.3em;
         }
@@ -330,11 +330,11 @@ export default function Home() {
         .section-2-text {
           margin: 1em 0;
           font-size: 1.3em;
-          width: 80%;
         }
         .section_2_img {  
           -webkit-filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
                   filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
+        
         }
         .section-2-header {
           line-height: 1em;
@@ -508,12 +508,6 @@ export default function Home() {
           .section_1 {
             height: 700px;  
             width: 1600px;
-          }
-          .section-2-header {
-           font-size: 40px;
-          }
-          .section-23-header {
-           font-size: 40px;
           }
           .section_2_img {  
             -webkit-filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));

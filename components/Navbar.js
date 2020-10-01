@@ -101,7 +101,8 @@ export default function Navbar() {
       @media (max-width: 1024px){
         .navbar {
           margin: auto;
-          width: 800px;
+          max-width: 600px;
+          width: 100%;
         }
         .navbar-item {
           font-size: 17px;
