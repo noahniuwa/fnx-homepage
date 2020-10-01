@@ -39,7 +39,7 @@ export default function Home() {
           <div className="section_2">
             <img className="section_2_img" src="earn.svg" />
               <div className="section_2_imageAside">
-                <h3 className="section-2-header em-3 section-header">Earn Now!</h3>
+                <h3 className="section-2-header section-header">Earn Now!</h3>
                 <p className="section-2-text">With FPO v1.0, liquidity providers earn attractive rewards for trustlessly locking their assets in the the MASP liquidity pool.</p>
                 <div className="float-container section_2_button">
                   <button className="is-rounded float-left button is-danger">Provide Liquidity</button>
@@ -50,7 +50,7 @@ export default function Home() {
           <div className="section_3">
             <img className="section_3_img" src="FNX_options.svg" />
             <div className="section_3_imageAside">
-              <h3 className="section-3-header section-header em-3"> Hedge & Leverage</h3>
+              <h3 className="section-3-header section-header"> Hedge & Leverage</h3>
               <p className="section-3-text">FPO's wide variety of options makes it easy to find just the solution for your investment needs, and our MASP liquidity pool ensures you never need to worry if there's enough liquidity.</p>
               <button className="is-rounded button section_ is-danger">Buy FPO Options</button>
             </div>
@@ -58,24 +58,31 @@ export default function Home() {
 
           <div className="team-section">
             <div className="team-size-restrictor">
-            <div className="team-header-container">
-              <h3 className="section-header em-3 team-title">Team</h3>
-            </div>
-            <div className="team">
+            
+            <div className="team core-team">
+              <div className="team-header-container">
+                <h3 className="section-header em-3 team-title">Team</h3>
+              </div>
+            <div className="team-member-container">
               <TeamMember name="Boris Yang" title="Founder & CEO" image="BorisYang.png" />
               <TeamMember name="Bob Chen" title="Co-founder & CTO" image="BobChen.png" />
               <TeamMember name="Ryan Tian" title="Financial Specialist" image="RyanTian.png" />
               <TeamMember name="Veerender Singh" title="Community Manager" image="VeerenderSingh.png" />
               <TeamMember name="Jack Tung" title="Legal Expert" image="JackTung.png" />
-             </div>
-            <div className="team-header-container">
-              <h3 className="section-header em-3 team-title">Advisory</h3>
+              </div>
             </div>
+           
             <div className="team">
-              <TeamMember name="Nicholas Krapels" title="Strategy Advisor" image="NicholasKrapels.png" />
-              <TeamMember name="Noah Maizels" title="Marketing Adviser" image="NoahMaizels.png" />
-              <TeamMember name="Eason Zhang" title="FP of River Capital" image="EasonZhang.png" />
-              <TeamMember name="Jack Lu" title="Wanchain Founder" image="JackLu.png" />
+              <div className="team-header-container">
+                <h3 className="section-header em-3 team-title">Advisory</h3>
+              </div>
+              <div className="team-member-container">
+                <TeamMember name="Nicholas Krapels" title="Strategy Advisor" image="NicholasKrapels.png" />
+                <TeamMember name="Noah Maizels" title="Marketing Adviser" image="NoahMaizels.png" />
+                <TeamMember name="Eason Zhang" title="FP of River Capital" image="EasonZhang.png" />
+                <TeamMember name="Jack Lu" title="Wanchain Founder" image="JackLu.png" />
+              </div>
+            
             </div>
             <img className="team_bg_image" src="bgshape_01.svg" />
 
@@ -208,42 +215,58 @@ export default function Home() {
           width: 1200px;
           bottom: 2.5em;
         }
-        .team {
-          width: 1000px;
+        .team-member-container{
+          display: flex;
+          flex-direction: row;
           justify-content: center;
           margin: auto;
-          padding: 30px 30px;
+          flex-wrap: wrap;
+        }
+        .team-header-container {
+          /* min-width: 500px; */
+          margin-bottom: 0rem;
+          text-align: center
+        }
+        .team {
+          /* width: 1000px; */
+          justify-content: center;
+          margin: auto;
+          margin-bottom: 100px;
+          padding: 0px 30px;
+          padding-bottom: 100px;
           display: flex;
           flex-wrap: wrap;
           background-color: rgb(208, 180, 213);
           border-radius: 50px;
+          border: 15px solid rgba(159, 102, 169, 0.08);
         }
         .team_bg_image {
           position: absolute;
-          bottom: 5em;
-          top: 5rem;
-          right: -15rem;
-          width: 50rem;
+          bottom: 500px;
+     
+          right: -500px;
+          width: 800px;
           z-index: -10;
         }
         .team-section {
-          bottom: 200px;
+          bottom: 150px;
           width: 100%;
           justify-content: center;
           margin: auto;
-          padding-bottom: 80px;
+          /* padding-bottom: 80px; */
           padding-top: 100px;
           padding-left: 100px;
           padding-right: 100px;
           display: flex;
           flex-wrap: wrap;
           background-color: rgba(159, 102, 169, 0.2);
-          }
+         
+        }
           .team-size-restrictor {
             max-width: 1920px;
           }
         .team-title {
-          width: 750px;
+          /* width: 750px; */
           margin: 1em auto;
           font-weight: 900;
         }
@@ -266,7 +289,7 @@ export default function Home() {
           width: 500px; 
         }
         .section-3-text {
-          width: 90%;
+          width: 100%;
           margin: 1em 0;
           font-size: 1.3em;
         }
@@ -300,10 +323,10 @@ export default function Home() {
         }
         
 
-
-        .section_2_imageAside {
+ 
+       .section_2_imageAside {
           width: 500px; 
-        }
+        } 
         .section-2-text {
           margin: 1em 0;
           font-size: 1.3em;
@@ -311,9 +334,7 @@ export default function Home() {
         .section_2_img {  
           -webkit-filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
                   filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
-          width: 650px;
-          left: -80px;
-          bottom: 200px;
+        
         }
         .section-2-header {
           line-height: 1em;
@@ -349,7 +370,7 @@ export default function Home() {
           background-color: #224099;
           background-size: 100% 800px;
           margin: auto;
-          width: 95%;
+          width: 1200px;
           color: #F1F1F2;
           overflow: hidden;
         }
@@ -478,19 +499,39 @@ export default function Home() {
 
 
         @media (min-width: 1700px) {
-         
+          .section_1_container {
+            width: 1200px;
+            margin: auto;
+            overflow: visible;
+            height: 300px;
+          }
+          .section_1 {
+            height: 700px;  
+            width: 1600px;
+          }
+          .section_2_img {  
+            -webkit-filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
+                    filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
+            width: 650px;
+            left: -80px;
+            bottom: 200px;
+          }
+          .team-member-container{
+           width: 100%;
+          }
+          .team  {
+            width: 100%;
+          }
+          .team-size-restrictor {
+            width: 1000px;
+          }
         }
 
         @media (min-width: 1200px) and (max-width: 1700px) {
-          /*
-            Fonts:
-              Main Title: font-size: 2.3em;
-              Instructions: font-size: 0.9em;
-              Main content: font-size: 1.1em;
-
-          */
+          
           .section_1 {
             height: 500px;  
+            width: 1200px;
           }
           .mainContents {
             padding-left: 120px;
@@ -518,7 +559,11 @@ export default function Home() {
             font-size: 1.1em;
           }
           .section_2_img {  
-            width: 450px;    
+            -webkit-filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
+                    filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
+            width: 450px;
+            left: -80px;
+            bottom: 200px;
           }
           .section-2-header {
             font-size: 40px;
@@ -532,9 +577,7 @@ export default function Home() {
             width: 400px; 
             bottom: 100px;
           }
-          .section-3-text {
-            font-size: 1.1em;
-          }
+          
           .section_3_img {  
             width: 450px;    
           }
@@ -545,13 +588,17 @@ export default function Home() {
             justify-content: center;
             width: 1200px;
           }
+          .team-size-restrictor {
+            width: 1000px;
+          }
           .team-title {
             font-size: 40px;
           }
           .socials-title {
-            font-size: 30px;
+            font-size: 25px;
             width: 40%;
             bottom: 0.2em;
+            left: 50px;
           }
           .social-logo {
             width: 30px;
@@ -561,51 +608,51 @@ export default function Home() {
             width: 40%;
           }
           footer {
-            width: 1100px;
+            max-width: 1200px;
+            width: 90%;
           }
           .footer_1 {
             margin-top: auto;
             margin-bottom: 3em; 
-          } 
+           } 
           .partners-title {
-            width: 80%;
+            width: 1000px;
             font-size: 40px;
           }
           .exchanges-title {
-            max-width: 80%;
+            width: 1000px;
             font-size: 40px;
-          }        
+          }     
+          .carousel-container {
+            padding-bottom: 3rem;
+            width: 1000px;
+          }   
         }
 
-        @media (min-width: 700px) and (max-width: 1200px) {
+        @media (min-width: 1024px) and (max-width: 1200px) {
           .section_1 {
             height: 500px;  
-            border-radius: 0 0 100px 100px;
+            width: 1200px;
           }
           .mainContents {
-            padding-left: 50px;
-            width: 400px;          
-          }
+            padding-left: 120px;
+            width: 700px;          }
           .mainTitle {
-            line-height: 35px; 
+            line-height: 40px; 
             font-size: 40px;
           }
-          
-
-         
-
-          
           .instructions {
-            font-size: 14px;
+            font-size: 16px;
           }
           .mainContentsText_1 {
-            font-size: 18px;
+            font-size: 20px;
           }
           .section_1_large_bg {
             width: 400px;
-            right: 27rem;
+            right: 5rem;
             top: 1rem; 
           }
+         
           .section_2_imageAside {
             width: 400px; 
             bottom: 50px;
@@ -614,7 +661,11 @@ export default function Home() {
             font-size: 1.1em;
           }
           .section_2_img {  
-            width: 450px;    
+            -webkit-filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
+                    filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
+            width: 450px;
+            left: -80px;
+            bottom: 200px;
           }
           .section-2-header {
             font-size: 40px;
@@ -631,6 +682,7 @@ export default function Home() {
           .section-3-text {
             font-size: 1.1em;
           }
+           
           .section_3_img {  
             width: 450px;    
           }
@@ -648,6 +700,7 @@ export default function Home() {
             font-size: 30px;
             width: 40%;
             bottom: 0.2em;
+            left: 50px;
           }
           .social-logo {
             width: 30px;
@@ -673,207 +726,174 @@ export default function Home() {
           }     
         }
 
-        @media (max-width:700px) {
+        @media (max-width: 1024px) {
+          .section_1_container {
+            width: 100%;
+            margin: auto;
+            overflow: visible;
+            height: 300px;
+          }
+          
+          .section_1 {
+            border-radius: 0 0 50px 50px;
+            height: 650px;
+            width: 100%;
+          }
+          .mainContents {
+            padding-left: 30px;
+            width: 80%;  
+          }
+          .mainTitle {
+            line-height: 40px; 
+            font-size: 40px;
+          }
+          .instructions {
+            font-size: 16px;
+          }
+          .mainContentsText_1 {
+            font-size: 20px;
+          }
+          .section_1_large_bg {
+            width: 400px;
+            right: -15rem;
+            top: 1rem; 
+          }
+         
+          .section_2_imageAside {
+            width: 100%;
+          }
+          .section-2-text {
+            font-size: 18px;
+          }
+          .section_2_img {  
+            width: 100%; 
+          }
+          .section-2-header {
+            font-size: 35px;
+            margin-top: 30px;
+          }
+          .section_2 {
+            justify-content: center;
+            width: 80%;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            margin-bottom: 50px;
+            top: -30px;
+          }
+          
+          .section_3_imageAside {
+            width: 100%;
+            bottom: 0;
+            margin: auto;
+          }
+          
+          .section_3_img {  
+            width: 100%;    
+          }
+          .section-3-header {
+            font-size: 35px;
+          }
+          p {
+            margin: 0;
+          }
+          .section_3 {
+            justify-content: center;
+            width: 80%;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            margin-bottom: 200px;
+            top: -30px;;
+          }
+          .team-title {
+            font-size: 40px;
+          }
+          .socials-title {
+            font-size: 20px;
+            width: 50%;
+            bottom: 0.2em;
+            left: 30px;
+          }
           .social-logo {
-            width: 100px;
+            width: 20px;
+            margin: auto 5px;
           }
           .socials-grid {
-            max-width: 800px;
+            width: 40%;
+          }
+          footer {
+            width: 100%;
+            height: 350px;
+            border-radius: 50px 50px 0 0;
+            
+          }
+          .footer_1 {
+            width: 95%;
+            padding-bottom: 50px;
+            margin-top: auto;
+            margin-bottom: 3em; 
+            justify-content: space-between;
+          } 
+          .partners-title {
+            width: 80%;
+            font-size: 40px;
+          }
+          .exchanges-title {
+            max-width: 80%;
+            font-size: 40px;
+          }  
+          
+          .team-member-container{
             display: flex;
-            margin: auto;
+            flex-direction: row;
+          }
+          .team-header-container {
+          width: 100%;
+          display: block;
+          }
+          .team-member-container{
+          width: 100%;
           }
           .team {
-            width: 300px;
+            width: 100%;
+            max-width: 500px;
+            min-width: 360px;
+            padding: 0;
+           
+            display: flex;
+            flex-direction: column;
+          }
+          
+          .team_bg_image {
+          
+          }
+        
+          .team-size-restrictor {
+            width: 100%;
+          }
+          .team-title {
+            width: 100%;
+            margin: 1em auto;
+            font-weight: 900;
+            display: block;
+          }
+          
+          .team-section {
+            /* bottom: 200px; */
+            width: 100%;
+            justify-content: center;
             margin: auto;
+            /* padding-bottom: 80px; */
+            padding-top: 100px;
+            padding-left: 0px;
+            padding-right: 0px;
             display: flex;
             flex-wrap: wrap;
-            -webkit-transform: translateX(-11px);
-                  -ms-transform: translateX(-11px);
-                      transform: translateX(-11px)
-          } 
-            
-           
+            background-color: rgba(159, 102, 169, 0.2);
         
+          }
             
-            .team-header-container {
-                min-width: 500px;
-                margin-bottom: 2rem;
-                text-align: center
-            }
-            .versionLabel {
-                float: right;
-                margin-top: 5px;
-                width: 30px;
-                height: 15px;
-                color: #F1F1F2;
-                background-color: #6E308B;
-                
-                text-align: center;
-                border-radius: 10px
-            }
-            .square_label_img {
-                width: 70%;
-                margin: auto;
-                display: block
-            }
-            .squareLabel {
-                margin-right: 10px;
-                display: inline-block;
-                padding: 20px;
-                
-                font-weight: 900;
-                color: #000;
-                width: 110px;
-                height: 110px;
-                background-color: #EFF0EB;
-                border-radius: 20px;
-                margin-bottom: 8px
-            }
-           
-            
-          
-            .section_1_bg {
-                position: none;
-                display: none;
-                width: 500px;
-                left: 200px;
-                top: 400px
-            }
-           
-            .section_1 {
-                padding-left: 0;
-                padding-right: 0;
-                height: 600px;
-                border-radius: 0 0 80px 80px;
-                background-color: #224099;
-                background-size: 100% 800px;
-                margin: auto auto 3rem;
-                width: 100%;
-                color: #F1F1F2
-            }
-            .mainContentsText_1 {
-                margin-bottom: 20px
-            }
-            .section_2 {
-                width: 90%;
-                margin: auto auto 80px;
-                display: block;
-                position: relative;
-                bottom: 70px
-            }
-            .section_2_img {
-                width: 100%;
-                margin-bottom: 50px;
-                -webkit-filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
-                        filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3))
-            }
-            .section_3 {
-                width: 90%;
-                display: block;
-                position: relative;
-                margin: auto;
-                bottom: 100px
-            }
-            .section_3_img {
-                margin-top: 40px;
-                width: 100%;
-                margin-bottom: 30px;
-                -webkit-filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
-                        filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
-                z-index: 3
-            }
-            .section_3_imageAside {
-                width: 100%
-            }
-            .mainTitle {
-                
-                line-height: 2rem;
-                margin-bottom: 20px;
-                margin-top: 20px
-            }
-            .vertical-reverse {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: reverse;
-                -ms-flex-direction: column-reverse;
-                flex-direction: column-reverse
-            }
-            .labelTitle {
-                margin-bottom: 50px
-            }
-            .labelTitle h4 {
-                
-                line-height: 2rem;
-                font-weight: 900
-            }
-            .labelTitle h5 {
-                
-                line-height: 2rem;
-                font-weight: 900
-            }
-            p {
-                font-weight: 900
-            }
-            .section_3_imageAside p {
-                margin: 15px 0
-            }
-            .button {
-                font-weight: 900
-            }
-            footer {
-                -webkit-box-pack: end;
-                -ms-flex-pack: end;
-                justify-content: flex-end;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                flex-direction: column;
-                margin-top: 3rem;
-                color: #F1F1F2;
-                background-color: #224099;
-                height: 400px;
-                max-height: 800px;
-                border-radius: 50px 50px 0 0;
-                position: static;
-                width: 100%
-            }
-            
-            .socials-title {
-                
-                padding-left: 1rem
-            }
-            .footer_2 {
-                text-align: center;
-                background-color: #203c88
-            }
-            .footer_3 {
-                background-color: #1d357a;
-                
-                text-align: center;
-                padding-top: 5px;
-                padding-bottom: 5px
-            }
-            
-          
-         
-            .partners-title {
-              margin-top: 4rem;
-              margin-left: 2rem
-            }
-            .exchanges-title {
-              margin-left: 2rem;
-            }
-            .team-title {
-              z-index: 100;
-              margin-top: 3rem;
-              float: left;
-              margin-left: 3rem
-            }
         }
       `}</style>
     </div>

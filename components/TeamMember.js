@@ -26,10 +26,9 @@ export default function Navbar(props) {
               border-bottom: .6rem solid #224099;
               text-align: center;
               border-radius: 1.3rem;
-              transform: translate(0rem, -2.2rem);
+              bottom: 0px;
               z-index: 100;
             }
-            
             .team-name {
               text-align: center;
               margin: auto;
@@ -66,13 +65,44 @@ export default function Navbar(props) {
               transform: scale(1, 1);
               transition: all .1s ease-in-out;
             }
-            .team-member-container:hover {
-              transform: scale(1.1, 1.1);
-            }
-        
+            
             .team-header-container h3 {
               text-align: center;
             }
+
+            @media (max-width: 1024px) {
+              .team-member-container {
+                transform: scale(.7, .7);
+                width: 145px;
+                height: 200px;
+                margin: 20px 20px;
+              }
+              .team-member-container:hover {
+                transform: scale(.6, .6);
+              }
+              .team-member-frame {
+                transform: scale(1.8, 1.8);
+                top: -6px;
+              }
+              .team-member {
+                transform: scale(1.7, 1.7);
+              }
+              .team-title {
+                font-size: 18px;
+                width: 210px;
+                line-height: 25px;
+              }
+              .team-member-title {
+                bottom: -10px;
+                right: -39px;
+              }
+              .team-name {
+                width: 210px;
+                line-height: 20px;
+                font-size: 25px;
+              }
+            }
+
       `}</style>
     </div>
   )

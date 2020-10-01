@@ -59,7 +59,7 @@ export default function Navbar() {
       <style jsx>{`
         .navbar {
           margin: auto;
-          width: 1000px;
+          width: 900px;
         }
         .navbar-item img {
           width: 160px;
@@ -86,10 +86,22 @@ export default function Navbar() {
         }
       }
  
+      @media (max-width: 1200px){
+        .navbar {
+          width: 900px;
+        }
+      }
+
+      @media (max-width: 700px){
+        .navbar {
+          margin: auto;
+          width: 400px;
+        }
+      }
       @media (max-width: 1024px){
         .navbar {
           margin: auto;
-          width: 95%;
+          width: 800px;
         }
         .navbar-item {
           font-size: 17px;
