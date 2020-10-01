@@ -91,15 +91,15 @@ export default function Home() {
           <h3 className="section-header team-title">Team</h3>
         </div>
         <div className="grid team">
-          <TeamMember name="Boris Yang" title="Founder & CEO" image="Boris Yang - Founder & CEO.png" />
-          <TeamMember name="Bob Chen" title="Co-founder & CTO" image="Bob Chen - Co-founder & CTO.png" />
-          <TeamMember name="Ryan Tian" title="Financial Specialist" image="Ryan Tian - Financial Specialist.png" />
-          <TeamMember name="Veerender Singh" title="Community Manager" image="Veerender Singh - Community Manager.png" />
-          <TeamMember name="Jack Tung" title="Legal Expert" image="Jack Tung - Legal Expert.png" />
-          <TeamMember name="Nicholas Krapels" title="Strategy Advisor" image="Nicholas Krapels - Strategy Advisor.png" />
-          <TeamMember name="Noah Maizels" title="Marketing Adviser" image="Noah Maizels - Global Marketing Adviser.png" />
-          <TeamMember name="Eason Zhang" title="FP of River Capital" image="Eason Zhang.png" />
-          <TeamMember name="Jack Lu" title="Wanchain Founder" image="Jack Lu.png" />
+          <TeamMember name="Boris Yang" title="Founder & CEO" image="BorisYang.png" />
+          <TeamMember name="Bob Chen" title="Co-founder & CTO" image="BobChen.png" />
+          <TeamMember name="Ryan Tian" title="Financial Specialist" image="RyanTian.png" />
+          <TeamMember name="Veerender Singh" title="Community Manager" image="VeerenderSingh.png" />
+          <TeamMember name="Jack Tung" title="Legal Expert" image="JackTung.png" />
+          <TeamMember name="Nicholas Krapels" title="Strategy Advisor" image="NicholasKrapels.png" />
+          <TeamMember name="Noah Maizels" title="Marketing Adviser" image="NoahMaizels.png" />
+          <TeamMember name="Eason Zhang" title="FP of River Capital" image="EasonZhang.png" />
+          <TeamMember name="Jack Lu" title="Wanchain Founder" image="JackLu.png" />
 
         </div>
       </main>
@@ -179,8 +179,16 @@ export default function Home() {
           position: relative;
         }
       
-        .grid {
+        /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ .grid {
           max-width: 1000px;
+          display: -ms-grid;
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
           /* This is better for small screens, once min() is better supported */
@@ -244,7 +252,7 @@ export default function Home() {
         }       
         @media(min-width: 1600px){
           .sizeRestrictor{
-            max-width: 1300px;
+            max-width: 1600px;
             margin: auto;
           }
           .pillText_1, 
@@ -339,12 +347,26 @@ export default function Home() {
             bottom: 9rem;
            }
           
-          .section_2 {
+         /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ .section_2 {
             top: 2rem;
             margin: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             width: 80%;
             margin-bottom: 2rem;
             position: relative;
@@ -367,11 +389,25 @@ export default function Home() {
             width: 30rem;
            }
           
-          .section_3 {
+         /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ .section_3 {
             margin: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+                -ms-flex-direction: row-reverse;
+                    flex-direction: row-reverse;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             width: 80%;
             bottom: 2rem;
             position: relative;
@@ -403,15 +439,29 @@ export default function Home() {
           
           
          
-         
-          .section_2 {
+       /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+  
+.section_2 {
             margin: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
           }
           .headerContentContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
             max-height: 10rem;
           }
       
@@ -424,10 +474,23 @@ export default function Home() {
             
           }
         
-          .pillContainer {
+          /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.pillContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: flex-end; 
-            justify-content: flex-start;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end; 
+            -webkit-box-pack: start; 
+                -ms-flex-pack: start; 
+                    justify-content: flex-start;
           }
           h4 {
             font-size: 3rem;
@@ -523,10 +586,21 @@ export default function Home() {
             z-index: 3;
 
           }
-          .purplePill {
+         /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ .purplePill {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
              margin-bottom: 60px;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             color: #F1F1F2;
              padding-left: 40px;
             padding-right: 40px;
@@ -545,10 +619,23 @@ export default function Home() {
           
          
           
-          .pillContainer {
+         /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ .pillContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: flex-end; 
-            justify-content: flex-start;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end; 
+            -webkit-box-pack: start; 
+                -ms-flex-pack: start; 
+                    justify-content: flex-start;
           }
         
           
@@ -572,11 +659,25 @@ export default function Home() {
             margin-bottom: 5rem;
           }
 
-          footer {
-            max-width: 1200px;
-            justify-content: flex-end;
+         /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ footer {
+            min-width: 1600px;
+            -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             /* margin-top: 6rem; */
             color: #F1F1F2;
             background-color: #224099;
@@ -589,8 +690,16 @@ export default function Home() {
           /* .social-logo {
             width: 8rem;
           } */
-          .socials-grid {
+          /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ .socials-grid {
             max-width: 800px;
+            display: -ms-grid;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(min(100px, 100%), 1fr));
             grid-gap: 1rem;
@@ -610,9 +719,20 @@ export default function Home() {
           .big-text{
             font-size: 3rem;
           }
-          .footer_1 {
+         /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ .footer_1 {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-evenly;
+            -webkit-box-pack: space-evenly;
+                -ms-flex-pack: space-evenly;
+                    justify-content: space-evenly;
             max-width: 100%;
             margin-left: auto;
             margin-right: auto;
@@ -709,12 +829,26 @@ export default function Home() {
             bottom: 9rem;
            }
           
-          .section_2 {
+        /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+  .section_2 {
             top: 2rem;
             margin: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             width: 80%;
             margin-bottom: 2rem;
             position: relative;
@@ -736,12 +870,26 @@ export default function Home() {
             filter: drop-shadow(0px 10px 15px rgba(9,9,9,0.3));
             bottom: 2rem;
            }
-          
-          .section_3 {
+          /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
+.section_3 {
             margin: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+                -ms-flex-direction: row-reverse;
+                    flex-direction: row-reverse;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             width: 80%;
             bottom: 2rem;
             position: relative;
@@ -775,14 +923,28 @@ export default function Home() {
           
          
          
-          .section_2 {
+       /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+   .section_2 {
             margin: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
           }
           .headerContentContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
             
           }
       
@@ -795,10 +957,23 @@ export default function Home() {
             
           }
         
-          .pillContainer {
+          /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.pillContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: flex-end; 
-            justify-content: flex-start;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end; 
+            -webkit-box-pack: start; 
+                -ms-flex-pack: start; 
+                    justify-content: flex-start;
           }
           h4 {
             font-size: 3rem;
@@ -886,10 +1061,21 @@ export default function Home() {
             z-index: 3;
 
           }
-          .purplePill {
+          /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.purplePill {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             margin-bottom: 60px;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             color: #F1F1F2;
             padding-left: 40px;
             padding-right: 40px;
@@ -909,10 +1095,24 @@ export default function Home() {
           
          
           
-          .pillContainer {
+         /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ 
+.pillContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: flex-end; 
-            justify-content: flex-start;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end; 
+            -webkit-box-pack: start; 
+                -ms-flex-pack: start; 
+                    justify-content: flex-start;
           }
           .team-title {
             font-size: 4rem;
@@ -929,10 +1129,18 @@ export default function Home() {
             max-width: 60%;
             margin: auto;
           }
-          .grid {
+          /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.grid {
             width: 60%;
             margin: auto;
             margin-bottom: 120px;
+            display: -ms-grid;
             display: grid;
             min-width: 330px;
             grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
@@ -950,10 +1158,24 @@ export default function Home() {
             margin-bottom: 50px;
           }
           }
-          footer {
-            justify-content: flex-end;
+          /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+footer {
+            -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             margin-top: 6rem;
             color: #F1F1F2;
             background-color: #224099;
@@ -964,9 +1186,17 @@ export default function Home() {
             max-width: 1000px;
             width: 90%;
           } 
-          .socials-grid {
+          /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.socials-grid {
             max-width: 10rem;
             top: 0rem;
+            display: -ms-grid;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(min(17px, 100%), 1fr));
             grid-gap: 1rem;
@@ -976,9 +1206,20 @@ export default function Home() {
             max-width: 10rem;
             
           }
-          .footer_1 {
+          /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.footer_1 {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             max-width: 100%;
             margin: auto;
           }
@@ -1070,13 +1311,27 @@ export default function Home() {
             filter: drop-shadow(0px 10px 15px rgba(9,9,9,0.3));
             bottom: 7rem;
            }
-          
-          .section_2 {
+          /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
+.section_2 {
             top: 2rem;
             margin: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             width: 80%;
             margin-bottom: 2rem;
             position: relative;
@@ -1098,11 +1353,25 @@ export default function Home() {
             bottom: 4rem;
            }
           
-          .section_3 {
+         /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ .section_3 {
             margin: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+                -ms-flex-direction: row-reverse;
+                    flex-direction: row-reverse;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             width: 80%;
             bottom: 3rem;
             position: relative;
@@ -1137,14 +1406,28 @@ export default function Home() {
            font-size: 3rem;
          }
          
-          .section_2 {
+         /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.section_2 {
             margin: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
           }
           .headerContentContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
           }
       
          
@@ -1156,10 +1439,23 @@ export default function Home() {
             
           }
         
-          .pillContainer {
+         /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ .pillContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: flex-end; 
-            justify-content: flex-start;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end; 
+            -webkit-box-pack: start; 
+                -ms-flex-pack: start; 
+                    justify-content: flex-start;
           }
           h4 {
             font-size: 3rem;
@@ -1250,10 +1546,21 @@ export default function Home() {
             z-index: 3;
 
           }
-          .purplePill {
+         /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.purplePill {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
              margin-bottom: 60px;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             color: #F1F1F2;
              padding-left: 40px;
             padding-right: 40px;
@@ -1273,10 +1580,23 @@ export default function Home() {
           
          
           
-          .pillContainer {
+          /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.pillContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: flex-end; 
-            justify-content: flex-start;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end; 
+            -webkit-box-pack: start; 
+                -ms-flex-pack: start; 
+                    justify-content: flex-start;
           }
           .team-header-container {
             /* margin-left: 6rem; */
@@ -1287,15 +1607,27 @@ export default function Home() {
             max-width: 70%;
             margin: auto;
           }
-          .grid {
-            width: 60%;
-            margin: auto;
-            margin-bottom: 80px;
-            display: grid;
-            min-width: 330px;
-            grid-template-columns: repeat(auto-fill, minmax(90px, .5fr));
-            grid-gap: 4.5rem;
-          }
+          /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
           .carousel-container {
               padding-bottom: 8rem;
               max-width: 80%;
@@ -1311,11 +1643,28 @@ export default function Home() {
             margin: auto;
             margin-bottom: 50px;
           }
-          footer {
-            justify-content: flex-end;
+         /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ footer {
+            -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
       
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+      
+            -webkit-box-direction: normal;
+      
+                -ms-flex-direction: column;
+      
+                    flex-direction: column;
             margin-top: 6rem;
             color: #F1F1F2;
             background-color: #224099;
@@ -1325,9 +1674,17 @@ export default function Home() {
             position: static;
             width: 90%;
           } 
-          .socials-grid {
+          /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.socials-grid {
             max-width: 10rem;
             top: 0rem;
+            display: -ms-grid;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(min(17px, 100%), 1fr));
             grid-gap: 1rem;
@@ -1372,9 +1729,17 @@ export default function Home() {
           .team {
             transform: translateX(-11px);
           }
-          .grid {
+          /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.grid {
             width: 60%;
             margin: auto;
+            display: -ms-grid;
             display: grid;
             min-width: 330px;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -1456,10 +1821,23 @@ export default function Home() {
    
           }
 
-          .pillContainer {
+          /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ .pillContainer {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: flex-end; 
-            justify-content: flex-start;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end; 
+            -webkit-box-pack: start; 
+                -ms-flex-pack: start; 
+                    justify-content: flex-start;
           }
           .section_1_bg{
             position: none;
@@ -1532,9 +1910,21 @@ export default function Home() {
             margin-bottom: 20px;
             margin-top: 20px;
           }
-          .vertical-reverse {
+         /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ .vertical-reverse {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column-reverse;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: reverse;
+                -ms-flex-direction: column-reverse;
+                    flex-direction: column-reverse;
           }
           .labelTitle {
             margin-bottom: 50px;           
@@ -1561,11 +1951,25 @@ export default function Home() {
 
           
           
-          
-          footer {
-            justify-content: flex-end;
+          /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
+footer {
+            -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             margin-top: 3rem;
             color: #F1F1F2;
             background-color: #224099;
@@ -1578,12 +1982,24 @@ export default function Home() {
           .social-logo {
             width: 1.5rem;
           }
-          .socials-grid {
+          /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.socials-grid {
              max-width: 15rem;
             /* top: 0rem; */
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
             padding-left: 4rem;
             /* display: grid; */
             /* grid-template-columns: repeat(auto-fill, minmax(min(100px, 150%), 1fr)); */
