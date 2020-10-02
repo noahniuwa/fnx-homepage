@@ -28,7 +28,6 @@ export default function Home() {
                 <p className="instructions em-1">Join our email list to get the latest news about FinNexus's upcoming decentralized derivative products.</p>
                 <button className="is-rounded button sign-up is-danger">Sign-up</button>
               </div>
-              <img className="section_1_bg" src="bgshape_01.svg" />
               <img className="section_1_large_bg" src="top_illustration.svg" />
             </div>
            

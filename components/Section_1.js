@@ -217,11 +217,10 @@ export default function Section_1(props) {
             background-color: #224099;
             background-size: 100% 800px;
             margin: auto;
-            width: 1200px;
-            color: #F1F1F2;
+             color: #F1F1F2;
             overflow: hidden;
-            height: 500px;  
-            width: 1600px;
+            height: 800px;  
+            width: 1400px;
             margin-bottom: 300px;
           }
          
@@ -236,16 +235,18 @@ export default function Section_1(props) {
             width: 1200px;
             z-index: 1;
             float: right;
+            height: 500px;
           }
           .section_1 {
             border-radius: 0 0 200px 200px;
             background-color: #224099;
             background-size: 100% 800px;
             margin: auto;
+            margin-bottom: 200px;
             color: #F1F1F2;
             overflow: hidden;
-            height: 600px;  
-            width: 1200px;
+            height: 700px;  
+            width: 95%;
           }
           
           .mainContents {
@@ -317,7 +318,7 @@ export default function Section_1(props) {
           
           .section_1 {
             border-radius: 0 0 50px 50px;
-            height: 620px;
+            height: 700px;
         
             border-radius: 0 0 50px 50px;
             background-color: #224099;

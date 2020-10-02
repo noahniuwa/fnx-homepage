@@ -11,16 +11,18 @@ export default function Home() {
     <div className="appContainer">
       <div className="sizeRestrictor">
         <main>
-          <Section_1 show_alt_bg={1} show_bg={0}>
+          <Section_1>
             <div className="main-contents">
               <h1 className="main-title">
-                About FinNexus
+                About FinNexus...
               </h1>
               <div className="main-aside">
-                <p className="section-2-text"> <span className="section-2-opener">Redefining finance is </span>
-                <span  className="section-2-closer">FinNexus's founding mission. The project was initiated by a core group of blockchain industry veterans in 2019 with a focus on offerring new DeFi products which offer greater diversity, convenience, and value offered</span> </p>
+                <p className="section-2-text"> <em><span className="section-2-opener">Redefining finance is </span></em>
+                <span  className="section-2-closer">FinNexus's founding mission. The project was initiated by a group of blockchain industry veterans in 2019 with a focus on offerring new DeFi products that offer greater diversity, convenience, and value to investors.</span> </p>
               </div>
             </div>
+            <img className="about_bg" src="bgshape_01.svg" />
+
           </Section_1>
       
           
@@ -29,7 +31,7 @@ export default function Home() {
             
             <div className="team core-team">
               <div className="team-header-container">
-                <h3 className="section-header em-3 team-title">Team</h3>
+                <h3 className="section-header em-3 team-title">Meet the Team</h3>
               </div>
             <div className="team-member-container">
               <TeamMember name="Boris Yang" title="Founder & CEO" image="BorisYang.png" />
@@ -135,7 +137,9 @@ export default function Home() {
           font-weight: 700;
           font-size: 40px;
           color: #9F66A9;
-          width: 1000px;
+          width: 250px;
+          padding-bottom: 40px;
+
         }
         .partners-title {
           width: 1000px;
@@ -156,18 +160,20 @@ export default function Home() {
           bottom: 1em;
         }
         .section_1_large_bg {
-          position: absolute;
+          position: relative;
           width: 650px;
           right: -10rem;
-          top: 1rem;
+          top: 800px;
           z-index: 1
         }
        .main-title {
           margin-top: 0em;
-           line-height: 4rem; 
+          line-height: 4rem; 
           font-weight: 900;
           width: 300px;
-          font-size: 4em;
+          font-size: 4.5em;
+          margin-bottom: 40px;
+
         }
         main {
           width: 100%;
@@ -190,16 +196,32 @@ export default function Home() {
         }
           
            
-          /* .section-2-closer {
-            font-size: 25px;
+          .section-2-closer {
+            font-size: 26px;
           }
           .section-2-opener {
-            font-size: 25px;
-            color: red;
+            font-size: 35px;
+            font-weight: 700;
           }
-          */
-
+         
+         .about_bg{
+            left: 800px;
+            bottom: 400px;
+            width: 1900px;
+            position: relative;
+            transform: scale(1, 1);
+          }
         @media (min-width: 1700px) {
+          .main-contents, .main-aside {
+            width: 600px;
+          }
+          .about_bg{
+            left: 800px;
+            bottom: 300px;
+            width: 1900px;
+            position: relative;
+            transform: scale(1, 1);
+          }
           .team-member-container {
            width: 100%;
           }
@@ -209,6 +231,10 @@ export default function Home() {
           }
           .team-title {
             font-size: 40px;
+            width: 250px;
+            padding-bottom: 40px;
+
+
           }
           .main-contents {
             display: block;
@@ -217,25 +243,52 @@ export default function Home() {
             padding-right: 0px;
             line-height: 1.5;
           }
-        
-          
           .team-member-container{
            width: 100%;
           }
-          
           .team  {
             width: 100%;
           }
-
           .team-size-restrictor {
             width: 1000px;
+          }
+         
+          .section-2-closer {
+            font-size: 22px;
+          }
+          .section-2-opener {
+            font-size: 35px;
+            font-weight: 700;
           }
         }
 
         @media (min-width: 1200px) and (max-width: 1700px) { 
+          .main-contents {
+            display: block;
+            padding-top: 0px;
+            padding-left: 30px;
+            padding-right: 0px;
+            line-height: 1.5;
+            width: 500px;
+          }
+          .about_bg{
+            left: 500px;
+            bottom: 300px;
+            width: 1900px;
+            position: relative;
+            transform: scale(1, 1);
+          }
+          .section-2-closer {
+            font-size: 22px;
+          }
+          .section-2-opener {
+            font-size: 35px;
+            font-weight: 700;
+          }
           .main-title {
-            line-height: 40px; 
-            font-size: 40px;
+            line-height: 65px; 
+            font-size: 65px;
+            padding-top: 80px;
           }
           .instructions {
             font-size: 16px;
@@ -257,6 +310,8 @@ export default function Home() {
           }
           .team-title {
             font-size: 40px;
+            padding-bottom: 40px;
+            width: 250px;
           }
           .partners-title {
             width: 1000px;
@@ -273,9 +328,32 @@ export default function Home() {
         }
 
         @media (min-width: 1024px) and (max-width: 1200px) {
+          .main-contents {
+            display: block;
+            padding-top: 0px;
+            padding-left: 30px;
+            padding-right: 0px;
+            line-height: 1.5;
+            width: 500px;
+          }
+          .about_bg{
+            left: 500px;
+            bottom: 300px;
+            width: 1900px;
+            position: relative;
+            transform: scale(1, 1);
+          }
+          .section-2-closer {
+            font-size: 22px;
+          }
+          .section-2-opener {
+            font-size: 35px;
+            font-weight: 700;
+          }
           .main-title {
-            line-height: 40px; 
-            font-size: 40px;
+            line-height: 65px; 
+            font-size: 65px;
+            padding-top: 80px;
           }
           .instructions {
             font-size: 16px;
@@ -298,6 +376,8 @@ export default function Home() {
           }
           .team-title {
             font-size: 40px;
+            width: 250px;
+            padding-bottom: 40px;
           }
           .partners-title {
             width: 1000px;
@@ -314,9 +394,33 @@ export default function Home() {
        }   
 
        @media (max-width: 1024px){
-        .main-title {
-            line-height: 40px; 
-            font-size: 40px;
+        .main-contents {
+            display: block;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            line-height: 1.5;
+            width: 500px;
+            min-width: 360px;
+          }
+          .about_bg{
+            left: 500px;
+            bottom: 300px;
+            width: 1900px;
+            position: relative;
+            transform: scale(1, 1);
+          }
+          .section-2-closer {
+            font-size: 22px;
+          }
+          .section-2-opener {
+            font-size: 35px;
+            font-weight: 700;
+          }
+          .main-title {
+            line-height: 65px; 
+            font-size: 75px;
+            padding-top: 80px;
           }
           .instructions {
             font-size: 16px;
@@ -341,9 +445,10 @@ export default function Home() {
           }
           .team-title {
             font-size: 40px;
-            width: 100%;
+            width: 250px;
             max-width: 800px;
             margin: auto;
+            padding-bottom: 40px;
           }
           .partners-title {
             width: 1000px;
@@ -359,10 +464,44 @@ export default function Home() {
           }   
        }
        @media (max-width: 700px){
-        .main-title {
-            line-height: 40px; 
-            font-size: 40px;
+        .main-contents {
+            display: block;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            line-height: 1.5;
+            width: 100%;
+            max-width: 330px;
           }
+          .main-aside {
+            width: 100%;
+            padding-top: 0px;
+            max-width: 300px;
+            margin-left: 30px;
+          }
+          .about_bg{
+            left: 500px;
+            bottom: 300px;
+            width: 1900px;
+            position: relative;
+            transform: scale(1, 1);
+          }
+          .section-2-closer {
+            font-size: 20px;
+          }
+          .section-2-opener {
+            font-size: 30px;
+            font-weight: 700;
+          }
+          .main-title {
+            box-sizing: content-box;
+            line-height: 65px; 
+            font-size: 50px;
+            padding-top: 80px;
+            max-width: 330px;
+            margin: auto;
+          }
+      
           .instructions {
             font-size: 16px;
           }
@@ -388,6 +527,8 @@ export default function Home() {
           }
           .team-title {
             font-size: 40px;
+            width: 250px;
+            padding-bottom: 40px;
           }
           .partners-title {
             max-width: 400px;
