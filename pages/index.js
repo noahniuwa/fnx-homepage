@@ -1,8 +1,7 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar'
-import TeamMember from '../components/TeamMember'
-import PartnerCarousel from '../components/PartnerCarousel'
-import ExchangesCarousel from '../components/ExchangesCarousel'
+import Footer from '../components/Footer'
+ 
 
 export default function Home() {
 
@@ -56,88 +55,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="team-section">
-            <div className="team-size-restrictor">
-            
-            <div className="team core-team">
-              <div className="team-header-container">
-                <h3 className="section-header em-3 team-title">Team</h3>
-              </div>
-            <div className="team-member-container">
-              <TeamMember name="Boris Yang" title="Founder & CEO" image="BorisYang.png" />
-              <TeamMember name="Bob Chen" title="Co-founder & CTO" image="BobChen.png" />
-              <TeamMember name="Ryan Tian" title="Financial Specialist" image="RyanTian.png" />
-              <TeamMember name="Veerender Singh" title="Community Manager" image="VeerenderSingh.png" />
-              <TeamMember name="Jack Tung" title="Legal Expert" image="JackTung.png" />
-              </div>
-            </div>
-           
-            <div className="team">
-              <div className="team-header-container">
-                <h3 className="section-header em-3 team-title">Advisory</h3>
-              </div>
-              <div className="team-member-container">
-                <TeamMember name="Nicholas Krapels" title="Strategy Advisor" image="NicholasKrapels.png" />
-                <TeamMember name="Noah Maizels" title="Marketing Adviser" image="NoahMaizels.png" />
-                <TeamMember name="Eason Zhang" title="FP of River Capital" image="EasonZhang.png" />
-                <TeamMember name="Jack Lu" title="Wanchain Founder" image="JackLu.png" />
-              </div>
-            
-            </div>
-            <img className="team_bg_image" src="bgshape_01.svg" />
-
-            </div>
-           
-          </div>
           
         </main>
-        <p className="partners-title em-3 sub-section-header">Partners</p>
-        <div className="carousel-container">
-          <PartnerCarousel />
-        </div>
-        <p className="exchanges-title em-3 sub-section-header">Exchanges</p>
-        <div className="carousel-container">
-          <ExchangesCarousel />
-        </div>
-        <footer>
-          <div className="footer_1">
-            <p className="socials-title">
-              <span className="big-text">Join</span> the FinNexus community 
-            </p>
-            <div className="socials-grid">
-              <a href="https://twitter.com/fin_nexus/">
-                <img className="social-logo" src="/twitter.svg" alt="social-logo" />
-              </a>
-              <a href="https://t.me/FinNexusOfficial">
-                <img className="social-logo" src="/telegram.svg" alt="social-logo" />
-              </a>
-              <a href="https://medium.com/finnexus/">
-                <img className="social-logo" src="/medium.svg" alt="social-logo" />
-              </a>
-              <a href="https://www.linkedin.com/company/finnexus/">
-                <img className="social-logo" src="/linkedin.svg" alt="social-logo" />
-              </a>
-              <a href="https://www.facebook.com/FinNexus/">
-                <img className="social-logo" src="/facebook.svg" alt="social-logo" />
-              </a>
-              <a href="https://discord.gg/bCDMHN7">
-                <img className="social-logo" src="/discord.svg" alt="social-logo" />
-              </a>
-              <a>
-                <img className="social-logo" src="/wechat.svg" alt="social-logo" />
-              </a>
-              <a href="mailto:info@finnexus.io">
-                <img className="social-logo" src="/email.svg" alt="social-logo" />
-              </a>
-
-            </div>
-          </div>
-
-          <div className="footer_2">
-            <img className="logo" src="/fnxLogo.svg" alt="FinNexus" width="150" height="100" />
-          </div>
-          <div className="footer_3">© 2020 FinNexus. All Rights Reserved.</div>
-        </footer>
+        
+        <Footer></Footer>
 
       </div>
 

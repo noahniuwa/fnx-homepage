@@ -34,7 +34,7 @@ export default function Navbar(props) {
               margin: auto;
               color: white;
               font-weight: 900;
-              line-height: 1.1rem;
+              line-height: 1.3rem;
               width: 10rem;
               font-size: 1em;
             }
@@ -44,7 +44,7 @@ export default function Navbar(props) {
               color: white;
               width: 10rem;
               font-weight: 300;
-              line-height: 1rem;
+              line-height: 1.3rem;
               font-size: 1em;
             }
             .team-member-frame {
@@ -62,9 +62,12 @@ export default function Navbar(props) {
               width: 175px;
               height: 200px;
               margin: 25px 50px;
-              transform: scale(1, 1);
+              transform: scale(1.1, 1.1);
               transition: all .1s ease-in-out;
             }
+            .team-member-container:hover {
+                transform: scale(1.2, 1.2);
+              }
             
             .team-header-container h3 {
               text-align: center;
@@ -72,17 +75,17 @@ export default function Navbar(props) {
 
             @media (max-width: 1024px) {
               .team-member-container {
-                transform: scale(.7, .7);
-                width: 145px;
+                transform: scale(.8, .8);
+                width: 125px;
                 height: 200px;
-                margin: 20px 20px;
+                margin: 40px 50px;
               }
               .team-member-container:hover {
-                transform: scale(.6, .6);
+                transform: scale(.7, .7);
               }
               .team-member-frame {
-                transform: scale(1.8, 1.8);
-                top: -6px;
+                transform: scale(1.85, 1.85);
+                top: -4px;
               }
               .team-member {
                 transform: scale(1.7, 1.7);
@@ -100,6 +103,30 @@ export default function Navbar(props) {
                 width: 210px;
                 line-height: 20px;
                 font-size: 25px;
+              }
+            }
+
+            @media (max-width: 700px){
+               
+              .team-member-container {
+                transform: scale(.6, .6);
+                width: 135px;
+                height: 200px;
+                margin: 0px 15px;
+              }
+              .team-member-title {
+                bottom: -10px;
+                right: -39px;
+                line-height: 25px;
+                
+              }
+              .team-name {
+                width: 210px;
+                line-height: 25px;
+                font-size: 25px;
+              }
+              .team-member-title {
+                right: -45px;
               }
             }
 

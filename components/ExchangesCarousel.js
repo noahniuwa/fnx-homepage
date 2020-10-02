@@ -33,11 +33,24 @@ function Carousel() {
 
 
       <style jsx>{`
-        @media (min-width: 1000px)   {
+             
+        .carousel-cell:hover {
+          transform: scale(1.2, 1.2);
+        }
         .carousel-cell {
+          transform: scale(1.1, 1.1);
+          transition: all .1s ease-in-out;
+          width: 20%; 
+          margin-right: 40px;
+        }
+        @media (min-width: 1000px)   {
+            
+         
+        .carousel-cell {
+         
           width: 20%; /* full width */
           /* height: 50%;   */
-          margin-right: 30px;
+          margin-right: 40px;
         }
       }
       

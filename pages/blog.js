@@ -4,16 +4,11 @@ import TeamMember from '../components/TeamMember'
 import PartnerCarousel from '../components/PartnerCarousel'
 import ExchangesCarousel from '../components/ExchangesCarousel'
 
-export default function Home() {
 
+
+export default function Home() {
   return (
     <div className="appContainer">
-      <Head>
-        <title>FinNexus Options</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"></link>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet"></link>
-      </Head>
       <div className="sizeRestrictor">
         <main>
           <header className="section_1">
@@ -21,14 +16,10 @@ export default function Home() {
             <div className="section_1_container"> 
               <div className="mainContents">
                 <h1 className="mainTitle">
-                  FinNexus Options v1.0
+                  FinNexus Team & Partners
                 </h1>
-                <div className="mainContentsText_1">
-                  FinNexus Protocol For Options is a pioneering multi-blockchain decentralized options protocol based on the innovative MASP (Multi-Asset Single Pool) liquidity model.
-                </div>
-                <p className="instructions em-1">Join our email list to get the latest news about FinNexus's upcoming decentralized derivative products.</p>
-                <button className="is-rounded button sign-up is-danger">Sign-up</button>
-              </div>
+                
+               </div>
               <img className="section_1_bg" src="bgshape_01.svg" />
               <img className="section_1_large_bg" src="top_illustration.svg" />
             </div>
@@ -36,25 +27,8 @@ export default function Home() {
        
           </header>
 
-          <div className="section_2">
-            <img className="section_2_img" src="earn.svg" />
-              <div className="section_2_imageAside">
-                <h3 className="section-2-header section-header">Earn Now!</h3>
-                <p className="section-2-text">With FPO v1.0, liquidity providers earn attractive rewards for trustlessly locking their assets in the the MASP liquidity pool.</p>
-                <div className="float-container section_2_button">
-                  <button className="is-rounded float-left button is-danger">Provide Liquidity</button>
-                </div>
-              </div>
-          </div>
-
-          <div className="section_3">
-            <img className="section_3_img" src="FNX_options.svg" />
-            <div className="section_3_imageAside">
-              <h3 className="section-3-header section-header"> Hedge & Leverage</h3>
-              <p className="section-3-text">FPO's wide variety of options makes it easy to find just the solution for your investment needs, and our MASP liquidity pool ensures you never need to worry if there's enough liquidity.</p>
-              <button className="is-rounded button section_ is-danger">Buy FPO Options</button>
-            </div>
-          </div>
+       
+ 
 
           <div className="team-section">
             <div className="team-size-restrictor">
@@ -370,6 +344,7 @@ export default function Home() {
           background-color: #224099;
           background-size: 100% 800px;
           margin: auto;
+          margin-bottom: 300px;
           width: 1200px;
           color: #F1F1F2;
           overflow: hidden;
