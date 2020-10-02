@@ -17,6 +17,12 @@ export default function Navbar(props) {
   
 
       <style jsx>{`
+              .team-member-container {
+                transform: scale(.7, .7);
+              }
+              .team-member-container:hover {
+                transform: scale(.8, .8);
+              } 
             .team-member-title {
               position: absolute;
               background-color: #224099;
@@ -75,13 +81,13 @@ export default function Navbar(props) {
 
             @media (max-width: 1024px) {
               .team-member-container {
-                transform: scale(.8, .8);
+                transform: scale(.7, .7);
                 width: 125px;
                 height: 200px;
                 margin: 40px 50px;
               }
               .team-member-container:hover {
-                transform: scale(.7, .7);
+                transform: scale(.8, .8);
               }
               .team-member-frame {
                 transform: scale(1.85, 1.85);
@@ -107,7 +113,13 @@ export default function Navbar(props) {
             }
 
             @media (max-width: 700px){
-               
+              .team-member-container {
+                transform: scale(.7, .7);
+              }
+              .team-member-container:hover {
+                transform: scale(.8, .8);
+              } 
+
               .team-member-container {
                 transform: scale(.6, .6);
                 width: 135px;
