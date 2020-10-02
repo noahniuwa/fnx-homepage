@@ -13,8 +13,14 @@ export default function Section_1(props) {
             </div>
           </header>
         <style jsx>{` 
-        
-      .em-3 {
+        /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ .em-3 {
           font-size: 3em;
         }
         .em-2 {
@@ -261,6 +267,8 @@ export default function Section_1(props) {
           }
           .section_1_container {
             width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             max-width: 1000px;
             margin-top: 80px;
@@ -298,6 +306,8 @@ export default function Section_1(props) {
             display: none;
           }
           .mainContentsText_1 {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             font-size: 24px;
             line-height: 1.3;
@@ -336,6 +346,7 @@ export default function Section_1(props) {
           
           
         }
+     
         `}</style>
       </div>
     )

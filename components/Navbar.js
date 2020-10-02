@@ -71,7 +71,14 @@ export default function Navbar() {
 
 
       <style jsx>{`
-        .navbar {
+        /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.navbar {
           margin: auto;
           
           min-width: 1000px;
@@ -161,6 +168,8 @@ export default function Navbar() {
           pointer-events: auto;
         }
         .navbar-menu {
+          -webkit-transition: top .4s ease-in-out;
+          -o-transition: top .4s ease-in-out;
           transition: top .4s ease-in-out;
           right: 0px;
           display: block;

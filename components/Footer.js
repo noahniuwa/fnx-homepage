@@ -43,9 +43,16 @@ export default function Footer() {
  
       <style jsx>{`
         
-       
+      /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ 
         
-        .social-logo {
+.social-logo {
             -webkit-filter: invert(100);
                      filter: invert(100);
         }      
@@ -104,10 +111,17 @@ export default function Footer() {
            }
           .socials-grid {
             max-width: 500px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             height: 80%;
             margin-left: 30px;
           }
@@ -143,10 +157,17 @@ export default function Footer() {
           .socials-grid {
             width: 80%;
             max-width: 200px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             margin-left: 40px;
           }
           
@@ -193,10 +214,17 @@ export default function Footer() {
             width: 80%;
             max-width: 200px;
             margin: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             height: 150px;
           }
           footer {
@@ -210,9 +238,16 @@ export default function Footer() {
             margin: auto;
             margin-top: auto;
             margin-bottom: 3em; 
-            justify-content: center;
+            -webkit-box-pack: center; 
+                -ms-flex-pack: center; 
+                    justify-content: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
           } 
            
         }

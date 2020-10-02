@@ -17,11 +17,22 @@ export default function Navbar(props) {
   
 
       <style jsx>{`
-              .team-member-container {
-                transform: scale(.7, .7);
+             /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ .team-member-container {
+                -webkit-transform: scale(.7, .7);
+                    -ms-transform: scale(.7, .7);
+                        transform: scale(.7, .7);
               }
               .team-member-container:hover {
-                transform: scale(.8, .8);
+                -webkit-transform: scale(.8, .8);
+                    -ms-transform: scale(.8, .8);
+                        transform: scale(.8, .8);
               } 
             .team-member-title {
               position: absolute;
@@ -56,7 +67,9 @@ export default function Navbar(props) {
             .team-member-frame {
               top: -3px;
               left: 6px;
-              transform: scale(1.11, 1.11);
+              -webkit-transform: scale(1.11, 1.11);
+                  -ms-transform: scale(1.11, 1.11);
+                      transform: scale(1.11, 1.11);
               position: absolute;
               z-index: 100;
             }
@@ -68,11 +81,17 @@ export default function Navbar(props) {
               width: 175px;
               height: 200px;
               margin: 25px 50px;
-              transform: scale(1.1, 1.1);
+              -webkit-transform: scale(1.1, 1.1);
+                  -ms-transform: scale(1.1, 1.1);
+                      transform: scale(1.1, 1.1);
+              -webkit-transition: all .1s ease-in-out;
+              -o-transition: all .1s ease-in-out;
               transition: all .1s ease-in-out;
             }
             .team-member-container:hover {
-                transform: scale(1.2, 1.2);
+                -webkit-transform: scale(1.2, 1.2);
+                    -ms-transform: scale(1.2, 1.2);
+                        transform: scale(1.2, 1.2);
               }
             
             .team-header-container h3 {
@@ -81,20 +100,28 @@ export default function Navbar(props) {
 
             @media (max-width: 1024px) {
               .team-member-container {
-                transform: scale(.7, .7);
+                -webkit-transform: scale(.7, .7);
+                    -ms-transform: scale(.7, .7);
+                        transform: scale(.7, .7);
                 width: 125px;
                 height: 200px;
                 margin: 40px 50px;
               }
               .team-member-container:hover {
-                transform: scale(.8, .8);
+                -webkit-transform: scale(.8, .8);
+                    -ms-transform: scale(.8, .8);
+                        transform: scale(.8, .8);
               }
               .team-member-frame {
-                transform: scale(1.85, 1.85);
+                -webkit-transform: scale(1.85, 1.85);
+                    -ms-transform: scale(1.85, 1.85);
+                        transform: scale(1.85, 1.85);
                 top: -4px;
               }
               .team-member {
-                transform: scale(1.7, 1.7);
+                -webkit-transform: scale(1.7, 1.7);
+                    -ms-transform: scale(1.7, 1.7);
+                        transform: scale(1.7, 1.7);
               }
               .team-title {
                 font-size: 18px;
@@ -114,14 +141,20 @@ export default function Navbar(props) {
 
             @media (max-width: 700px){
               .team-member-container {
-                transform: scale(.7, .7);
+                -webkit-transform: scale(.7, .7);
+                    -ms-transform: scale(.7, .7);
+                        transform: scale(.7, .7);
               }
               .team-member-container:hover {
-                transform: scale(.8, .8);
+                -webkit-transform: scale(.8, .8);
+                    -ms-transform: scale(.8, .8);
+                        transform: scale(.8, .8);
               } 
 
               .team-member-container {
-                transform: scale(.6, .6);
+                -webkit-transform: scale(.6, .6);
+                    -ms-transform: scale(.6, .6);
+                        transform: scale(.6, .6);
                 width: 135px;
                 height: 200px;
                 margin: 0px 15px;
@@ -141,7 +174,6 @@ export default function Navbar(props) {
                 right: -45px;
               }
             }
-
       `}</style>
     </div>
   )

@@ -34,11 +34,24 @@ function Carousel() {
 
       <style jsx>{`
              
-        .carousel-cell:hover {
-          transform: scale(1.2, 1.2);
+      /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+  .carousel-cell:hover {
+          -webkit-transform: scale(1.2, 1.2);
+              -ms-transform: scale(1.2, 1.2);
+                  transform: scale(1.2, 1.2);
         }
         .carousel-cell {
-          transform: scale(1.1, 1.1);
+          -webkit-transform: scale(1.1, 1.1);
+              -ms-transform: scale(1.1, 1.1);
+                  transform: scale(1.1, 1.1);
+          -webkit-transition: all .1s ease-in-out;
+          -o-transition: all .1s ease-in-out;
           transition: all .1s ease-in-out;
           width: 20%; 
           margin-right: 40px;
