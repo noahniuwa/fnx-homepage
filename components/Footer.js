@@ -200,9 +200,9 @@ export default function Footer() {
             height: 150px;
           }
           footer {
-            width: 90%;
+            width: 100%;
             height: 550px;
-            border-radius: 100px 100px 0 0;
+            border-radius: 50px 50px 0 0;
           }
           .footer_1 {
             width: 100%;

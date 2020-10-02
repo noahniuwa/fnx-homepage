@@ -654,7 +654,8 @@ export default function Home() {
 
         @media (max-width: 1024px) {
           .section_1_container {
-            width: 100%;
+            width: 90%;
+            min-width: 360px;
             margin: auto;
             overflow: visible;
             height: 300px;
@@ -666,23 +667,24 @@ export default function Home() {
             width: 100%;
           }
           .mainContents {
-            padding-left: 30px;
-            width: 80%;  
+             width: 100%;  
+            margin: auto;
           }
           .mainTitle {
-            line-height: 40px; 
+            line-height: 50px; 
             font-size: 40px;
           }
           .instructions {
-            font-size: 16px;
+            font-size: 18px;
           }
           .mainContentsText_1 {
-            font-size: 20px;
+            font-size: 22px;
           }
           .section_1_large_bg {
             width: 400px;
             right: -15rem;
             top: 1rem; 
+            display: none;
           }
          
           .section_2_imageAside {
@@ -729,97 +731,16 @@ export default function Home() {
             flex-direction: column;
             align-items: center;
             margin: auto;
-            margin-bottom: 200px;
+            margin-bottom: 50px;
             top: -30px;;
           }
-          .team-title {
-            font-size: 40px;
-          }
-          .socials-title {
-            font-size: 20px;
-            width: 50%;
-            bottom: 0.2em;
-            left: 30px;
-          }
-          .social-logo {
-            width: 20px;
-            margin: auto 5px;
-          }
-          .socials-grid {
-            width: 40%;
-          }
-          footer {
-            width: 100%;
-            height: 350px;
-            border-radius: 50px 50px 0 0;
-            
-          }
-          .footer_1 {
-            width: 95%;
-            padding-bottom: 50px;
-            margin-top: auto;
-            margin-bottom: 3em; 
-            justify-content: space-between;
-          } 
-          .partners-title {
-            width: 80%;
-            font-size: 40px;
-          }
-          .exchanges-title {
-            max-width: 80%;
-            font-size: 40px;
-          }  
           
-          .team-member-container{
-            display: flex;
-            flex-direction: row;
-          }
-          .team-header-container {
-          width: 100%;
-          display: block;
-          }
-          .team-member-container{
-          width: 100%;
-          }
-          .team {
-            width: 100%;
-            max-width: 500px;
-            min-width: 360px;
-            padding: 0;
            
-            display: flex;
-            flex-direction: column;
-          }
+         
           
-          .team_bg_image {
           
-          }
-        
-          .team-size-restrictor {
-            width: 100%;
-          }
-          .team-title {
-            width: 100%;
-            margin: 1em auto;
-            font-weight: 900;
-            display: block;
-          }
           
-          .team-section {
-            /* bottom: 200px; */
-            width: 100%;
-            justify-content: center;
-            margin: auto;
-            /* padding-bottom: 80px; */
-            padding-top: 100px;
-            padding-left: 0px;
-            padding-right: 0px;
-            display: flex;
-            flex-wrap: wrap;
-            background-color: rgba(159, 102, 169, 0.2);
-        
-          }
-            
+          
         }
       `}</style>
     </div>
