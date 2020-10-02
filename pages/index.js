@@ -1,8 +1,7 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar'
-import TeamMember from '../components/TeamMember'
-import PartnerCarousel from '../components/PartnerCarousel'
-import ExchangesCarousel from '../components/ExchangesCarousel'
+import Footer from '../components/Footer'
+ 
 
 export default function Home() {
 
@@ -29,7 +28,6 @@ export default function Home() {
                 <p className="instructions em-1">Join our email list to get the latest news about FinNexus's upcoming decentralized derivative products.</p>
                 <button className="is-rounded button sign-up is-danger">Sign-up</button>
               </div>
-              <img className="section_1_bg" src="bgshape_01.svg" />
               <img className="section_1_large_bg" src="top_illustration.svg" />
             </div>
            
@@ -56,88 +54,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="team-section">
-            <div className="team-size-restrictor">
-            
-            <div className="team core-team">
-              <div className="team-header-container">
-                <h3 className="section-header em-3 team-title">Team</h3>
-              </div>
-            <div className="team-member-container">
-              <TeamMember name="Boris Yang" title="Founder & CEO" image="BorisYang.png" />
-              <TeamMember name="Bob Chen" title="Co-founder & CTO" image="BobChen.png" />
-              <TeamMember name="Ryan Tian" title="Financial Specialist" image="RyanTian.png" />
-              <TeamMember name="Veerender Singh" title="Community Manager" image="VeerenderSingh.png" />
-              <TeamMember name="Jack Tung" title="Legal Expert" image="JackTung.png" />
-              </div>
-            </div>
-           
-            <div className="team">
-              <div className="team-header-container">
-                <h3 className="section-header em-3 team-title">Advisory</h3>
-              </div>
-              <div className="team-member-container">
-                <TeamMember name="Nicholas Krapels" title="Strategy Advisor" image="NicholasKrapels.png" />
-                <TeamMember name="Noah Maizels" title="Marketing Adviser" image="NoahMaizels.png" />
-                <TeamMember name="Eason Zhang" title="FP of River Capital" image="EasonZhang.png" />
-                <TeamMember name="Jack Lu" title="Wanchain Founder" image="JackLu.png" />
-              </div>
-            
-            </div>
-            <img className="team_bg_image" src="bgshape_01.svg" />
-
-            </div>
-           
-          </div>
           
         </main>
-        <p className="partners-title em-3 sub-section-header">Partners</p>
-        <div className="carousel-container">
-          <PartnerCarousel />
-        </div>
-        <p className="exchanges-title em-3 sub-section-header">Exchanges</p>
-        <div className="carousel-container">
-          <ExchangesCarousel />
-        </div>
-        <footer>
-          <div className="footer_1">
-            <p className="socials-title">
-              <span className="big-text">Join</span> the FinNexus community 
-            </p>
-            <div className="socials-grid">
-              <a href="https://twitter.com/fin_nexus/">
-                <img className="social-logo" src="/twitter.svg" alt="social-logo" />
-              </a>
-              <a href="https://t.me/FinNexusOfficial">
-                <img className="social-logo" src="/telegram.svg" alt="social-logo" />
-              </a>
-              <a href="https://medium.com/finnexus/">
-                <img className="social-logo" src="/medium.svg" alt="social-logo" />
-              </a>
-              <a href="https://www.linkedin.com/company/finnexus/">
-                <img className="social-logo" src="/linkedin.svg" alt="social-logo" />
-              </a>
-              <a href="https://www.facebook.com/FinNexus/">
-                <img className="social-logo" src="/facebook.svg" alt="social-logo" />
-              </a>
-              <a href="https://discord.gg/bCDMHN7">
-                <img className="social-logo" src="/discord.svg" alt="social-logo" />
-              </a>
-              <a>
-                <img className="social-logo" src="/wechat.svg" alt="social-logo" />
-              </a>
-              <a href="mailto:info@finnexus.io">
-                <img className="social-logo" src="/email.svg" alt="social-logo" />
-              </a>
-
-            </div>
-          </div>
-
-          <div className="footer_2">
-            <img className="logo" src="/fnxLogo.svg" alt="FinNexus" width="150" height="100" />
-          </div>
-          <div className="footer_3">© 2020 FinNexus. All Rights Reserved.</div>
-        </footer>
+        
+        <Footer></Footer>
 
       </div>
 
@@ -734,7 +654,8 @@ export default function Home() {
 
         @media (max-width: 1024px) {
           .section_1_container {
-            width: 100%;
+            width: 90%;
+            min-width: 360px;
             margin: auto;
             overflow: visible;
             height: 300px;
@@ -746,23 +667,24 @@ export default function Home() {
             width: 100%;
           }
           .mainContents {
-            padding-left: 30px;
-            width: 80%;  
+             width: 100%;  
+            margin: auto;
           }
           .mainTitle {
-            line-height: 40px; 
+            line-height: 50px; 
             font-size: 40px;
           }
           .instructions {
-            font-size: 16px;
+            font-size: 18px;
           }
           .mainContentsText_1 {
-            font-size: 20px;
+            font-size: 22px;
           }
           .section_1_large_bg {
             width: 400px;
             right: -15rem;
             top: 1rem; 
+            display: none;
           }
          
           .section_2_imageAside {
@@ -809,97 +731,16 @@ export default function Home() {
             flex-direction: column;
             align-items: center;
             margin: auto;
-            margin-bottom: 200px;
+            margin-bottom: 50px;
             top: -30px;;
           }
-          .team-title {
-            font-size: 40px;
-          }
-          .socials-title {
-            font-size: 20px;
-            width: 50%;
-            bottom: 0.2em;
-            left: 30px;
-          }
-          .social-logo {
-            width: 20px;
-            margin: auto 5px;
-          }
-          .socials-grid {
-            width: 40%;
-          }
-          footer {
-            width: 100%;
-            height: 350px;
-            border-radius: 50px 50px 0 0;
-            
-          }
-          .footer_1 {
-            width: 95%;
-            padding-bottom: 50px;
-            margin-top: auto;
-            margin-bottom: 3em; 
-            justify-content: space-between;
-          } 
-          .partners-title {
-            width: 80%;
-            font-size: 40px;
-          }
-          .exchanges-title {
-            max-width: 80%;
-            font-size: 40px;
-          }  
           
-          .team-member-container{
-            display: flex;
-            flex-direction: row;
-          }
-          .team-header-container {
-          width: 100%;
-          display: block;
-          }
-          .team-member-container{
-          width: 100%;
-          }
-          .team {
-            width: 100%;
-            max-width: 500px;
-            min-width: 360px;
-            padding: 0;
            
-            display: flex;
-            flex-direction: column;
-          }
+         
           
-          .team_bg_image {
           
-          }
-        
-          .team-size-restrictor {
-            width: 100%;
-          }
-          .team-title {
-            width: 100%;
-            margin: 1em auto;
-            font-weight: 900;
-            display: block;
-          }
           
-          .team-section {
-            /* bottom: 200px; */
-            width: 100%;
-            justify-content: center;
-            margin: auto;
-            /* padding-bottom: 80px; */
-            padding-top: 100px;
-            padding-left: 0px;
-            padding-right: 0px;
-            display: flex;
-            flex-wrap: wrap;
-            background-color: rgba(159, 102, 169, 0.2);
-        
-          }
-            
+          
         }
       `}</style>
     </div>

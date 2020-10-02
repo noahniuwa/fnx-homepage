@@ -1,5 +1,5 @@
- import { useState } from 'react';
-
+import { useState } from 'react';
+import Link from 'next/link'
 
 export default function Navbar() {
   const [menu, setMenu] = useState(0);
@@ -12,43 +12,57 @@ export default function Navbar() {
       <nav className="navbar is-primary" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <div className="navbar-item"  >
-            <img className="logo" src="/fnxLogo.svg" alt="FinNexus"  />
+            <Link href="/">
+              <a className="navbar-item"> <img className="logo" src="/fnxLogo.svg" alt="FinNexus"  /></a>
+            </Link>
+            
+            
            </div>
-            <a role="button" onClick={handleMenuClick} className={`navbar-burger burger ${menu === 0 ? "" : "is-active"}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
+            <a role="button" onClick={handleMenuClick} className={`navbar-burger  ${menu === 0 ? "" : "is-active"}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span className="burger burger-1" aria-hidden="true"></span>
+              <span className="burger burger-2" aria-hidden="true"></span>
+              <span className="burger burger-3" aria-hidden="true"></span>
             </a>
         </div>
 
         <div id="basicNavbar" className={`navbar-menu ${menu === 0 ? "" : "is-active"}`}>
           <div className="navbar-end">
-            <a className="navbar-item">
-              Blog
-            </a>
-            <a className="navbar-item">
-              Documentation
-            </a>
+          
+
+            <Link href="/">
+              <a className="navbar-item">Home</a>
+            </Link>
+            <Link href="https://www.docs.finnexus.io/">
+              <a  target="_blank" className="navbar-item">Documentation</a>
+            </Link>  
+            <Link href="about">
+              <a className="navbar-item">About</a>
+            </Link>
+            <Link href="https://medium.com/finnexus">
+              <a className="navbar-item">Blog</a>
+            </Link>
+           
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">
                 Products
               </a>
               <div className="navbar-dropdown">
-                <a className="navbar-item">
-                  FNX Mining
-                </a>
-                <a className="navbar-item">
-                  FPO 1.0
-                </a>
-                <a className="navbar-item">
-                  FPO 0.1
-                </a>
-                <a className="navbar-item">
-                  Wandora's Box
-                </a>
-                <a className="navbar-item">
-                  Jack's Pot
-                </a>
+                <Link href="https://liquidity.finnexus.io/">
+                  <a  target="_blank" className="navbar-item">FNX Mining</a>
+                </Link>  
+                <Link href="https://options-v2-testnet.vercel.app/#/">
+                  <a  target="_blank" className="navbar-item">FPO v1.0</a>
+                </Link>
+                <Link href="https://options.finnexus.io/#/">
+                  <a  target="_blank" className="navbar-item">FPO v0.1</a>
+                </Link>
+                <Link href="https://wandora.finnexus.app/#/">
+                  <a  target="_blank" className="navbar-item">Wandora Box</a>
+                </Link>
+                <Link href="https://jackspot.finnexus.app/#/">
+                  <a  target="_blank" className="navbar-item">Jack's Pot</a>
+                </Link>
+              
               </div>
             </div>
           </div>
@@ -57,9 +71,17 @@ export default function Navbar() {
 
 
       <style jsx>{`
-        .navbar {
+        /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.navbar {
           margin: auto;
-          width: 900px;
+          
+          min-width: 1000px;
         }
         .navbar-item img {
           width: 160px;
@@ -86,23 +108,45 @@ export default function Navbar() {
         }
       }
  
-      @media (max-width: 1200px){
+      @media (min-width: 1000px) and (max-width: 1700px){
         .navbar {
-          width: 900px;
+          width: 1000px;
         }
       }
+      
 
-      @media (max-width: 700px){
+      @media (max-width: 360px){
         .navbar {
           margin: auto;
-          width: 400px;
+          min-width: 1000px;
         }
       }
       @media (max-width: 1024px){
-        .navbar {
+        .navbar-burger, span:nth-child(1) {
+          left: 0px; 
+        }
+        .navbar-burger, span:nth-child(2) {
+          left: 0px;      
+        }
+        .navbar-burger, span:nth-child(3) {
+          left: 0px;
+        }
+        .burger {
+          position: relative;
+          width: 40px;
           margin: auto;
-          max-width: 600px;
-          width: 100%;
+          right: 500px;
+          height: 2px;
+        } 
+        .navbar-burger {
+          width: 60px;
+          height: 60px;
+          
+        }
+        .navbar {
+          max-width: 1000px;
+          min-width: 90%;
+          margin: auto;
         }
         .navbar-item {
           font-size: 17px;
@@ -113,23 +157,25 @@ export default function Navbar() {
           position: absolute;
         }
         .logo {
-          max-width: 900px;
+          max-width: 400px;
           margin-top: 30px;
         }
           
         .navbar-menu.is-active {
-          top: 60px;
+          top: 80px;
           opacity: 1;
           position: absolute;
           pointer-events: auto;
         }
         .navbar-menu {
+          -webkit-transition: top .4s ease-in-out;
+          -o-transition: top .4s ease-in-out;
           transition: top .4s ease-in-out;
           right: 0px;
           display: block;
           width: 100%;
           position: absolute;  
-          top: -450px;
+          top: -600px;
           pointer-events: none;
         }
       }
@@ -137,5 +183,4 @@ export default function Navbar() {
        
       `}</style>
     </div>
-  )
-}
+    )}

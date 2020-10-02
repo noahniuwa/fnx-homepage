@@ -36,7 +36,7 @@ export default function PurplePill(props) {
 @media (min-width:1600px) {
      
       
-    .label-options {
+            .label-options {
                 text-align: center
             }
             .versionLabel {

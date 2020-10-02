@@ -36,7 +36,14 @@ function Carousel() {
 
 
       <style jsx>{`
-      @media (min-width: 1000px)   {
+     /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+ @media (min-width: 1000px)   {
         .carousel-cell {
           width: 20%; /* full width */
           /* height: 50%;   */
