@@ -1,8 +1,19 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import Bowser from "bowser"; // ES6 (and TypeScript with --esModuleInterop enabled)
 
 
 export default function Navbar(props) {
-  
+    const [currentBrowser, setBrowser] = useState("")
+    // Similar to componentDidMount and componentDidUpdate:
+    let browser =""
+    useEffect(() => {
+      // Update the document title using the browser API
+      browser = Bowser.getParser(window.navigator.userAgent);
+      let name = browser.getBrowser()
+      setBrowser(name)
+      console.log(name);
+      console.log(currentBrowser)
+     }, []);
   return (
      
     <div className="team-member-container">
@@ -65,6 +76,7 @@ export default function Navbar(props) {
               font-size: 1em;
             }
             .team-member-frame {
+              display: ${currentBrowser.name === "Internet Explorer" || currentBrowser.name === "Microsoft Edge" ? "none" : "block"};
               top: -3px;
               left: 6px;
               -webkit-transform: scale(1.11, 1.11);
