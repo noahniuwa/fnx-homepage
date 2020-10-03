@@ -214,8 +214,7 @@ export default function Home() {
           font-size: 1.3em;
         }
         .section_3_img {  
-          -webkit-filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
-                  filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
+          filter: drop-shadow(0px 5px 8px rgba(9,9,9,0.2));
           width: 650px;
           transform: translateY(-50px);
           z-index: 10;
@@ -224,6 +223,7 @@ export default function Home() {
           line-height: 1em;
           font-weight: 900;
           width: 90%;
+          font-size: 40px;
         }
         .section_3 {
           margin: auto;
@@ -253,14 +253,16 @@ export default function Home() {
           width: 80%;
         }
         .section_2_img {  
-          -webkit-filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
-                  filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
+          filter: drop-shadow(0px 5px 8px rgba(9,9,9,0.2));
         }
         .section-2-header {
           line-height: 1em;
           font-weight: 900;
           width: 90%;
+          font-size: 40px;
+
         }
+        
         .section_2 {
           margin: auto;
           margin-top: 150px;
@@ -366,10 +368,7 @@ export default function Home() {
           font-size: 30px;
           width: 30%;
         }
-        .social-logo {
-          width: 40px;
-          margin-right: 20px;
-        }
+       
         .socials-grid {
           width: 30%;
           display: flex;
@@ -419,6 +418,7 @@ export default function Home() {
 
 
         @media (min-width: 1700px) {
+          
           .section_1_container {
             width: 1200px;
             margin: auto;
@@ -429,9 +429,7 @@ export default function Home() {
             height: 700px;  
             width: 1600px;
           }
-          .section-2-header {
-           font-size: 40px;
-          }
+          
           .section-23-header {
            font-size: 40px;
           }
@@ -514,25 +512,8 @@ export default function Home() {
             justify-content: center;
             width: 1200px;
           }
-          .team-size-restrictor {
-            width: 1000px;
-          }
-          .team-title {
-            font-size: 40px;
-          }
-          .socials-title {
-            font-size: 25px;
-            width: 40%;
-            bottom: 0.2em;
-            left: 50px;
-          }
-          .social-logo {
-            width: 30px;
-            margin-right: 15px;
-          }
-          .socials-grid {
-            width: 40%;
-          }
+        
+          
           footer {
             max-width: 1200px;
             width: 90%;

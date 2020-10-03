@@ -6,11 +6,16 @@
 
 
 // Globals
-*, .carousel-cell,.flickity-viewport {
+*, .carousel-cell, .carousel-container, .flickity-viewportm, .flickity-slider {
     overflow: visible;
     box-sizing: content-box;
     font-family: 'Noto Sans', sans-serif;
-  }
+   }
+
+.flickity-button {
+  // border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 // Set your brand colors
 $purple: #8a4d76;
 $pink: #fa7c91;

@@ -40,25 +40,20 @@ function Carousel() {
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
+    img {
+      border-radius: 10px;
+      box-shadow: 4px 4px 0 0 rgba(0,0,0,0.1);
 
-  .carousel-cell:hover {
-          -webkit-transform: scale(1.2, 1.2);
-              -ms-transform: scale(1.2, 1.2);
-                  transform: scale(1.2, 1.2);
-        }
+    }
+   
         .carousel-cell {
-          -webkit-transform: scale(1.1, 1.1);
-              -ms-transform: scale(1.1, 1.1);
-                  transform: scale(1.1, 1.1);
-          -webkit-transition: all .1s ease-in-out;
-          -o-transition: all .1s ease-in-out;
-          transition: all .1s ease-in-out;
+          
           width: 20%; 
           margin-right: 40px;
+          z-index: 1000;
         }
         @media (min-width: 1000px)   {
-            
-         
+
         .carousel-cell {
          
           width: 20%; /* full width */

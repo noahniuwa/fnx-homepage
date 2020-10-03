@@ -99,7 +99,12 @@ export default function Footer() {
           padding-bottom: 5px
         }
 
-
+          .social-logo {
+            width: 30px;
+            margin-right: 15px;
+ 
+            padding-bottom:10px;
+          }
         @media (min-width: 1700px) {
              
              

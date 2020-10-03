@@ -85,7 +85,7 @@ export default function Home() {
           margin: auto auto 5rem;
           width: 1000px;
           bottom: 2.5em;
-          overflow: hidden;
+          overflow-y: visible;
         }
         .team-member-container{
           display: flex;
@@ -124,7 +124,7 @@ export default function Home() {
           width: 100%;
           justify-content: center;
           margin: auto;
-          
+          padding-bottom: 100px;
           display: flex;
           flex-wrap: wrap;
           background-color: rgba(159, 102, 169, 0.2);

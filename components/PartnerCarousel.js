@@ -42,6 +42,11 @@ function Carousel() {
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
+img {
+      border-radius: 10px;
+      box-shadow: 4px 4px 0 0 rgba(0,0,0,0.1);
+
+    }
 
  @media (min-width: 1000px)   {
         .carousel-cell {
