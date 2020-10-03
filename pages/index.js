@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Link from 'next/link'
+
  
 
 export default function Home() {
@@ -40,7 +42,11 @@ export default function Home() {
                 <h3 className="section-2-header section-header">Earn Now!</h3>
                 <p className="section-2-text">With FPO v1.0, liquidity providers earn attractive rewards for trustlessly locking their assets in the the MASP liquidity pool.</p>
                 <div className="float-container section_2_button">
-                  <button className="is-rounded float-left button is-danger">Provide Liquidity</button>
+                <Link href="https://options-v2-testnet.vercel.app/#/">
+                  <a  target="_blank">
+                    <button className="is-rounded float-left button is-danger">Provide Liquidity</button>
+                  </a>
+                </Link>
                 </div>
               </div>
           </div>
@@ -50,8 +56,12 @@ export default function Home() {
             <div className="section_3_imageAside">
               <h3 className="section-3-header section-header"> Hedge & Leverage</h3>
               <p className="section-3-text">FPO's wide variety of options makes it easy to find just the solution for your investment needs, and our MASP liquidity pool ensures you never need to worry if there's enough liquidity.</p>
-              <button className="is-rounded button section_ is-danger">Buy FPO Options</button>
-            </div>
+              <Link href="https://options-v2-testnet.vercel.app/#/">
+                  <a  target="_blank">
+                    <button className="is-rounded float-left button is-danger">Buy FPO Options</button>
+                  </a>
+                </Link>
+             </div>
           </div>
 
           
