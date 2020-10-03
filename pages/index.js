@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar'
+import Section_1 from '../components/Section_1'
+
 import Footer from '../components/Footer'
 import Link from 'next/link'
 
@@ -17,25 +19,22 @@ export default function Home() {
       </Head>
       <div className="sizeRestrictor">
         <main>
-          <header className="section_1">
-            <Navbar />
-            <div className="section_1_container"> 
-              <div className="mainContents">
+          <Section_1>
+            <div className="mainContents">
+              <div className="main_text_container">
                 <h1 className="mainTitle">
                   FinNexus Options v1.0
                 </h1>
                 <div className="mainContentsText_1">
                   FinNexus Protocol For Options is a pioneering multi-blockchain decentralized options protocol based on the innovative MASP (Multi-Asset Single Pool) liquidity model.
                 </div>
-                <p className="instructions em-1">Join our email list to get the latest news about FinNexus's upcoming decentralized derivative products.</p>
+                <div className="instructions">Join our email list to get the latest news about FinNexus's upcoming decentralized derivative products.</div>
                 <button className="is-rounded button sign-up is-danger">Sign-up</button>
+                <img className="section_1_large_bg" src="top_illustration.svg" />
               </div>
-              <img className="section_1_large_bg" src="top_illustration.svg" />
             </div>
-           
-       
-          </header>
-
+          </Section_1>
+          
           <div className="section_2">
             <img className="section_2_img" src="earn.svg" />
               <div className="section_2_imageAside">
@@ -44,7 +43,7 @@ export default function Home() {
                 <div className="float-container section_2_button">
                 <Link href="https://options-v2-testnet.vercel.app/#/">
                   <a  target="_blank">
-                    <button className="is-rounded float-left button is-danger">Provide Liquidity</button>
+                    <button className="is-rounded float-left section-2-button button is-danger">Provide Liquidity</button>
                   </a>
                 </Link>
                 </div>
@@ -58,7 +57,7 @@ export default function Home() {
               <p className="section-3-text">FPO's wide variety of options makes it easy to find just the solution for your investment needs, and our MASP liquidity pool ensures you never need to worry if there's enough liquidity.</p>
               <Link href="https://options-v2-testnet.vercel.app/#/">
                   <a  target="_blank">
-                    <button className="is-rounded float-left button is-danger">Buy FPO Options</button>
+                    <button className="is-rounded float-left section-2-button button is-danger">Buy FPO Options</button>
                   </a>
                 </Link>
              </div>
@@ -72,48 +71,29 @@ export default function Home() {
       </div>
 
       <style jsx>{`
-        .em-3 {
-          font-size: 3em;
-        }
-        .em-2 {
-          font-size: 2em;
-        }
-        .em-1 {
-          font-size: 1em;
-        }
-        .em-4 {
-          font-size: 4em;
-        }
-        .em-5 {
-          font-size: 5em;
-        }
+        
         .section-header {
-            color: #9F66A9;
-          }
+          color: #9F66A9;
+        }
            
         main {
           overflow: visible: 
         }
         .float-left { 
-            float: left
+          float: left
         }
         strong {
-            color: inherit
+          color: inherit
         }
         * {
           -webkit-box-sizing: border-box;
                   box-sizing: border-box;
-          position: relative
+          position: relative;
         }
         .float-right {
-          float: right
+          float: right;
         }
-        .instructions {
-          font-size: 16px;
-          font-weight: 400;
-          font-style: italic;
-          margin-bottom: 1em;
-        }
+        
         .sub-section-header {
           color: #9F66A9;   
         }
@@ -129,102 +109,26 @@ export default function Home() {
           display: none;
           width: 0;
           -ms-overflow-style: none;
-          scrollbar-width: none
+          scrollbar-width: none;
         }
         .appContainer, main {
           position: relative;
-          overflow: hidden
-        }
-        .carousel-container {
-          padding-bottom: 3rem;
-          max-width: 80%;
-          margin: auto auto 5rem;
-          width: 1200px;
-          bottom: 2.5em;
-        }
-        .team-member-container{
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          margin: auto;
-          flex-wrap: wrap;
-        }
-        .team-header-container {
-          /* min-width: 500px; */
-          margin-bottom: 0rem;
-          text-align: center
-        }
-        .team {
-          /* width: 1000px; */
-          justify-content: center;
-          margin: auto;
-          margin-bottom: 100px;
-          padding: 0px 30px;
-          padding-bottom: 100px;
-          display: flex;
-          flex-wrap: wrap;
-          background-color: rgb(208, 180, 213);
-          border-radius: 50px;
-          border: 15px solid rgba(159, 102, 169, 0.08);
-        }
-        .team_bg_image {
-          position: absolute;
-          bottom: 500px;
-     
-          right: -500px;
-          width: 800px;
-          z-index: -10;
-        }
-        .team-section {
-          bottom: 150px;
-          width: 100%;
-          justify-content: center;
-          margin: auto;
-          /* padding-bottom: 80px; */
-          padding-top: 100px;
-          padding-left: 100px;
-          padding-right: 100px;
-          display: flex;
-          flex-wrap: wrap;
-          background-color: rgba(159, 102, 169, 0.2);
-         
-        }
-          .team-size-restrictor {
-            max-width: 1920px;
-          }
-        .team-title {
-          /* width: 750px; */
-          margin: 1em auto;
-          font-weight: 900;
-        }
-        .partners-title {
-          width: 1200px;
-          margin: auto;
-          bottom: 1em;
-          margin-bottom: 1em;
-          font-weight: 900;
-        }
-        .exchanges-title {
-          width: 1200px;
-          margin: auto;
-          margin-top: 2em;
-          margin-bottom: 1em;
-          font-weight: 900;
-          bottom: 1em;
+          overflow: hidden;
         }
         .section_3_imageAside {
           width: 500px; 
         }
         .section-3-text {
-          width: 80%;
+          width: 100%;
           margin: 1em 0;
           font-size: 1.3em;
+          line-height: 25px;
+           
         }
         .section_3_img {  
           filter: drop-shadow(0px 5px 8px rgba(9,9,9,0.2));
           width: 650px;
-          transform: translateY(-50px);
-          z-index: 10;
+           z-index: 10;
         }
         .section-3-header {
           line-height: 1em;
@@ -234,7 +138,6 @@ export default function Home() {
         }
         .section_3 {
           margin: auto;
-          margin-bottom: 100px;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -245,19 +148,17 @@ export default function Home() {
           -webkit-box-pack: justify;
           -ms-flex-pack: justify;
           justify-content: space-between;
-          width: 1200px;
-          position: relative
+          position: relative;
         }
-        
-
- 
        .section_2_imageAside {
           width: 500px; 
         } 
         .section-2-text {
           margin: 1em 0;
           font-size: 1.3em;
-          width: 80%;
+          width: 100%;
+          line-height: 25px;
+         
         }
         .section_2_img {  
           filter: drop-shadow(0px 5px 8px rgba(9,9,9,0.2));
@@ -267,16 +168,12 @@ export default function Home() {
           font-weight: 900;
           width: 90%;
           font-size: 40px;
-
         }
-        
         .section_2 {
           margin: auto;
-          margin-top: 150px;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          flex-direction: row;
           -webkit-box-orient: horizontal;
           -webkit-box-direction: row;
           -ms-flex-direction: row;
@@ -284,161 +181,71 @@ export default function Home() {
           -webkit-box-pack: justify;
           -ms-flex-pack: justify;
           justify-content: space-between;
-          width: 1200px;
-          position: relative
-        }
-        .section_1_container {
-          width: 1200px;
-          margin: auto;
-          overflow: visible;
-          height: 300px;
-        }
-        .section_1 {
-          height: 700px;
-          border-radius: 0 0 200px 200px;
-          background-color: #224099;
-          background-size: 100% 800px;
-          margin: auto;
-           
-          width: 90%;
-          color: #F1F1F2;
-          overflow: hidden;
-        }
-       
-        .mainContents {
-          display: inline-block;
-          padding-top: 15px;
-          padding-left: 20px;
-          padding-right: 15px;
-          width: 500px;
-          line-height: 1.5;
-        }
-
-        .section_1_large_bg {
-          position: absolute;
-          width: 600px;
-          right: -50px;
-          top: 50px;
-          z-index: 1
-        }
-        .section_1_bg {
-          display: none;
-          position: absolute;
-          max-width: 18rem;
-          left: 33rem;
-          top: 4rem;
-          z-index: 1
-        }
-        .mainTitle {
-          margin-top: 0.5em;
-          line-height: 4rem; 
-          font-weight: 900;
-          width: 300px;
-          font-size: 3em;
-        }
-        .mainContentsText_1 {
-          margin: 1.5em 0;
-          font-size: 1.5em;
+          position: relative;
         }
         main {
           width: 100%;
           margin: auto;
-          overflow: visible
+          overflow: visible;
         }
-          
-          
         .appContainer {
-          overflow: hidden
-        }
-        .headerContentContainer {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-pack: distribute;
-          justify-content: space-around;
-          max-height: 10rem
-        }
-            
-        h4 {
-          font-weight: 900;
-          margin: 0;
-          padding: 0;
-          line-height: 1.5rem
-        }
-        h5 {
-          font-weight: 900;
-          margin: 0;
-          padding: 0
-        }
-          
-          
-        .socials-title {
-          font-size: 30px;
-          width: 30%;
-        }
-       
-        .socials-grid {
-          width: 30%;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-        footer {
-          width: 1600px;
-          -webkit-box-pack: end;
-          -ms-flex-pack: end;
-          justify-content: flex-end;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column;
-          color: #F1F1F2;
-          background-color: #224099;
-          height: 300px;
           overflow: hidden;
-          border-radius: 300px 300px 0 0;
-          position: static;
-          margin: auto;
-        }
-        .footer_1 {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center;
-          margin-top: auto;
-          margin-bottom: auto;
-        }
-        .footer_2 {
-          text-align: center;
-          background-color: #203c88
-        }
-        .footer_3 {
-          background-color: #1d357a;
-          text-align: center;
-          padding-top: 5px;
-          padding-bottom: 5px
-        }
+        } 
 
+        .mainTitle {
+          font-weight: 700;
+        }
+        .instructions {
+          font-style: italic;
+        }
 
         @media (min-width: 1700px) {
-          
-          .section_1_container {
-            width: 1200px;
+          .main_text_container {
+            width: 650px;
+          }
+          .mainContentsText_1 {
+            font-size: 20px;
+            margin: 20px 0;
+          }
+          .mainContents {
             margin: auto;
-            overflow: visible;
-            height: 300px;
+            width: 1200px;
+            margin-top: 40px;
           }
-          .section_1 {
-            height: 700px;  
-            min-width: 1600px;
+          .mainTitle {
+            line-height: 40px; 
+            font-size: 40px;
+            margin-top: 90px;
+          }
+          .instructions {
+            font-size: 16px;
+            font-weight: 400;
+            font-style: italic;
+            line-height: 16px;
+            margin-bottom: 20px;
+          }
+          .section_1_large_bg {
+            width: 500px;
+            left: 700px;
+            bottom: 280px; 
           }
           
-          .section-23-header {
+          .section_2 {
+            width: 1200px;
+          }
+          .section_3 {
+            width: 1200px;
+          }
+          .section-2-text {
+            margin: 15px 0;
+            font-size: 1.3em;
+            width: 100%;
+            line-height: 25px;
+          }
+          .section-2-header {
+           font-size: 40px;
+          }
+          .section-3-header {
            font-size: 40px;
           }
           .section_2_img {  
@@ -456,194 +263,209 @@ export default function Home() {
           }
           .team-size-restrictor {
             width: 1000px;
-          }
+          } 
+         
         }
 
         @media (min-width: 1200px) and (max-width: 1700px) {
           
-          .section_1 {
-            height: 500px;  
-            min-width: 1200px;
-            width: 90%;
-          }
-          .mainContents {
-            padding-left: 120px;
-            width: 700px;          }
-          .mainTitle {
-            line-height: 40px; 
-            font-size: 40px;
-          }
-          .instructions {
-            font-size: 16px;
+          .main_text_container {
+            padding-left: 30px;
+            width: 500px;
           }
           .mainContentsText_1 {
             font-size: 20px;
-          }
-          .section_1_large_bg {
-            width: 400px;
-            right: 5rem;
-            top: 1rem; 
-          }
-          .section_2_imageAside {
-            width: 400px; 
-            bottom: 50px;
-          }
-          .section-2-text {
-            font-size: 1.1em;
-          }
-          .section_2_img {  
-            -webkit-filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
-                    filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
-            width: 450px;
-            left: -80px;
-            bottom: 200px;
-          }
-          .section-2-header {
-            font-size: 40px;
-          }
-          .section_2 {
-            justify-content: center;
-            width: 1200px;
-          }
-          
-          .section_3_imageAside {
-            width: 400px; 
-            bottom: 100px;
-          }
-          
-          .section_3_img {  
-            width: 450px;    
-          }
-          .section-3-header {
-            font-size: 40px;
-          }
-          .section_3 {
-            justify-content: center;
-            width: 1200px;
-          }
-        
-          
-          footer {
-            max-width: 1200px;
-            width: 90%;
-          }
-          .footer_1 {
-            margin-top: auto;
-            margin-bottom: 3em; 
-           } 
-          .partners-title {
-            width: 1000px;
-            font-size: 40px;
-          }
-          .exchanges-title {
-            width: 1000px;
-            font-size: 40px;
-          }     
-          .carousel-container {
-            padding-bottom: 3rem;
-            width: 1000px;
-          }   
-        }
-
-        @media (min-width: 1024px) and (max-width: 1200px) {
-          .section_1 {
-            height: 500px;  
-            width: 90%;
-            min-width: 800px;
+            margin: 20px 0;
           }
           .mainContents {
-            padding-left: 120px;
-            width: 700px;          }
+            margin: auto;
+            width: 1000px;
+            margin-top: 20px;
+           }
           .mainTitle {
             line-height: 40px; 
             font-size: 40px;
+            margin-top: 50px;
           }
           .instructions {
             font-size: 16px;
-          }
-          .mainContentsText_1 {
-            font-size: 20px;
+            font-weight: 400;
+            font-style: italic;
+            line-height: 16px;
+            margin-bottom: 20px;
           }
           .section_1_large_bg {
-            width: 400px;
-            right: 5rem;
-            top: 1rem; 
+            width: 500px;
+            left: 550px;
+            bottom: 330px; 
           }
          
-          .section_2_imageAside {
-            width: 400px; 
-            bottom: 50px;
+          .section_3 {
+            width: 1000px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+          }
+            
+          .section_2 {
+            width: 1000px;
+            margin: auto;
+          }
+          .section-2-header {
+           font-size: 40px;
           }
           .section-2-text {
-            font-size: 1.1em;
+            margin: 15px 0;
+            font-size: 1.3em;
+            width: 100%;
+            line-height: 25px;
+          }
+          .section-3-text {
+            margin: 15px 0;
+            font-size: 1.3em;
+            width: 90%;
+            line-height: 25px;
+          }
+          .section-3-header {
+           font-size: 40px;
           }
           .section_2_img {  
             -webkit-filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
                     filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
-            width: 450px;
-            left: -80px;
-            bottom: 200px;
-          }
-          .section-2-header {
-            font-size: 40px;
-          }
-          .section_2 {
-            justify-content: center;
-            width: 1200px;
-          }
-          
-          .section_3_imageAside {
-            width: 400px; 
+            width: 45%;
             bottom: 100px;
+           }
+           .section_2_imageAside {
+            width: 50%; 
+           }
+           .section_3_img {  
+            -webkit-filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
+                    filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
+            width: 45%;
           }
-          .section-3-text {
-            font-size: 1.1em;
+          .section_3_imageAside {
+            width: 50%; 
+           }
+          .team-member-container{
+           width: 100%;
           }
-           
-          .section_3_img {  
-            width: 450px;    
+          .team  {
+            width: 100%;
           }
-          .section-3-header {
-            font-size: 40px;
-          }
-          .section_3 {
-            justify-content: center;
-            width: 1200px;
-          }
-          .team-title {
-            font-size: 40px;
-          }
-          .socials-title {
-            font-size: 30px;
-            width: 40%;
-            bottom: 0.2em;
-            left: 50px;
-          }
-          .social-logo {
-            width: 30px;
-            margin-right: 15px;
-          }
-          .socials-grid {
-            width: 40%;
-          }
-          footer {
-            width: 1100px;
-          }
-          .footer_1 {
-            margin-top: auto;
-            margin-bottom: 3em; 
+          .team-size-restrictor {
+            width: 1000px;
           } 
-          .partners-title {
-            width: 80%;
-            font-size: 40px;
-          }
-          .exchanges-title {
-            max-width: 80%;
-            font-size: 40px;
-          }     
+            
         }
 
-        @media (max-width: 1024px) {
+        @media (min-width: 700px) and (max-width: 1200px) {
+          .main_text_container {
+            padding-left: 30px;
+            width: 55%;
+          }
+          .mainContentsText_1 {
+            font-size: 20px;
+            margin: 20px 0;
+            line-height: 25px;
+          }
+          .mainContents {
+            margin: auto;
+            width: 700px;
+            margin: 20px auto;
+           }
+          .mainTitle {
+            line-height: 40px; 
+            font-size: 38px;
+            margin-top: 50px;
+            width: 300px;
+            white-space: nowrap;
+          }
+          .instructions {
+            font-size: 16px;
+            font-weight: 400;
+            font-style: italic;
+            line-height: 16px;
+            margin-bottom: 20px;
+          }
+          .section_1_large_bg {
+            width: 400px;
+            left: 400px;
+            bottom: 250px; 
+          }
+         
+          .section_3 {
+            width: 700px;
+            margin: 100px auto;
+            display: flex;
+            justify-content: center;
+          }
+          .section-2-text {
+            margin: 15px 0;
+           
+            font-size: 1.3em;
+            width: 100%;
+            line-height: 25px;
+          }
+          .section-2-button {
+
+          }
+          .section_2 {
+            width: 700px;
+            margin: auto;
+          }
+          .section-2-header {
+           font-size: 40px;
+          }
+          .section-3-header {
+           font-size: 40px;
+          }
+          .section-3-text {
+          
+            margin: 15px 0;
+            font-size: 1.3em;
+            width: 100%;
+            line-height: 25px;
+          }
+          .section_2_img {  
+            -webkit-filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
+                    filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
+            width: 50%;
+            bottom: 50px;
+           }
+           .section_2_imageAside {
+            width: 50%; 
+            margin: 0 30px;
+            top: 20px;
+           }
+           .section_3_img {  
+            -webkit-filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
+                    filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
+            width: 45%;
+          }
+          .section_3_imageAside {
+            width: 50%; 
+            margin: 0 30px;
+           }
+          .team-member-container{
+           width: 100%;
+          }
+          .team  {
+            width: 100%;
+          }
+          .team-size-restrictor {
+            width: 1000px;
+          } 
+        }
+
+        @media (max-width: 700px) {
+          .mainContents {
+            font-size: 16px;  
+            line-height: 25px;
+            display: block;
+            margin: auto;
+            width: 70%;
+            min-width: 300px;
+          }
           .partners-title {
             width: 80%;
             font-size: 40px;
@@ -652,32 +474,21 @@ export default function Home() {
             max-width: 80%;
             font-size: 40px;
           }  
-          .section_1_container {
-            width: 90%;
-            min-width: 360px;
-            margin: auto;
-            overflow: visible;
-            height: 300px;
-          }
-          
-          .section_1 {
-            border-radius: 0 0 50px 50px;
-            height: 650px;
-            width: 100%;
-          }
-          .mainContents {
-             width: 100%;  
-            margin: auto;
-          }
+         
           .mainTitle {
             line-height: 50px; 
             font-size: 40px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            margin-top: 45px;
           }
           .instructions {
             font-size: 18px;
+            margin: 15px 0;
+            font-style: italic;
           }
           .mainContentsText_1 {
-            font-size: 22px;
+            font-size: 20px;
           }
           .section_1_large_bg {
             width: 400px;
@@ -697,7 +508,7 @@ export default function Home() {
           }
           .section-2-header {
             font-size: 35px;
-            margin-top: 30px;
+            margin-top: 20px;
           }
           .section_2 {
             justify-content: center;
@@ -720,6 +531,7 @@ export default function Home() {
           }
           .section-3-header {
             font-size: 35px;
+            margin-top: 20px;
           }
           p {
             margin: 0;
@@ -733,12 +545,7 @@ export default function Home() {
             margin-bottom: 50px;
             top: -30px;;
           }
-          
            
-         
-          
-          
-          
           
         }
       `}</style>

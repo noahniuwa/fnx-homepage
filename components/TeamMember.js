@@ -152,39 +152,35 @@ export default function Navbar(props) {
             }
 
             @media (max-width: 700px){
-              .team-member-container {
-                -webkit-transform: scale(.7, .7);
-                    -ms-transform: scale(.7, .7);
-                        transform: scale(.7, .7);
-              }
+              
               .team-member-container:hover {
-                -webkit-transform: scale(.8, .8);
-                    -ms-transform: scale(.8, .8);
-                        transform: scale(.8, .8);
+                -webkit-transform: scale(.65, .65);
+                    -ms-transform: scale(.65, .65);
+                        transform: scale(.65, .65);
               } 
 
               .team-member-container {
                 -webkit-transform: scale(.6, .6);
                     -ms-transform: scale(.6, .6);
                         transform: scale(.6, .6);
-                width: 135px;
+                width: 115px;
                 height: 200px;
                 margin: 0px 15px;
               }
               .team-member-title {
-                bottom: -10px;
-                right: -39px;
+                bottom: 8px;
+                right: -58px;
                 line-height: 25px;
-                
+                -webkit-transform: scale(.95, .95);
+                    -ms-transform: scale(.95, .95);
+                        transform: scale(.95, .95);
               }
               .team-name {
                 width: 210px;
                 line-height: 25px;
                 font-size: 25px;
               }
-              .team-member-title {
-                right: -45px;
-              }
+               
             }
       `}</style>
     </div>

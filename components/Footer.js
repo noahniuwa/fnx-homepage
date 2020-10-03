@@ -86,13 +86,14 @@ export default function Footer() {
         }
         .footer_2 {
           text-align: center;
-          background-color: #203c88
+          background-color: #203c88;
+          padding: 15px 0;
         }
         .footer_3 {
           background-color: #1d357a;
           text-align: center;
-          padding-top: 5px;
-          padding-bottom: 5px
+          padding-top: 10px;
+          padding-bottom: 10px
         }
 
           .social-logo {
@@ -144,7 +145,7 @@ export default function Footer() {
         
         }
 
-        @media (min-width: 1024px) and (max-width: 1700px) {
+        @media (min-width: 1200px) and (max-width: 1700px) {
           
            
           .socials-title {
@@ -180,6 +181,7 @@ export default function Footer() {
           footer {
             max-width: 1200px;
             width: 90%;
+            border-radius: 200px 200px 0 0;
           }
           .footer_1 {
             margin-top: auto;
@@ -190,9 +192,49 @@ export default function Footer() {
 
   
 
-        @media (max-width: 1024px) {
-           
+        @media (min-width: 700px) and (max-width: 1200px) {           
+          .socials-title {
+            font-size: 24px;
+            width: 80%;
+            max-width: 200px;
+          
+            left: 500px;
+            margin-right: 40px;
+          }
+          .socials-grid {
+            width: 80%;
+            max-width: 200px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin-left: 40px;
+          }
+          
+          .social-logo {
+            width: 30px;
+            margin-right: 15px;
+          }
          
+          footer {
+            width: 100%;
+            height: 350px;
+            border-radius: 100px 100px 0 0;
+          }
+          .footer_1 {
+            margin-top: auto;
+            margin-bottom: 3em; 
+           } 
+           
+        }
+        @media (max-width: 700px) {
           .social-link{
             height: 50px;
             display: block;
@@ -203,10 +245,11 @@ export default function Footer() {
           }
           
           .socials-title {
-            font-size: 35px;
-            width: 80%;
+            
+            font-size: 30px;
+            width: 90%;
             max-width: 300px;
-           
+            line-height: 40px;
             margin: auto;
             text-align: center;
             margin-bottom: 40px;
@@ -226,16 +269,22 @@ export default function Footer() {
             -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center;
-            height: 150px;
+            height: 100px;
           }
+           
+          .footer_1 {
+            margin-top: auto;
+            margin-bottom: 3em; 
+           } 
           footer {
             width: 100%;
-            height: 550px;
+            height: 450px;
             border-radius: 50px 50px 0 0;
           }
           .footer_1 {
             width: 100%;
             padding-bottom: 0px;
+            
             margin: auto;
             margin-top: auto;
             margin-bottom: 3em; 
@@ -250,7 +299,6 @@ export default function Footer() {
                 -ms-flex-direction: column;
                     flex-direction: column;
           } 
-           
         }
       `}</style>
     </footer>

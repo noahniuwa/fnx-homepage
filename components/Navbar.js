@@ -71,116 +71,105 @@ export default function Navbar() {
 
 
       <style jsx>{`
-        /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
-.navbar {
-          margin: auto;
-          
-          min-width: 1000px;
-        }
-        .navbar-item img {
-          width: 160px;
-          max-height: 100px;
-          position: absolute;
-        }
-        .logo {
-          max-width: 900px;
-          margin-top: 30px;
-        } 
-        .navbar-item {
-          font-size: 16px;
-        }
-      @media (min-width: 1700px){
-        .navbar {
-          margin: auto;
-          width: 1200px;
-        }
-        .navbar-item img {
-          width: 180px;
-        }
-        .navbar-item {
-          font-size: 20px;
-        }
-      }
- 
-      @media (min-width: 1000px) and (max-width: 1700px){
-        .navbar {
-          width: 1000px;
-        }
-      }
-      
-
-      @media (max-width: 360px){
-        .navbar {
-          margin: auto;
-          min-width: 1000px;
-        }
-      }
-      @media (max-width: 1024px){
-        .navbar-burger, span:nth-child(1) {
-          left: 0px; 
-        }
-        .navbar-burger, span:nth-child(2) {
-          left: 0px;      
-        }
-        .navbar-burger, span:nth-child(3) {
-          left: 0px;
-        }
-        .burger {
-          position: relative;
-          width: 40px;
-          margin: auto;
-          right: 500px;
-          height: 2px;
-        } 
-        .navbar-burger {
-          width: 60px;
-          height: 60px;
-          
-        }
-        .navbar {
-          max-width: 1000px;
-          min-width: 90%;
-          margin: auto;
-        }
-        .navbar-item {
-          font-size: 17px;
-        }
-        .navbar-item img {
-          width: 140px;
-          max-height: 100px;
-          position: absolute;
-        }
-        .logo {
-          max-width: 400px;
-          margin-top: 30px;
-        }
-          
-        .navbar-menu.is-active {
-          top: 80px;
-          opacity: 1;
-          position: absolute;
-          pointer-events: auto;
-        }
-        .navbar-menu {
-          -webkit-transition: top .4s ease-in-out;
-          -o-transition: top .4s ease-in-out;
-          transition: top .4s ease-in-out;
-          right: 0px;
-          display: block;
-          width: 100%;
-          position: absolute;  
-          top: -600px;
-          pointer-events: none;
-        }
-      }
-     
        
+            .navbar-item img {
+              width: 160px;
+              max-height: 100px;
+              position: absolute;
+            }
+            .logo {
+              max-width: 900px;
+              margin-top: 30px;
+            } 
+            .navbar-item {
+              font-size: 16px;
+            }
+      
+          @media (min-width: 1700px) {
+            .navbar {
+              width: 1200px;
+              margin: auto;
+            }
+          }
+  
+          @media (min-width: 1200px) and (max-width: 1700px) {
+            
+            .navbar {
+              width: 1000px;
+              margin: auto;
+            }
+              
+          }
+         
+
+          @media (max-width: 700px) {}
+          @media (min-width: 1024px) and (max-width: 1200px) {}
+          @media (min-width: 700px) and (max-width: 1200px) {
+            .navbar {
+              width: 700px;
+              margin: auto;
+            }
+          }
+
+          @media (max-width: 1024px) {
+            .navbar-burger, span:nth-child(1) {
+              left: 0px; 
+            }
+            .navbar-burger, span:nth-child(2) {
+              left: 0px;      
+            }
+            .navbar-burger, span:nth-child(3) {
+              left: 0px;
+            }
+            .burger {
+              position: relative;
+              width: 40px;
+              margin: auto;
+              right: 500px;
+              height: 2px;
+            } 
+            .navbar-burger {
+              width: 60px;
+              height: 60px;
+              
+            }
+            .navbar {
+              width: 95%;
+              min-width: 300px;
+              max-width: 700px;
+              margin: auto;
+            }
+            .navbar-item {
+              font-size: 17px;
+            }
+            .navbar-item img {
+              width: 140px;
+              max-height: 100px;
+              position: absolute;
+            }
+            .navbar-menu.is-active {
+              top: 80px;
+              opacity: 1;
+              position: absolute;
+              pointer-events: auto;
+            }
+            .navbar-menu {
+              -webkit-transition: top .4s ease-in-out;
+              -o-transition: top .4s ease-in-out;
+              transition: top .4s ease-in-out;
+              right: 0px;
+              display: block;
+              width: 100%;
+              position: absolute;  
+              top: -600px;
+              pointer-events: none;
+            }
+            .logo {
+              max-width: 400px;
+              margin-top: 30px;
+            }
+           }
+   
       `}</style>
     </div>
     )}
