@@ -32,7 +32,7 @@ export default function Home() {
             
             <div className="team core-team">
               <div className="team-header-container">
-                <h3 className="section-header em-3 team-title">Meet the Team</h3>
+                <h3 className="team-title">Meet the Team</h3>
               </div>
             <div className="team-member-container">
               <TeamMember name="Boris Yang" title="Founder & CEO" image="BorisYang.png" />
@@ -61,11 +61,11 @@ export default function Home() {
           </div>
           
         </main>
-        <p className="partners-title em-3 sub-section-header">Partners</p>
+        <p className="partners-title sub-section-header">Partners</p>
         <div className="carousel-container">
           <PartnerCarousel />
         </div>
-        <p className="exchanges-title em-3 sub-section-header">Exchanges</p>
+        <p className="exchanges-title sub-section-header">Exchanges</p>
         <div className="carousel-container">
           <ExchangesCarousel />
         </div>
@@ -96,7 +96,7 @@ export default function Home() {
           flex-wrap: wrap;
         }
         .team-header-container {
-           margin-bottom: 0rem;
+          margin-bottom: 0rem;
           text-align: center
         }
         .team {
@@ -125,7 +125,7 @@ export default function Home() {
           width: 100%;
           justify-content: center;
           margin: 100px auto;
-          /* padding-bottom: 100px; */
+          padding-bottom: 100px;
           display: flex;
           flex-wrap: wrap;
           background-color: rgba(159, 102, 169, 0.2);
@@ -134,32 +134,29 @@ export default function Home() {
           max-width: 1920px;
         }
         .team-title {
-          margin: 1em auto;
+          margin: 0 auto;
           font-weight: 700;
           font-size: 40px;
           color: #9F66A9;
           width: 250px;
-          padding-bottom: 40px;
+          margin-top: 20px;
           max-width: 80%;
         }
         .partners-title {
           width: 1000px;
           max-width: 80%;
           margin: auto;
-          bottom: 1em;
-          margin-bottom: 1em;
-          margin-top: 150px;
+          margin-bottom: 20px;
           font-weight: 700;
           font-size: 40px;
         }
         .exchanges-title {
-          font-size: 40px;
           width: 1000px;
+          max-width: 80%;
           margin: auto;
-          margin-top: 2em;
-          margin-bottom: 1em;
-          font-weight: 900;
-          bottom: 1em;
+          margin-bottom: 20px;
+          font-weight: 700;
+          font-size: 40px;
         }
         .section_1_large_bg {
           position: relative;
@@ -495,7 +492,7 @@ export default function Home() {
           .team-title {
             font-size: 40px;
             width: 250px;
-            padding-bottom: 40px;
+            padding-bottom: 20px;
           }
           .partners-title {
             width: 1000px;

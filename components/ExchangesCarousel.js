@@ -73,7 +73,7 @@ function Carousel() {
         .carousel-cell {
           width: 50%; /* full width */
           /* height: 50%;   */
-          margin-right: 30px;
+          margin-right: 15px;
         }
       }
      
