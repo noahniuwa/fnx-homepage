@@ -80,14 +80,11 @@ export default function Home() {
         .section-header {
             color: #9F66A9;
           }
-        .social-logo {
-            -webkit-filter: invert(100);
-                     filter: invert(100);
-        }      
+           
         main {
-          overflow: visible;  
+          overflow: visible: 
         }
-        .float-left {
+        .float-left { 
             float: left
         }
         strong {
@@ -292,7 +289,8 @@ export default function Home() {
           background-color: #224099;
           background-size: 100% 800px;
           margin: auto;
-          width: 1200px;
+           
+          width: 90%;
           color: #F1F1F2;
           overflow: hidden;
         }
@@ -308,9 +306,9 @@ export default function Home() {
 
         .section_1_large_bg {
           position: absolute;
-          width: 650px;
-          right: -10rem;
-          top: 1rem;
+          width: 600px;
+          right: -50px;
+          top: 50px;
           z-index: 1
         }
         .section_1_bg {
@@ -427,7 +425,7 @@ export default function Home() {
           }
           .section_1 {
             height: 700px;  
-            width: 1600px;
+            min-width: 1600px;
           }
           
           .section-23-header {
@@ -455,7 +453,8 @@ export default function Home() {
           
           .section_1 {
             height: 500px;  
-            width: 1200px;
+            min-width: 1200px;
+            width: 90%;
           }
           .mainContents {
             padding-left: 120px;
@@ -539,7 +538,8 @@ export default function Home() {
         @media (min-width: 1024px) and (max-width: 1200px) {
           .section_1 {
             height: 500px;  
-            width: 1200px;
+            width: 90%;
+            min-width: 800px;
           }
           .mainContents {
             padding-left: 120px;
@@ -634,6 +634,14 @@ export default function Home() {
         }
 
         @media (max-width: 1024px) {
+          .partners-title {
+            width: 80%;
+            font-size: 40px;
+          }
+          .exchanges-title {
+            max-width: 80%;
+            font-size: 40px;
+          }  
           .section_1_container {
             width: 90%;
             min-width: 360px;

@@ -123,8 +123,8 @@ export default function Home() {
           bottom: 150px;
           width: 100%;
           justify-content: center;
-          margin: auto;
-          padding-bottom: 100px;
+          margin: 100px auto;
+          /* padding-bottom: 100px; */
           display: flex;
           flex-wrap: wrap;
           background-color: rgba(159, 102, 169, 0.2);
@@ -139,10 +139,11 @@ export default function Home() {
           color: #9F66A9;
           width: 250px;
           padding-bottom: 40px;
-
+          max-width: 80%;
         }
         .partners-title {
           width: 1000px;
+          max-width: 80%;
           margin: auto;
           bottom: 1em;
           margin-bottom: 1em;
@@ -194,7 +195,7 @@ export default function Home() {
           margin: 0;
           padding: 0
         }
-          
+         
            
           .section-2-closer {
             font-size: 26px;
@@ -212,6 +213,9 @@ export default function Home() {
             transform: scale(1, 1);
           }
         @media (min-width: 1700px) {
+          .team-section {
+            padding-bottom: 100px;
+          }
           .main-contents, .main-aside {
             width: 600px;
           }
@@ -222,11 +226,10 @@ export default function Home() {
             position: relative;
             transform: scale(1, 1);
           }
-          .team-member-container {
-           width: 100%;
-          }
+          
+         
           .team {
-            width: 100%;
+            width: 90%;
             max-width: 1000px;
           }
           .team-title {
@@ -243,12 +246,8 @@ export default function Home() {
             padding-right: 0px;
             line-height: 1.5;
           }
-          .team-member-container{
-           width: 100%;
-          }
-          .team  {
-            width: 100%;
-          }
+          
+         
           .team-size-restrictor {
             width: 1000px;
           }
@@ -305,7 +304,7 @@ export default function Home() {
            width: 100%;
           }
           .team {
-            width: 100%;
+            width: 90%;
             max-width: 1000px;
           }
           .team-title {
@@ -371,7 +370,7 @@ export default function Home() {
            max-width: 1000px;
           }
           .team {
-            width: 100%;
+            width: 90%;
             max-width: 1000px;
           }
           .team-title {
@@ -430,33 +429,40 @@ export default function Home() {
             right: 5rem;
             top: 1rem; 
           }     
+          .team-section {
+            padding: 0 50px;
+            padding-bottom: 100px;
+            margin-top: 200px;
+          }
           .team-size-restrictor {
             width: 1000px;
           }
           .team-member-container {
-           
-           max-width: 450px;
-           margin: auto;
+           width: 100%;
+           min-width: 360px;
           }
           .team {
             width: 100%;
-            max-width: 600px;
-            margin: auto;
+            max-width: 1000px;
+          }
+
+          .core-team {
+            margin-bottom: 100px;
           }
           .team-title {
             font-size: 40px;
             width: 250px;
-            max-width: 800px;
-            margin: auto;
             padding-bottom: 40px;
           }
           .partners-title {
             width: 1000px;
             font-size: 40px;
+            max-width: 80%;
           }
           .exchanges-title {
             width: 1000px;
             font-size: 40px;
+            max-width: 80%;
           }     
           .carousel-container {
             padding-bottom: 3rem;
@@ -544,8 +550,9 @@ export default function Home() {
           }   
           .team-section {
             padding: 100px 50px;
-            margin-top: 100px;
+            margin-top: 400px;
           }
+          
        }
       `}
       </style>

@@ -81,17 +81,17 @@ export default function Navbar(props) {
               width: 175px;
               height: 200px;
               margin: 25px 50px;
-              -webkit-transform: scale(1.1, 1.1);
-                  -ms-transform: scale(1.1, 1.1);
-                      transform: scale(1.1, 1.1);
-              -webkit-transition: all .1s ease-in-out;
-              -o-transition: all .1s ease-in-out;
-              transition: all .1s ease-in-out;
+              -webkit-transform: scale(1, 1.);
+                  -ms-transform: scale(1, 1);
+                      transform: scale(1, 1);
+              -webkit-transition: -webkit-transform .1s ease-in-out;
+              -o-transition: -o-transform .1s ease-in-out;
+              transition: transform .1s ease-in-out;
             }
             .team-member-container:hover {
-                -webkit-transform: scale(1.2, 1.2);
-                    -ms-transform: scale(1.2, 1.2);
-                        transform: scale(1.2, 1.2);
+                -webkit-transform: scale(1.1, 1.1);
+                    -ms-transform: scale(1.1, 1.1);
+                        transform: scale(1.1, 1.1);
               }
             
             .team-header-container h3 {

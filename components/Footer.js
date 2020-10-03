@@ -51,11 +51,7 @@ export default function Footer() {
 */
 
  
-        
-.social-logo {
-            -webkit-filter: invert(100);
-                     filter: invert(100);
-        }      
+  
       
        
         footer {
