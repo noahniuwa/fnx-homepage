@@ -17,8 +17,8 @@ export default function Home() {
                 About FinNexus...
               </h1>
               <div className="main-aside">
-                <p className="section-2-text"> <em><span className="section-2-opener">Redefining finance is </span></em>
-                <span  className="section-2-closer">FinNexus's founding mission. The project was initiated by a group of blockchain industry veterans in 2019 with a focus on offerring new DeFi products that offer greater diversity, convenience, and value to investors.</span> </p>
+                <p className="section-2-text"> <em><span className="section-2-opener">Redefining finance </span></em>
+                <span  className="section-2-closer">is FinNexus's founding mission. The project was initiated by a group of blockchain industry veterans in 2019 with a focus on offerring new DeFi products that offer greater diversity, convenience, and value to investors.</span> </p>
               </div>
             </div>
             <img className="about_bg" src="bgshape_01.svg" />
