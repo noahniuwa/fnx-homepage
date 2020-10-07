@@ -346,7 +346,7 @@ export default function Home() {
          
         }
 
-        @media (min-width: 700px) and (max-width: 1200px) {
+        @media (min-width: 800px) and (max-width: 1200px) {
           .main_text_container {
             width: 700px;
             margin: 0;
@@ -431,7 +431,7 @@ export default function Home() {
        }   
 
        
-       @media (max-width: 700px){
+       @media (max-width: 800px){
           .main_text_container {
             width: 90%;
             margin: auto;

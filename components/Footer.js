@@ -7,7 +7,7 @@ export default function Footer() {
     <footer>
       <div className="footer_1">
         <p className="socials-title">
-            <span className="big-text">Join</span> the FinNexus community 
+            Join the FinNexus community 
         </p>
           <div className="socials-grid">
             <a className="social-link" href="https://twitter.com/fin_nexus/">
@@ -84,32 +84,36 @@ export default function Footer() {
           margin-top: auto;
           margin-bottom: auto;
         }
-        .footer_2 {
-          text-align: center;
-          background-color: #203c88;
-          padding: 15px 0;
-        }
-        .footer_3 {
-          background-color: #1d357a;
-          text-align: center;
-          padding-top: 10px;
-          padding-bottom: 10px
-        }
+        
+        
 
           .social-logo {
             width: 30px;
-            margin-right: 15px;
- 
-            padding-bottom:10px;
+            margin: 5px;
           }
         @media (min-width: 1700px) {
-             
-             
+          .footer_1 {
+            height: 180px;
+          }
+          .footer_3 {
+            background-color: #1d357a;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+          }
+          .logo {
+            height: 80px;
+          } 
+          .footer_2 {
+            text-align: center;
+            background-color: #203c88;
+            height: 80px;
+          }
           .socials-title {
-            font-size: 24px;
+            font-size: 25px;
             max-width: 600px;
-            bottom: 0.2em;
-            margin-right: 30px;
+            line-height: 180px;
+            margin-right: 200px;
            }
           .socials-grid {
             max-width: 500px;
@@ -124,40 +128,56 @@ export default function Footer() {
             -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center;
-            height: 80%;
-            margin-left: 30px;
+            height: 180px;
+            margin-left: 200px;
           }
           
           .social-logo {
             width: 30px;
             margin-right: 15px;
+            line-height: 40px;
           }
          
           footer {
-            max-width: 1200px;
-            width: 90%;
+            width: 1600px;
+            margin: auto;
           }
-          .footer_1 {
-            margin-top: auto;
-            margin-bottom: 3em; 
-           } 
+          
           
         
         }
 
         @media (min-width: 1200px) and (max-width: 1700px) {
-          
-           
-          .socials-title {
-            font-size: 24px;
-            width: 80%;
-            max-width: 200px;
-            bottom: 0.2em;
-            left: 50px;
-            margin-right: 40px;
+          .footer_1 {
+            height: 180px;
           }
+          .footer_3 {
+            background-color: #1d357a;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+          }
+          .logo {
+            height: 80px;
+          } 
+          .social-logo {
+            width: 30px;
+            margin-right: 15px;
+            line-height: 0px;
+          }
+          .footer_2 {
+            text-align: center;
+            background-color: #203c88;
+            height: 80px;
+          }
+          .socials-title {
+            font-size: 25px;
+            max-width: 600px;
+            line-height: 180px;
+            margin: auto;
+            margin-right: 50px;
+           }
           .socials-grid {
-            width: 80%;
             max-width: 200px;
             display: -webkit-box;
             display: -ms-flexbox;
@@ -170,94 +190,57 @@ export default function Footer() {
             -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center;
-            margin-left: 40px;
+            height: 80px;
+            margin: auto;
+            margin-left: 50px;
           }
           
-          .social-logo {
-            width: 30px;
-            margin-right: 15px;
-          }
+        
          
           footer {
-            max-width: 1200px;
-            width: 90%;
-            border-radius: 200px 200px 0 0;
+            width: 80%;
+            min-width: 1000px;
+            margin: auto;
           }
-          .footer_1 {
-            margin-top: auto;
-            margin-bottom: 3em; 
-           } 
+          
+          
           
         }
 
   
 
-        @media (min-width: 700px) and (max-width: 1200px) {           
-          .socials-title {
-            font-size: 24px;
-            width: 80%;
-            max-width: 200px;
-          
-            left: 500px;
-            margin-right: 40px;
+        @media (min-width: 800px) and (max-width: 1200px) {           
+          .footer_1 {
+            height: 180px;
           }
-          .socials-grid {
-            width: 80%;
-            max-width: 200px;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            margin-left: 40px;
+          .footer_3 {
+            background-color: #1d357a;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
           }
-          
+          .logo {
+            height: 80px;
+          } 
           .social-logo {
             width: 30px;
             margin-right: 15px;
+            line-height: 0px;
           }
-         
-          footer {
-            width: 100%;
-            height: 350px;
-            border-radius: 100px 100px 0 0;
-          }
-          .footer_1 {
-            margin-top: auto;
-            margin-bottom: 3em; 
-           } 
-           
-        }
-        @media (max-width: 700px) {
-          .social-link{
-            height: 50px;
-            display: block;
-          }
-          .social-logo {
-            width: 30px;
-            margin: 10px 10px;
-          }
-          
-          .socials-title {
-            
-            font-size: 30px;
-            width: 90%;
-            max-width: 300px;
-            line-height: 40px;
-            margin: auto;
+          .footer_2 {
             text-align: center;
-            margin-bottom: 40px;
+            background-color: #203c88;
+            height: 80px;
           }
-          .socials-grid {
-            width: 80%;
-            max-width: 200px;
+          .socials-title {
+            font-size: 25px;
+            max-width: 600px;
+            line-height: 180px;
             margin: auto;
+            margin-right: 50px;
+           }
+          .socials-grid {
+            max-width: 200px;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -269,36 +252,84 @@ export default function Footer() {
             -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center;
-            height: 100px;
-          }
-           
-          .footer_1 {
-            margin-top: auto;
-            margin-bottom: 3em; 
-           } 
-          footer {
-            width: 100%;
-            height: 450px;
-            border-radius: 50px 50px 0 0;
-          }
-          .footer_1 {
-            width: 100%;
-            padding-bottom: 0px;
-            
+            height: 80px;
             margin: auto;
-            margin-top: auto;
-            margin-bottom: 3em; 
-            -webkit-box-pack: center; 
-                -ms-flex-pack: center; 
-                    justify-content: center;
+            margin-left: 50px;
+          }
+          
+        
+         
+          footer {
+            width: 80%;
+            min-width: 500px;
+            margin: auto;
+            border-radius: 100px 100px 0 0;
+          }
+          
+          
+           
+        }
+        @media (max-width: 800px) {
+          .footer_1 {
+            height: 180px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          .footer_3 {
+            background-color: #1d357a;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+          }
+          .logo {
+            height: 80px;
+          } 
+          .social-logo {
+            width: 30px;
+            margin-right: 15px;
+            line-height: 0px;
+          }
+          .footer_2 {
+            text-align: center;
+            background-color: #203c88;
+            height: 80px;
+          }
+          .socials-title {
+            font-size: 25px;
+            max-width: 600px;
+            height: 50%;
+          
+            
+           }
+          .socials-grid {
+            max-width: 200px;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column;
-          } 
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            height: 50%;
+         
+      
+          }
+          
+      
+          footer {
+            width: 100%;
+            min-width: 330px;
+            margin: auto;
+            border-radius: 100px 100px 0 0;
+            height: 400px;
+          }
+          
+          
         }
       `}</style>
     </footer>

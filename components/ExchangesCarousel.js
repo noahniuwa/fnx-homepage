@@ -7,8 +7,6 @@ const flickityOptions = {
   autoPlay: true,
   autoPlay: 3000,
   hash: true,
-  
-  
 }
 
 function Carousel() {

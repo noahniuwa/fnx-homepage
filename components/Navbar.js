@@ -71,9 +71,9 @@ export default function Navbar() {
 
 
       <style jsx>{`
-       
+            
             .navbar-item img {
-              width: 160px;
+              width: 140px;
               max-height: 100px;
               position: absolute;
             }
@@ -84,11 +84,24 @@ export default function Navbar() {
             .navbar-item {
               font-size: 16px;
             }
+            .navbar,.is-primary .navbar-brand .navbar-item {
+              width: 0;
+              margin: 0;
+              padding: 0;
+            }
+            .navbar,.is-primary .navbar-brand .navbar-item .navbar-item   {
+              width: 0;
+              margin: 0;
+              padding: 0;
+            }
       
           @media (min-width: 1700px) {
             .navbar {
               width: 1200px;
               margin: auto;
+            }
+            .navbar-item {
+              font-size: 20px;
             }
           }
   
@@ -102,9 +115,13 @@ export default function Navbar() {
           }
          
 
-          @media (max-width: 700px) {}
+          @media (max-width: 800px) {
+            .navbar {
+              width: 70%;
+            }
+          }
           @media (min-width: 1024px) and (max-width: 1200px) {}
-          @media (min-width: 700px) and (max-width: 1200px) {
+          @media (min-width: 800px) and (max-width: 1200px) {
             .navbar {
               width: 700px;
               margin: auto;
@@ -134,9 +151,7 @@ export default function Navbar() {
               
             }
             .navbar {
-              width: 95%;
-              min-width: 300px;
-              max-width: 700px;
+              
               margin: auto;
             }
             .navbar-item {
