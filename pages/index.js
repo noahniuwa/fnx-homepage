@@ -37,7 +37,9 @@ export default function Home() {
           
           <div className="section_2">
             <div className="section_2_img_container">
-              <img className="section_2_img" src="earn.svg" />
+              <img className="section_2_img section_2_img_desktop" src="EarnNow2.svg" />
+              <img className="section_2_img section_2_img_mobile" src="earn.svg" />
+
             </div>
             <div className="section_2_imageAside">
               <h3 className="section-2-header section-header">Earn Now!</h3>
@@ -76,6 +78,12 @@ export default function Home() {
 
       <style jsx>{`
 
+          .section_2_img_mobile{
+            display: none;
+          }
+          .section_2_img_desktop{
+            display: block;
+          }
         .section-header {
           color: #9F66A9;
         }
@@ -212,7 +220,11 @@ export default function Home() {
             -webkit-filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
                     filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
             width: 90%;
-            bottom: 240px;
+            bottom: 150px;
+          }
+          .section_2 {
+            width: 1200px;
+            bottom: 80px;
           }
           .section_3_img {  
             width: 90%;
@@ -232,12 +244,12 @@ export default function Home() {
           .mainContents {
             margin: auto;
             width: 1200px;
-            margin-top: 40px;
+            margin-top: 0px;
           }
           .mainTitle {
             line-height: 45px; 
             font-size: 45px;
-            margin-top: 90px;
+            margin-top: 50px;
           }
           .instructions {
             font-size: 20px;
@@ -257,9 +269,7 @@ export default function Home() {
           .section_2_imageAside {
             width: 50%; 
           } 
-          .section_2 {
-            width: 1200px;
-          }
+          
           .section_3 {
             width: 1200px;
          
@@ -331,7 +341,7 @@ export default function Home() {
           .mainTitle {
             line-height: 40px; 
             font-size: 40px;
-            margin-top: 90px;
+            margin-top: 50px;
           }
           .instructions {
             font-size: 15px;
@@ -399,7 +409,7 @@ export default function Home() {
             -webkit-filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
                   filter: drop-shadow(0px 10px 15px rgba(9, 9, 9, 0.3));
             width: 90%;
-            bottom: 30px;
+            bottom: 15px;
           }
           .section_3_img {  
             width: 90%;
@@ -424,7 +434,7 @@ export default function Home() {
           .mainTitle {
             line-height: 40px; 
             font-size: 40px;
-            margin-top: 90px;
+            margin-top: 50px;
           }
           .instructions {
             font-size: 15px;
@@ -483,6 +493,12 @@ export default function Home() {
         }
 
         @media (max-width: 800px) {
+          .section_2_img_mobile{
+            display: block;
+          }
+          .section_2_img_desktop{
+            display: none;
+          }
           .version {
             font-size: 25px;
             font-weight: 700;
@@ -507,7 +523,7 @@ export default function Home() {
             line-height: 40px; 
             font-size: 40px;
             font-weight: 700;
-            margin-top: 45px;
+            margin-top: 50px;
           }
           .instructions {
             font-size: 18px;

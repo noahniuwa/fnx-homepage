@@ -86,11 +86,13 @@ export default function Footer() {
         }
         
         
-
-          .social-logo {
-            width: 30px;
-            margin: 5px;
-          }
+        .footer_3 {
+          font-size: 12px;
+        }
+        .social-logo {
+          width: 30px;
+          margin: 5px;
+        }
         @media (min-width: 1700px) {
           .footer_1 {
             height: 180px;
@@ -98,8 +100,8 @@ export default function Footer() {
           .footer_3 {
             background-color: #1d357a;
             text-align: center;
-            height: 40px;
-            line-height: 40px;
+            height: 20px;
+            line-height: 20px;
           }
           .logo {
             height: 80px;
@@ -110,13 +112,15 @@ export default function Footer() {
             height: 80px;
           }
           .socials-title {
+            padding: 50px 0;
+            height: 180px;
             font-size: 25px;
-            max-width: 600px;
-            line-height: 180px;
+            width: 200px;
+            line-height: 40px;
             margin-right: 200px;
            }
           .socials-grid {
-            max-width: 500px;
+            width: 200px;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -128,8 +132,9 @@ export default function Footer() {
             -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center;
-            height: 180px;
+            height: 80px;
             margin-left: 200px;
+            padding: 50px 0;
           }
           
           .social-logo {
@@ -154,8 +159,8 @@ export default function Footer() {
           .footer_3 {
             background-color: #1d357a;
             text-align: center;
-            height: 40px;
-            line-height: 40px;
+            height: 20px;
+            line-height: 20px;
           }
           .logo {
             height: 80px;
@@ -172,8 +177,8 @@ export default function Footer() {
           }
           .socials-title {
             font-size: 25px;
-            max-width: 600px;
-            line-height: 180px;
+            width: 200px;
+            line-height: 40px;
             margin: auto;
             margin-right: 50px;
            }
@@ -216,8 +221,8 @@ export default function Footer() {
           .footer_3 {
             background-color: #1d357a;
             text-align: center;
-            height: 40px;
-            line-height: 40px;
+            height: 20px;
+            line-height: 20px;
           }
           .logo {
             height: 80px;
@@ -234,8 +239,8 @@ export default function Footer() {
           }
           .socials-title {
             font-size: 25px;
-            max-width: 600px;
-            line-height: 180px;
+            width: 200px;
+            line-height: 40px;
             margin: auto;
             margin-right: 50px;
            }
@@ -279,8 +284,8 @@ export default function Footer() {
           .footer_3 {
             background-color: #1d357a;
             text-align: center;
-            height: 40px;
-            line-height: 40px;
+            height: 20px;
+            line-height: 20px;
           }
           .logo {
             height: 80px;
@@ -297,10 +302,9 @@ export default function Footer() {
           }
           .socials-title {
             font-size: 25px;
-            max-width: 600px;
+            width: 400px;
             height: 50%;
-          
-            
+            text-align: center;
            }
           .socials-grid {
             max-width: 200px;
