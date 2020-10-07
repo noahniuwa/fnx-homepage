@@ -71,7 +71,10 @@ export default function Navbar() {
 
 
       <style jsx>{`
-            
+            .navbar-container {
+              margin-top: 10px;
+              height: 70px;
+            }
             .navbar-item img {
               width: 140px;
               max-height: 100px;
@@ -79,7 +82,7 @@ export default function Navbar() {
             }
             .logo {
               max-width: 900px;
-              margin-top: 30px;
+        
             } 
             .navbar-item {
               font-size: 16px;
@@ -141,18 +144,18 @@ export default function Navbar() {
             .burger {
               position: relative;
               width: 40px;
-              margin: auto;
+            
               right: 500px;
               height: 2px;
             } 
             .navbar-burger {
               width: 60px;
-              height: 60px;
+           
               
             }
             .navbar {
               
-              margin: auto;
+              margin: 0 auto;
             }
             .navbar-item {
               font-size: 17px;
@@ -181,7 +184,7 @@ export default function Navbar() {
             }
             .logo {
               max-width: 400px;
-              margin-top: 30px;
+              margin-top: 0px;
             }
            }
    
