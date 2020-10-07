@@ -59,7 +59,7 @@ export default function Navbar(props) {
               border-bottom: .6rem solid #224099;
               text-align: center;
               border-radius: 1.3rem;
-              bottom: 0px;
+              bottom: -20px;
               z-index: 100;
             }
             .team-name {
@@ -146,7 +146,7 @@ export default function Navbar(props) {
                 line-height: 25px;
               }
               .team-member-title {
-                bottom: -40px;
+                bottom: -60px;
                 right: -50px;
               }
               .team-name {
@@ -173,7 +173,7 @@ export default function Navbar(props) {
                 margin: 0px 15px;
               }
               .team-member-title {
-                bottom: -40px;
+                bottom: -60px;
                 right: -55px;;
                 line-height: 25px;
                 -webkit-transform: scale(.95, .95);
