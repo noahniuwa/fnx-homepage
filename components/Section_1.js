@@ -6,7 +6,7 @@ export default function Section_1(props) {
         <div>
          <header className="section_1">
             <Navbar />
-              {props.children}
+            {props.children}
           </header>
         <style jsx>{` 
        

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar'
 import Section_1 from '../components/Section_1'
-
+import Particles from '../components/Particles'
 import Footer from '../components/Footer'
 import Link from 'next/link'
 
@@ -32,8 +32,10 @@ export default function Home() {
                 <div className="instructions">Join our email list to get the latest news about FinNexus's upcoming decentralized derivative products.</div>
                 <button className="is-rounded button sign-up is-danger">Sign-up</button>
                 <img className="section_1_large_bg" src="top_illustration.svg" />
+                
               </div>
             </div>
+            <Particles></Particles>
           </Section_1>
           
           <div className="section_2">
@@ -76,7 +78,7 @@ export default function Home() {
       </div>
 
       <style jsx>{`
-       
+        
         .section-header {
           color: #9F66A9;
         }

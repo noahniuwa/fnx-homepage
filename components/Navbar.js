@@ -71,6 +71,9 @@ export default function Navbar() {
 
 
       <style jsx>{`
+            .navbar * {
+              z-index: 10;
+            }
             .navbar-container {
               margin-top: 10px;
               height: 70px;
