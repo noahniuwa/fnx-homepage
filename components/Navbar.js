@@ -90,12 +90,14 @@ export default function Navbar() {
               font-size: 16px;
             }
             .navbar,.is-primary .navbar-brand .navbar-item {
-              width: 0;
+              width: 100px;
+              height: 50px;
               margin: 0;
               padding: 0;
             }
             .navbar,.is-primary .navbar-brand .navbar-item .navbar-item   {
-              width: 0;
+              width: 100px;
+              height: 50px;
               margin: 0;
               padding: 0;
             }
