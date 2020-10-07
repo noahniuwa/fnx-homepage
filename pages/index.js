@@ -2,11 +2,16 @@ import Head from 'next/head';
 import Section_1 from '../components/Section_1'
 import Footer from '../components/Footer'
 import Link from 'next/link'
+import AOS from 'aos'
+import {useEffect} from 'react'
+import 'aos/dist/aos.css';
 
  
 
 export default function Home() {
-
+  useEffect(() => {
+    AOS.init();
+  })
   return (
     <div className="appContainer">
       <Head>
@@ -37,11 +42,11 @@ export default function Home() {
           
           <div className="section_2">
             <div className="section_2_img_container">
-              <img className="section_2_img section_2_img_desktop" src="EarnNow2.svg" />
-              <img className="section_2_img section_2_img_mobile" src="earn.svg" />
+              <img data-aos="fade-right"  className="section_2_img section_2_img_desktop" src="EarnNow2.svg" />
+              <img data-aos="fade-right" className="section_2_img section_2_img_mobile" src="earn.svg" />
 
             </div>
-            <div className="section_2_imageAside">
+            <div data-aos="fade-left" className="section_2_imageAside">
               <h3 className="section-2-header section-header">Earn Now!</h3>
               <p className="section-2-text">With FPO v1.0, liquidity providers earn attractive rewards for trustlessly locking their assets in the the MASP liquidity pool.</p>
               <div className="float-container section_2_button">
@@ -56,9 +61,9 @@ export default function Home() {
 
           <div className="section_3">
             <div className="section_3_img_container">
-              <img className="section_3_img" src="FNX_options.svg" />
+              <img data-aos="fade-left" className="section_3_img" src="FNX_options.svg" />
             </div>
-            <div className="section_3_imageAside">
+            <div data-aos="fade-right" className="section_3_imageAside">
               <h3 className="section-3-header section-header"> Hedge & Leverage</h3>
               <p className="section-3-text">FPO's wide variety of options makes it easy to find just the solution for your investment needs, and our MASP liquidity pool ensures you never need to worry if there's enough liquidity.</p>
               <Link href="https://options-v2-testnet.vercel.app/#/">
@@ -185,6 +190,7 @@ export default function Home() {
           -ms-flex-pack: justify;
           justify-content: center;
           position: relative;
+          margin-top: 300px;
         }
         main {
           width: 100%;

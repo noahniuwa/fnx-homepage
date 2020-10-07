@@ -1,30 +1,35 @@
 import { useState, useEffect } from 'react';
 import Bowser from "bowser"; // ES6 (and TypeScript with --esModuleInterop enabled)
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
+ 
+ 
 
 export default function Navbar(props) {
+    
     const [currentBrowser, setBrowser] = useState("")
-    // Similar to componentDidMount and componentDidUpdate:
+    // switch styles for unsupported browsers
     let browser =""
-    useEffect(() => {
-      // Update the document title using the browser API
+      useEffect(() => {
+      AOS.init();
+      // check browser
       browser = Bowser.getParser(window.navigator.userAgent);
       let name = browser.getBrowser()
       setBrowser(name)
-      console.log(name);
-      console.log(currentBrowser)
      }, []);
   return (
      
     <div className="team-member-container">
-      
-      <img className="team-member-frame" src="bgshape_03.svg"/>
-      <img className="team-member" src={props.image}/>
-      <div className="team-member-title">
-        <p className="team-name">{props.name}</p>
-        <p className="team-title">{props.title}</p>
+      <div data-aos="flip-right"  >
+        <img className="team-member-frame" src="bgshape_03.svg"/>
+        <img className="team-member" src={props.image}/>
+        <div className="team-member-title">
+          <p className="team-name">{props.name}</p>
+          <p className="team-title">{props.title}</p>
+        </div>
       </div>
-    
+      
   
 
       <style jsx>{`
