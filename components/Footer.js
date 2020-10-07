@@ -70,7 +70,7 @@ export default function Footer() {
           background-color: #224099;
           height: 300px;
           overflow: hidden;
-          border-radius: 300px 300px 0 0;
+          border-radius: 200px 200px 0 0;
           position: static;
           margin: auto;
         }
