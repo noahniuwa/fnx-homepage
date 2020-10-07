@@ -190,7 +190,7 @@ export default function Home() {
           -ms-flex-pack: justify;
           justify-content: center;
           position: relative;
-          margin-top: 300px;
+          margin-top: 100px;
         }
         main {
           width: 100%;
@@ -230,7 +230,6 @@ export default function Home() {
           }
           .section_2 {
             width: 1200px;
-            bottom: 80px;
           }
           .section_3_img {  
             width: 90%;
