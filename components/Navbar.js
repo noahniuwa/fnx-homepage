@@ -85,7 +85,6 @@ export default function Navbar() {
             }
             .logo {
               max-width: 900px;
-        
             } 
             .navbar-item {
               font-size: 16px;
@@ -123,7 +122,7 @@ export default function Navbar() {
 
           @media (max-width: 800px) {
             .navbar {
-              width: 70%;
+              width: 90%;
             }
           }
           @media (min-width: 1024px) and (max-width: 1200px) {}
@@ -135,29 +134,8 @@ export default function Navbar() {
           }
 
           @media (max-width: 1024px) {
-            .navbar-burger, span:nth-child(1) {
-              left: 0px; 
-            }
-            .navbar-burger, span:nth-child(2) {
-              left: 0px;      
-            }
-            .navbar-burger, span:nth-child(3) {
-              left: 0px;
-            }
-            .burger {
-              position: relative;
-              width: 40px;
             
-              right: 500px;
-              height: 2px;
-            } 
-            .navbar-burger {
-              width: 60px;
-           
-              
-            }
             .navbar {
-              
               margin: 0 auto;
             }
             .navbar-item {
