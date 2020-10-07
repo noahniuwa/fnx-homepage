@@ -146,8 +146,8 @@ export default function Navbar(props) {
                 line-height: 25px;
               }
               .team-member-title {
-                bottom: -10px;
-                right: -39px;
+                bottom: -40px;
+                right: -50px;
               }
               .team-name {
                 width: 210px;
@@ -173,8 +173,8 @@ export default function Navbar(props) {
                 margin: 0px 15px;
               }
               .team-member-title {
-                bottom: 8px;
-                right: -58px;
+                bottom: -40px;
+                right: -55px;;
                 line-height: 25px;
                 -webkit-transform: scale(.95, .95);
                     -ms-transform: scale(.95, .95);
