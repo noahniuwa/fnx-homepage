@@ -36,10 +36,10 @@ export default function Home() {
               </div>
             <div className="team-member-container">
               <TeamMember name="Boris Yang" title="Founder & CEO" image="BorisYang.png" />
-              <TeamMember name="Bob Chen" title="Co-founder & CTO" image="BobChen.png" />
-              <TeamMember name="Ryan Tian" title="Financial Specialist" image="RyanTian.png" />
-              <TeamMember name="Veerender Singh" title="Community Manager" image="VeerenderSingh.png" />
-              <TeamMember name="Jack Tung" title="Legal Expert" image="JackTung.png" />
+              <TeamMember delay="100" name="Bob Chen" title="Co-founder & CTO" image="BobChen.png" />
+              <TeamMember delay="200" name="Ryan Tian" title="Financial Specialist" image="RyanTian.png" />
+              <TeamMember delay="300" name="Veerender Singh" title="Community Manager" image="VeerenderSingh.png" />
+              <TeamMember delay="400" name="Jack Tung" title="Legal Expert" image="JackTung.png" />
               </div>
             </div>
            
@@ -49,9 +49,9 @@ export default function Home() {
               </div>
               <div className="team-member-container">
                 <TeamMember name="Nicholas Krapels" title="Strategy Advisor" image="NicholasKrapels.png" />
-                <TeamMember name="Noah Maizels" title="Marketing Adviser" image="NoahMaizels.png" />
-                <TeamMember name="Eason Zhang" title="FP of River Capital" image="EasonZhang.png" />
-                <TeamMember name="Jack Lu" title="Wanchain Founder" image="JackLu.png" />
+                <TeamMember delay="100" name="Noah Maizels" title="Marketing Adviser" image="NoahMaizels.png" />
+                <TeamMember delay="200" name="Eason Zhang" title="FP of River Capital" image="EasonZhang.png" />
+                <TeamMember delay="300" name="Jack Lu" title="Wanchain Founder" image="JackLu.png" />
               </div>
             
             </div>

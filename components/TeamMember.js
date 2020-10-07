@@ -21,7 +21,7 @@ export default function Navbar(props) {
   return (
      
     <div className="team-member-container">
-      <div data-aos="flip-right"  >
+      <div data-aos-delay={props.delay} data-aos="flip-right"  >
         <img className="team-member-frame" src="bgshape_03.svg"/>
         <img className="team-member" src={props.image}/>
         <div className="team-member-title">
