@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
       <div className="sizeRestrictor">
         <main>
-          <Section_1>
+          <Section_1 background_color="#224099">
             <div className="mainContents">
               <div className="main_text_container">
                 <h1 className="mainTitle">
@@ -460,10 +460,10 @@ export default function Home() {
             width: 50%; 
           } 
           .section_2 {
-            width: 700px;
+            width: 800px;
           }
           .section_3 {
-            width: 700px;
+            width: 800px;
             margin-top: 50px;
             bottom: 0;
           }
