@@ -37,12 +37,12 @@ export default function Home() {
               </div>
             <div className="team-member-container">
               <a target="_blank" href="https://www.linkedin.com/in/boris-yang-371297199/"><TeamMember name="Boris Yang" title="Founder & CEO" image="BorisYang.png" /></a>
-              <a target="_blank" href="https://www.linkedin.com/in/%E9%9B%A8-%E7%94%B0-375a7127/"></a> <TeamMember delay="100" name="Ryan Tian" title="Financial Specialist" image="RyanTian.png" />
-              <a target="_blank" href=" https://www.linkedin.com/in/%E5%BB%BA%E5%BC%BA-%E5%90%95-4400b5168/"><TeamMember delay="200" name="Lü Jianqiang" title="CTO" image=" .png" /></a>
-              <a target="_blank" href="https://www.linkedin.com/in/qinggang-jia-074757131"><TeamMember delay="300" name="Jia Qinggang" title="Senior Developer" image=" .png" /></a>
+              <a target="_blank" href="https://www.linkedin.com/in/%E9%9B%A8-%E7%94%B0-375a7127/"><TeamMember delay="100" name="Ryan Tian" title="Financial Specialist" image="RyanTian.png"/></a>
+              <a target="_blank" href=" https://www.linkedin.com/in/%E5%BB%BA%E5%BC%BA-%E5%90%95-4400b5168/"><TeamMember delay="200" name="Lü Jianqiang" title="CTO" image="lu_jianqiang.png" /></a>
+              <a target="_blank" href="https://www.linkedin.com/in/qinggang-jia-074757131"><TeamMember delay="300" name="Jia Qinggang" title="Senior Developer" image="jia_qinggang.png" /></a>
               <a target="_blank" href="https://www.linkedin.com/in/%E7%8F%8A%E7%8F%8A-%E9%BB%84-3b3a7a103"><TeamMember delay="400" name="Sarah Huang" title="Chief Community Manager" image="sarah_huang.png" /></a>
               <a target="_blank" href="https://www.linkedin.com/in/sardar-veerender-singh-6325a7119/"><TeamMember delay="500" name="Veerender Singh" title="Community Manager" image="VeerenderSingh.png" /></a>
-              <a target="_blank" href="http://linkedin.com/in/jacky-wang-776458173"><TeamMember delay="600" name="Wang Jie" title="CMO" image=" .png" /></a>
+              {/* <a target="_blank" href="http://linkedin.com/in/jacky-wang-776458173"><TeamMember delay="600" name="Wang Jie" title="CMO" image="wang_jie.png" /></a> */}
               </div>
             </div>
            
@@ -56,7 +56,7 @@ export default function Home() {
               <a target="_blank" href=""></a><TeamMember delay="200" name="Eason Zhang" title="FP of River Capital" image="EasonZhang.png" />
               <a target="_blank" href="https://www.linkedin.com/in/jack-lu-57995469/"><TeamMember delay="300" name="Jack Lu" title="Wanchain Founder" image="JackLu.png" /></a>
               <a target="_blank" href="https://www.linkedin.com/in/joewong1/"><TeamMember delay="400" name="Joe Wong" title="Growth Advisor" image="joe_wong.png" /></a>
-              <a target="_blank" href="https://www.linkedin.com/in/a1choi"><TeamMember delay="500" name="Aaron Choi" title="BD Advisor" image=" .png" /></a>
+              <a target="_blank" href="https://www.linkedin.com/in/a1choi"><TeamMember delay="500" name="Aaron Choi" title="BD Advisor" image="aaron_choi.png" /></a>
            
               </div>
             
