@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 
 export default function Home() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({once: true});
   })
   return (
     <div className="appContainer">
@@ -33,7 +33,7 @@ export default function Home() {
                   FinNexus Protocol For Options is a pioneering multi-blockchain decentralized options protocol based on the innovative MASP (Multi-Asset Single Pool) liquidity model.
                 </div>
                 <div className="instructions">Join our email list to get the latest news about FinNexus's upcoming decentralized derivative products.</div>
-                <button className="is-rounded button sign-up is-danger">Sign-up</button>
+               <a href="https://finnexus.substack.com/" target="_blank"><button className="is-rounded button sign-up is-danger">Sign-up</button></a> 
                 <img className="section_1_large_bg" src="top_illustration.svg" />
                 
               </div>
@@ -277,8 +277,7 @@ export default function Home() {
           
           .section_3 {
             width: 1200px;
-         
-          }
+           }
           .section-2-text {
             margin: 15px 0;
             font-size: 25px;
@@ -371,6 +370,7 @@ export default function Home() {
           }
           .section_3 {
             width: 1000px;
+            margin-top: 40px;
           }
           .section-2-text {
             margin: 15px 0;

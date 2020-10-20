@@ -28,7 +28,7 @@ export default function Home() {
           </Section_1>
       
           
-          <div className="team-section">
+          <div id="team" className="team-section">
             <div className="team-size-restrictor">
             
             <div className="team core-team">

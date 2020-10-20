@@ -41,9 +41,9 @@ export default function Navbar() {
             <Link href="https://medium.com/finnexus">
               <a className="navbar-item">Blog</a>
             </Link>
-            <Link href="/dashboard">
+            {/* <Link href="/dashboard">
               <a className="navbar-item">Dashboard</a>
-            </Link>
+            </Link> */}
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">
                 Products
