@@ -13,7 +13,10 @@ export default function Dashboard() {
   useEffect(() => {
      fetch("https://fnx-api.herokuapp.com/api/v1")
      .then(res => res.json())
-     .then(data => set_dashboard_data(data))
+     .then(data => {
+       console.log(data)
+       set_dashboard_data(data)
+      })
    }, []);
 
   return (

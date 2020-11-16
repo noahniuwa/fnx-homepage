@@ -73,6 +73,7 @@ export default function Navbar() {
 
 
       <style jsx>{`
+           
             .navbar * {
               z-index: 10;
             }
@@ -90,6 +91,8 @@ export default function Navbar() {
             } 
             .navbar-item {
               font-size: 16px;
+              padding-top: 5px;
+              padding-bottom: 5px;
             }
             .navbar,.is-primary .navbar-brand .navbar-item {
               width: 100px;
